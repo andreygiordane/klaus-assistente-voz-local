@@ -1,0 +1,17 @@
+# Ambiente principal (.venv) - Python 3.12, Windows 11
+faster-whisper==1.2.1
+sherpa-onnx==2.0.2
+onnxruntime==1.32.0
+ultralytics==8.4.216
+opencv-python==5.1.0.95
+sounddevice==0.5.6
+numpy==2.5.5
+pillow==13.0.0
+psutil==7.2.2
+pystray==0.19.5
+pywebview==6.2.1
+websockets==17.4
+requests==2.34.2
+httpx==0.28.1
+ddgs==9.16.1
+# GPU NVIDIA (CUDA 12.4):  pip install torch==2.6.0 torchvision==0.21.0 --index-url https://download.pytorch.org/whl/cu124

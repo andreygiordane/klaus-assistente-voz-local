@@ -1,0 +1,3388 @@
+# Gerado por tools/gerar_tecnologia.py a partir de dicionario/*.txt. Não edite à mão.
+APIs	á pê í ésse	E
+CPUs	cê pê ú ésse	E
+DDoS	dê dê ó ésse	E
+DoS	dê ó ésse	E
+FPS-game	éfe pê ésse	E
+FaaS	fás	E
+GHz	guiga érts	E
+GPUs	gê pê ú ésse	E
+Gbps	guigabítis por segundo	E
+HD-ready	agá dê rédi	E
+Hz	érts	E
+IDEs	í dê é ésse	E
+IaaS	ái ás	E
+Kbps	quilobítis por segundo	E
+MHz	méga érts	E
+MVP-tech	ême vê pê	E
+Mbps	megabítis por segundo	E
+NVMe	ene vê ême í	E
+NoSQL	nôu ésse quê éle	E
+PCs	pê cês	E
+PaaS	pás	E
+SDKs	ésse dê cá ésse	E
+SaaS	sás	E
+SaaS-tech	sás	E
+URLs	ú érre éle ésse	E
+VMs	vê ême ésse	E
+dpi	dê pê ái	E
+gbps	guigabítis por segundo	E
+kHz	quilo érts	E
+kbps	quilobítis por segundo	E
+mbps	megabítis por segundo	E
+1password	uan pésse uórdi	A
+1passwords	uan pésse uórdis	A
+2d	dois dê	S
+2fa	dois éfe á	S
+2g	dois gê	S
+2k	dois cá	S
+3d	três dê	S
+3g	três gê	S
+4g	quatro gê	S
+4k	quatro cá	S
+5g	cinco gê	S
+7zip	sete zipi	S
+8k	oito cá	S
+aac	á á cê	S
+ableton	ébelton	A
+abletons	ébeltons	A
+abnt	á bê ene tê	S
+abstract	ébstréti	A
+abstracts	ébstrétis	A
+accuracy	écuraci	A
+accuracys	écuracis	A
+acer	êiser	A
+acers	êisers	A
+acrobat	ácrobéti	A
+acrobat-reader	ácrobéti ridér	A
+acrobat-readers	ácrobéti ridérs	A
+acrobats	ácrobétis	A
+active-directory	équitiv diréctori	A
+active-directorys	équitiv diréctoris	A
+activemq	équitiv ême quiú	A
+activemqs	équitiv ême quiús	A
+adapter	adépter	A
+adapter-pattern	adépter pétern	A
+adapter-patterns	adépter péterns	A
+adapters	adépters	A
+add-on	édon	A
+add-ons	édons	A
+addon	édon	A
+addons	édons	A
+admin	édimin	A
+administrator	edministrêiter	A
+administrators	edministrêiters	A
+admins	édimins	A
+adobe	adôubi	A
+adobes	adôubis	A
+adware	édiuér	A
+adwares	édiuérs	A
+aes	á é ésse	S
+affiliate	afíliêiti	A
+affiliates	afíliêitis	A
+afk	á éfe cá	S
+after-effects	éfter ifécitis	A
+aftereffects	éfter ifécitis	A
+agent	êidjenti	A
+agentic	êidjéntiqui	A
+agentics	êidjéntiquis	A
+agents	êidjentis	A
+agi	á gê í	S
+agile	ádjaiu	A
+agiles	ádjaius	A
+agp	á gê pê	S
+agrotech	agrotéqui	A
+agrotechs	agrotéquis	A
+ai	á í	S
+airbnb	érebiênebí	A
+airbnbs	érebiênebís	A
+aircrack	érquiréqui	A
+aircracks	érquiréquis	A
+airdrop	érdrópi	A
+airdrops	érdrópis	A
+airflow	érflôu	A
+airflows	érflôus	A
+airplay	éripleiei	A
+airplays	éripleieis	A
+airpod	érpódi	A
+airpods	érpódis	A
+airtable	érteibou	A
+airtables	érteibous	A
+ajax	eidjécs	S
+akamai	ácamái	A
+akamais	ácamáis	A
+aks	á cá ésse	S
+alert	alérti	A
+alerts	alértis	A
+alexa	alécsa	A
+alexas	alécsas	A
+alienware	eiliênuér	A
+alienwares	eiliênuérs	A
+alignment	aláinmenti	A
+alignments	aláinmentis	A
+amazon-prime	ámazon práime	A
+amazon-primes	ámazon práimes	A
+amd	á ême dê	S
+amoled	emôuledi	A
+amoleds	emôuledis	A
+android	éndroidi	A
+android-studio	éndroidi estúdio	A
+android-studios	éndroidi estúdios	A
+androids	éndroidis	A
+angular	ânguiular	A
+angularjs	ânguiular djêi ésse	A
+angulars	ânguiulars	A
+ansible	ânsibou	A
+ansibles	ânsibous	A
+anthropic	enfrópiqui	A
+anthropics	enfrópiquis	A
+antivirus	antivírus	A
+aot	á ó tê	S
+apache	apátchi	A
+apaches	apátchis	A
+apex	êipécs	A
+apex-legends	êipécs léjendis	A
+api	á pê í	S
+apis	á pê ís	A
+apk	á pê cá	S
+app	épi	A
+apple	épou	A
+apples	épous	A
+apps	épis	A
+appstore	épestór	A
+appstores	épestórs	A
+apt	épti	S
+apt-get	épti guéti	A
+apt-gets	épti guétis	A
+apu	á pê ú	S
+ar	êi ár	S
+archlinux	ártchi línucs	A
+argo	árgô	A
+argocd	árgô cê dê	A
+argocds	árgô cê dês	A
+argos	árgôs	A
+arr	á érre érre	S
+array	aréi	A
+arrays	aréis	A
+asana	assána	A
+asanas	assánas	A
+asap	êisap	S
+asi	êi ésse ái	S
+asr	á ésse érre	S
+assembler	assémbler	A
+assemblers	assémblers	A
+assembly	assémbli	A
+assemblys	assémblis	A
+astro	ástrô	A
+astros	ástrôs	A
+asus	ásus	A
+async	eisíncui	A
+asyncs	eisíncuis	A
+atom	étom	A
+atoms	étoms	A
+attention	aténchon	A
+attentions	aténchons	A
+auc	á ú cê	S
+audacity	ódiéssiti	A
+audacitys	ódiéssitis	A
+auth0	óti zero	A
+auth0s	óti zeros	A
+authenticator	ótenticêitor	A
+authenticators	ótenticêitors	A
+automl	ótô ême éle	A
+automls	ótô ême éles	A
+autoscaling	ótoesquêilin	A
+autoscalings	ótoesquêilins	A
+avi	á vê í	S
+await	euêiti	A
+await-async	euêiti eisíncui	A
+await-asyncs	euêiti eisíncuis	A
+awaits	euêitis	A
+aws	á dáblio ésse	S
+azure	ájur	A
+azures	ájurs	A
+b2b	bi tu bi	S
+b2c	bi tu ci	S
+back-end	béquendi	A
+back-ends	béquendis	A
+backdoor	béqueidór	A
+backdoors	béqueidórs	A
+backend	béquendi	A
+backends	béquendis	A
+backlink	béqueliqui	A
+backlinks	béqueliquis	A
+backlog	béquelógue	A
+backlogs	béquelógues	A
+backpropagation	béqueprópagueichon	A
+backpropagations	béqueprópagueichons	A
+backup	béqueápi	A
+backups	béqueápis	A
+baidu	báidu	A
+baidus	báidus	A
+balancer	bélenser	A
+balancers	bélensers	A
+bandwidth	bêndiuídi	A
+bandwidths	bêndiuídis	A
+banner	bêner	A
+banners	bêners	A
+bard	bárdi	A
+bards	bárdis	A
+bare-metal	béri métou	A
+bare-metals	béri métous	A
+basecamp	bêisiquémpi	A
+basecamps	bêisiquémpis	A
+bash	béchi	A
+bashs	béchis	A
+basic	bêisiqui	A
+basics	bêisiquis	A
+bat	bê á tê	S
+batch	bétchi	A
+batch-size	bétchi sáizi	A
+batch-sizes	bétchi sáizis	A
+batchs	bétchis	A
+battle-net	bétou nétchi	A
+battle-nets	bétou nétchis	A
+battle-royale	bétou royál	A
+battle-royales	bétou royáls	A
+battleroyale	bétou royál	A
+battleroyales	bétou royáls	A
+bcrypt	bê críptchi	A
+bcrypts	bê críptchis	A
+bdd	bê dê dê	S
+bearer	bérer	A
+bearers	bérers	A
+benchmark	bêntchmárqui	A
+benchmark-ai	bêntchmárqui	A
+benchmark-ais	bêntchmárquis	A
+benchmark-business	bêntchmárqui	A
+benchmarks	bêntchmárquis	A
+bert	bérti	A
+berts	bértis	A
+beta	bêita	A
+betas	bêitas	A
+bi	bê í	S
+big-data	bígui dêita	A
+big-datas	bígui dêitas	A
+bigdata	bígui dêita	A
+bigdatas	bígui dêitas	A
+bigquery	bígui quiéri	A
+bigquerys	bígui quiéris	A
+bing	bíngui	A
+bings	bínguis	A
+bios	báios	S
+bit	bíti	A
+bitbucket	bítibâquiti	A
+bitbuckets	bítibâquitis	A
+bitcoin	bítcóini	A
+bitcoins	bítcóinis	A
+bits	bítis	A
+bittorrent	bítitorrénti	A
+bittorrents	bítitorréntis	A
+bitwarden	bítiuórden	A
+bitwardens	bítiuórdens	A
+black	blécqui	A
+black-friday	blékifráidei	A
+black-fridays	blékifráideis	A
+blacks	blécquis	A
+blazor	bleizor	A
+blazors	bleizors	A
+blender	bléndér	A
+blenders	bléndérs	A
+blockchain	blóquitcheiní	A
+blockchains	blóquitcheinís	A
+blog	blógui	A
+blogger	blóguer	A
+bloggers	blóguers	A
+blogs	blóguis	A
+blue-team	blu tími	A
+blue-teams	blu tímis	A
+bluetooth	blútuz	A
+bmp	bê ême pê	S
+board	bórdi	A
+board-kanban	bórdi cânbán	A
+board-kanbans	bórdi cânbáns	A
+boards	bórdis	A
+boilerplate	bóiler pleiti	A
+boilerplates	bóiler pleitis	A
+boleto	boléto	A
+boletos	bolétos	A
+bonus	bônus	A
+booking	búquin	A
+bookings	búquins	A
+bookmark	búquemárqui	A
+bookmarks	búquemárquis	A
+bool	búle	A
+boolean	búlian	A
+booleans	búlians	A
+bools	búles	A
+boot	búti	A
+bootar	butár	A
+bootloader	bútilôuder	A
+bootloaders	bútilôuders	A
+boots	bútis	A
+bootstrap	butístrépi	A
+bootstraps	butístrépis	A
+boss	bóssi	A
+bot	bóti	A
+botnet	bótinéti	A
+botnets	bótinétis	A
+bots	bótis	A
+brainstorm	brêinestórme	A
+brainstorming	brêinestórmin	A
+brainstormings	brêinestórmins	A
+brainstorms	brêinestórmes	A
+branch	brénchi	A
+branches	brénchis	A
+branchs	brénchis	A
+brand	brêndi	A
+brand-book	brêndi búqui	A
+brand-books	brêndi búquis	A
+branding	brêndin	A
+brandings	brêndins	A
+brands	brêndis	A
+brave	brêivi	A
+braves	brêivis	A
+breakpoint	brêiquipóinti	A
+breakpoints	brêiquipóintis	A
+brew	brú	A
+brews	brús	A
+briefing	brífin	A
+briefings	brífins	A
+browser	bráuzer	A
+browsers	bráuzers	A
+brute-force	brúti fórsi	A
+brute-forces	brúti fórsis	A
+btw	bi tê dáblio	S
+buff	bâfi	A
+buffer	bâfer	A
+buffering	bâferin	A
+buffs	bâfis	A
+bug	bâgui	A
+bug-bounty	bâgui báwnti	A
+bug-bountys	bâgui báwntis	A
+bugs	bâguis	A
+build	bíudi	A
+buildado	bildádo	A
+buildando	bildândo	A
+buildar	bildár	A
+builds	bíudis	A
+bulma	bûlma	A
+bulmas	bûlmas	A
+bumble	bâmbou	A
+bumbles	bâmbous	A
+bun	bân	A
+burp	bârpi	A
+burps	bârpis	A
+burpsuite	bârpi suíti	A
+burpsuites	bârpi suítis	A
+business	bíznes	A
+business-intelligence	bíznes intéligens	A
+byte	báiti	A
+bytecode	báitiqueôudi	A
+bytecodes	báitiqueôudis	A
+bytes	báitis	A
+cable	quêibou	A
+cables	quêibous	A
+cac	cê á cê	S
+cache	quéchi	A
+cacheado	quechiádo	A
+cachear	quechiár	A
+caches	quéchis	A
+caddy	quédi	A
+caddys	quédis	A
+calendar	quélender	A
+calendars	quélenders	A
+call-of-duty	cól óv diúti	A
+call-of-dutys	cól óv diútis	A
+callback	cólibéqui	A
+callbacks	cólibéquis	A
+camera	câmera	A
+cameras	câmeras	A
+canary	canéri	A
+canarys	canéris	A
+capacitor	capacítor	A
+capacitors	capacítors	A
+captcha	quépitchá	A
+captchas	quépitchás	A
+card	cárdi	A
+cards	cárdis	A
+cargo	cárgô	A
+cargos	cárgôs	A
+cart	cárti	A
+carts	cártis	A
+cashback	quéchibéqui	A
+cashbacks	quéchibéquis	A
+catboost	quétibusti	A
+catboosts	quétibustis	A
+cd	cê dê	S
+cdn	cê dê ene	S
+celeron	sélerón	A
+celerons	séleróns	A
+celery	séleri	A
+celery-queue	séleri quiú	A
+celery-queues	séleri quiús	A
+celerys	séleris	A
+centos	sentôs	A
+ceo	cê í ô	S
+cert	sérti	A
+certificate	sertificêiti	A
+certificates	sertificêitis	A
+certs	sértis	A
+cfo	cê éfe ô	S
+changelog	tchêindjilógui	A
+changelog-md	tchêindjilógui	A
+changelog-mds	tchêindjilóguis	A
+changelogs	tchêindjilóguis	A
+char	tchár	A
+charger	tchárdjer	A
+chargers	tchárdjers	A
+chars	tchárs	A
+chat	chátchi	A
+chatbot	chátchibóti	A
+chatbots	chátchibótis	A
+chatgpt	tcháti djí pí tí	A
+chatgpts	tcháti djí pí tís	A
+chats	chátchis	A
+cheat	tchíti	A
+cheats	tchítis	A
+check-in	tchéquin	A
+check-ins	tchéquins	A
+check-out	tchéquiaute	A
+check-outs	tchéquiautes	A
+checklist	tchéquilísti	A
+checklists	tchéquilístis	A
+checkout	tchéquiaute	A
+checkouts	tchéquiautes	A
+checkpoint	tchécpóinti	A
+checkpoints	tchécpóintis	A
+chef	chéfi	A
+chefs	chéfis	A
+chip	chípi	A
+chips	chípis	A
+chipset	chípi séti	A
+chipsets	chípi sétis	A
+chocolatey	tchócolétei	A
+chocolateys	tchócoléteis	A
+chromadb	crôme dê bê	A
+chromadbs	crôme dê bês	A
+chrome	crôumi	A
+chrome-os	crôwm ô ésse	A
+chromebook	crômibúqui	A
+chromebooks	crômibúquis	A
+chromecast	crômiquésti	A
+chromecasts	crômiquéstis	A
+chromeos	crôwm ô ésse	A
+chromes	crôumis	A
+churn	tchérne	A
+churns	tchérnes	A
+ci	cê í	S
+cicd	cê ái cê dê	S
+cinema4d	cínema quatro dê	A
+cinema4ds	cínema quatro dês	A
+cio	cê ái ô	S
+circleci	sérqueu cê ái	A
+circlecis	sérqueu cê áis	A
+ciso	cê ái ésse ô	S
+clan	clén	A
+clans	cléns	A
+class	clássi	A
+classes	clássis	A
+claude	clóudi	A
+claudes	clóudis	A
+clean-code	clín côudi	A
+clean-codes	clín côudis	A
+cli	cê éle ái	S
+click	clíqui	A
+clickar	clicár	A
+clickbait	clíquebêiti	A
+clickbaits	clíquebêitis	A
+clicks	clíquis	A
+clickup	clíqueapi	A
+clickups	clíqueapis	A
+clion	cê láion	A
+clions	cê láions	A
+clip	clípi	A
+clips	clípis	A
+clojure	clôujur	A
+clojures	clôujurs	A
+clone	clôni	A
+clones	clônis	A
+closure	clôujur	A
+closures	clôujurs	A
+cloud	clâudi	A
+cloudflare	clâudifléri	A
+cloudflare-workers	clâudifléri uórquers	A
+cloudflares	clâudifléris	A
+cloudfront	clâudifrônti	A
+cloudfronts	clâudifrôntis	A
+clouds	clâudis	A
+cluster	clâster	A
+clusters	clâsters	A
+cmake	cí mêiqui	A
+cmakes	cí mêiquis	A
+cmd	cê ême dê	S
+cmo	cê ême ô	S
+cmos	cê ême ô ésse	S
+cms	cê ême ésse	S
+cncf	cê ene cê éfe	S
+cnn	cê ene ene	S
+co-founder	cô fáwnder	A
+co-founders	cô fáwnders	A
+cobol	côbol	A
+cobols	côbols	A
+cocoapods	côucôpódis	A
+cod	cê ô dê	S
+code	côudi	A
+codebase	côudibêisi	A
+codebases	côudibêisis	A
+codeigniter	côudignáiter	A
+codeigniters	côudignáiters	A
+coder	côuder	A
+coders	côuders	A
+codes	côudis	A
+coding	côudin	A
+codings	côudins	A
+colab	cólabi	A
+colabs	cólabis	A
+colocation	colocêichon	A
+colocations	colocêichons	A
+comment	cómenti	A
+comments	cómentis	A
+commit	comíti	A
+commits	comítis	A
+compiler	compáiler	A
+compilers	compáilers	A
+compose	compôuzi	A
+compose-ui	compôuzi ú ái	A
+compose-uis	compôuzi ú áis	A
+composer	compôuzer	A
+composers	compôuzers	A
+composes	compôuzis	A
+conference-call	cónferens cól	A
+conference-calls	cónferens cóls	A
+config	cônfigui	A
+configs	cônfiguis	A
+confluence	cônflûens	A
+confusion-matrix	confiúzhon mêitricis	A
+consensus	consénsus	A
+console	cônsole	A
+consoles	cônsoles	A
+constructor	constrâtor	A
+constructors	constrâtors	A
+consul	cônsul	A
+consuls	cônsuls	A
+container	contêiner	A
+containers	contêiners	A
+context	cóntexti	A
+context-window	cóntexti uíndou	A
+context-windows	cóntexti uíndous	A
+contexts	cóntextis	A
+controller	contrôuler	A
+controllers	contrôulers	A
+conversion	convérjon	A
+conversions	convérjons	A
+coo	cê ô ô	S
+cookie	cúqui	A
+cookies	cúquis	A
+cookies-policy	cúquis pólissi	A
+cookies-policys	cúquis pólissis	A
+cooler	cúler	A
+coolers	cúlers	A
+coop	cô opi	A
+coops	cô opis	A
+copilot	copáiloti	A
+copilot-ai	copáiloti	A
+copilot-ais	copáilotis	A
+copilot-pro	copáiloti prô	A
+copilot-pros	copáiloti prôs	A
+copilots	copáilotis	A
+copy	cópi	A
+copys	cópis	A
+copywriter	cópiráiter	A
+copywriters	cópiráiters	A
+copywriting	cópiráitin	A
+copywritings	cópiráitins	A
+core	córi	A
+cores	córis	A
+cors	córs	S
+counter-strike	cáwnter estráiqui	A
+counter-strikes	cáwnter estráiquis	A
+coupon	cúpom	A
+coupons	cúpoms	A
+coursera	cursêra	A
+courseras	cursêras	A
+cowork	côuuórqui	A
+coworking	côuuórquin	A
+coworkings	côuuórquins	A
+coworks	côuuórquis	A
+cpc	cê pê cê	S
+cpm	cê pê ême	S
+cpp	cê plus plus	S
+cpu	cê pê ú	S
+cracker	créquer	A
+crackers	créquers	A
+crashado	crachádo	A
+crashando	crachândo	A
+crashar	crachár	A
+crashou	crachôu	A
+creator	criêiter	A
+creators	criêiters	A
+criptomoeda	criptomoéda	A
+criptomoedas	criptomoédas	A
+crm	cê érre ême	S
+cro	cê érre ô	S
+cronjob	crôm djóbi	A
+cronjobs	crôm djóbis	A
+crontab	crôntébi	A
+crontabs	crôntébis	A
+crud	crâdi	S
+crunchyroll	crântchirôu	A
+crunchyrolls	crântchirôus	A
+crush	crâchi	A
+crypto	críptô	A
+cryptos	críptôs	A
+cs2	cê ésse dois	S
+csgo	cê ésse gê ô	A
+csgos	cê ésse gê ôs	A
+csharp	cê chárpi	A
+csharps	cê chárpis	A
+csr	cê ésse érre	S
+csrf	cê ésse érre éfe	S
+css	cê ésse ésse	S
+css3	cê ésse ésse três	S
+csv	cê ésse vê	S
+ctf	cê tê éfe	S
+cto	cê tê ô	S
+ctr	cê tê érre	S
+cubase	quiúbeise	A
+cubases	quiúbeises	A
+cuda-cores	cúda córs	A
+cudnn	cúda ene ene	A
+cudnns	cúda ene enes	A
+cursor	cârsor	A
+cursors	cârsors	A
+custom	câstom	A
+cve	cê vê é	S
+cyberpunk	sáiberpânqui	A
+cyberpunks	sáiberpânquis	A
+cypress	sáiprés	A
+d-link	dê línqui	A
+d-links	dê línquis	A
+daemon	dêmon	A
+daemons	dêmons	A
+daily	dêili	A
+dailys	dêilis	A
+dall-e	dóli	A
+dall-es	dólis	A
+dalle	dóli	A
+dalles	dólis	A
+dao	dê á ô	S
+dark-web	dárqui uébi	A
+dark-webs	dárqui uébis	A
+darkweb	dárquiuébi	A
+darkwebs	dárquiuébis	A
+dart	dárti	A
+darts	dártis	A
+dashboard	déchibórdi	A
+dashboards	déchibórdis	A
+data	dêita	A
+data-analyst	dêita énalisti	A
+data-analysts	dêita énalistis	A
+data-center	dêita sénter	A
+data-centers	dêita sénters	A
+data-engineer	dêita endjiníer	A
+data-engineers	dêita endjiníers	A
+data-frame	dêita frêimi	A
+data-frames	dêita frêimis	A
+data-lake	dêita lêiqui	A
+data-lakes	dêita lêiquis	A
+data-science	dêita sáiens	A
+data-scientist	dêita sáientisti	A
+data-scientists	dêita sáientistis	A
+data-warehouse	dêita uérrráus	A
+database	dêitabêisi	A
+databases	dêitabêisis	A
+databricks	dêitabríques	A
+datacenter	dêita sénter	A
+datacenters	dêita sénters	A
+datadog	dêitadógui	A
+datadogs	dêitadóguis	A
+dataframe	dêitafrêimi	A
+dataframes	dêitafrêimis	A
+datalake	dêita lêiqui	A
+datalakes	dêita lêiquis	A
+datas	dêitas	A
+dataset	dêitaséti	A
+datasets	dêitasétis	A
+davinci	davínchi	A
+davinci-resolve	davínchi rizóuvi	A
+davinci-resolves	davínchi rizóuvis	A
+davincis	davínchis	A
+dbt	dê bê tê	S
+ddd	dê dê dê	S
+ddos	dê dê ó ésse	A
+deadline	dédlaini	A
+deadlines	dédlainis	A
+deadlock	dédilóqui	A
+deadlocks	dédilóquis	A
+debug	dibâgui	A
+debugger	dibâguer	A
+debuggers	dibâguers	A
+debugging	dibâguin	A
+debuggings	dibâguins	A
+debugs	dibâguis	A
+deck	déqui	A
+decks	déquis	A
+decorator	decoreitor	A
+decorators	decoreitors	A
+decrypt	dicrípiti	A
+decryption	dicripchon	A
+decryptions	dicripchons	A
+decrypts	dicrípitis	A
+deep-learning	dípi lérnin	A
+deep-learnings	dípi lérnins	A
+deep-web	dípi uébi	A
+deep-webs	dípi uébis	A
+deeplearning	dípi lérnin	A
+deeplearnings	dípi lérnins	A
+deeplink	dípliqui	A
+deeplinks	dípliquis	A
+deepseek	dípsíqui	A
+deepseeks	dípsíquis	A
+deepweb	dípuébi	A
+deepwebs	dípuébis	A
+deezer	dízer	A
+deezers	dízers	A
+default	difólti	A
+defaults	difóltis	A
+delivery	delivéri	A
+deliverys	delivéris	A
+delphi	délfi	A
+delphis	délfis	A
+deno	dênô	A
+denos	dênôs	A
+deploy	diplói	A
+deployado	diploiádo	A
+deployando	diploiândo	A
+deployar	diploiár	A
+deployment	diplóimenti	A
+deployments	diplóimentis	A
+deploys	dipláis	A
+design	dizáini	A
+design-system	dizáini sístem	A
+design-systems	dizáini sístems	A
+designer	dizáiner	A
+designers	dizáiners	A
+designs	dizáinis	A
+desktop	déscitópi	A
+desktops	déscitópis	A
+deslike	desláiqui	A
+deslikes	desláiquis	A
+destructor	distrâtor	A
+destructors	distrâtors	A
+dev	dévi	A
+developer	devéloper	A
+developers	devélopers	A
+devops	dévópis	A
+devs	dévis	A
+devsecops	dévsequiópis	A
+dhcp	dê agá cê pê	S
+diablo	diábou	A
+diablos	diábous	A
+dict	díqui	A
+dictionary	díquionéri	A
+dictionarys	díquionéris	A
+dicts	díquis	A
+diffusion	difiúchon	A
+diffusions	difiúchons	A
+digital	dídjitau	A
+digitalocean	dídjitau ôuchian	A
+digitaloceans	dídjitau ôuchians	A
+digitals	dídjitaus	A
+discord	discórdi	A
+discords	discórdis	A
+dislike	disláiqui	A
+dislikes	disláiquis	A
+disney	dísnei	A
+disney-plus	dísnei plâs	A
+disneys	dísneis	A
+display	dispiêi	A
+displayport	dísplêipórti	A
+displayports	dísplêipórtis	A
+displays	dispiêis	A
+diy	dê ái uai	S
+django	djêngo	A
+djangos	djêngos	A
+dl	dê éle	S
+dlc	dê éle cê	S
+dll	dê éle éle	S
+dmg	dê ême gê	S
+dnf	dê ene éfe	S
+dns	dê ene ésse	S
+doc	dê ó cê	S
+dock	dóqui	A
+docker	dóquer	A
+docker-compose	dóquer compôuzi	A
+docker-composes	dóquer compôuzis	A
+dockerfile	dóquerfaiu	A
+dockerfiles	dóquerfaius	A
+dockerhub	dóquer rábi	A
+dockerhubs	dóquer rábis	A
+dockers	dóquers	A
+docking	dóquin	A
+dockings	dóquins	A
+docks	dóquis	A
+docx	dê ó cê xis	S
+dom	dóm	S
+dongle	dónguiu	A
+dongles	dónguius	A
+dos	dê ó ésse	S
+dota2	dôta dois	A
+dotnet	dóti nétchi	A
+dotnets	dóti nétchis	A
+double	dâbou	A
+doubles	dâbous	A
+downgrade	dáungrêidi	A
+download	dáwnlôudi	A
+downloadar	daunlodár	A
+downloads	dáwnlôudis	A
+downtime	dáwntáimi	A
+downtimes	dáwntáimis	A
+dpi	dê pê ái	S
+drive	dráivi	A
+driver	dráiver	A
+drivers	dráivers	A
+drives	dráivis	A
+drone	drôni	A
+drones	drônis	A
+dropbox	drópibóquis	A
+dropout	drópiaute	A
+dropouts	drópiautes	A
+dropshipping	drópichipin	A
+dropshippings	drópichipins	A
+drupal	drúpau	A
+drupals	drúpaus	A
+dry	drái	S
+dto	dê tê ô	S
+duckduckgo	dâqui dâqui gôu	A
+duckduckgos	dâqui dâqui gôus	A
+duolingo	duolíngô	A
+duolingos	duolíngôs	A
+dvi	dê vê í	S
+dynamodb	dáinamô dê bê	A
+dynamodbs	dáinamô dê bês	A
+e-commerce	ícomérsi	A
+e-commerces	ícomérsis	A
+e-learning	í lérnin	A
+e-learnings	í lérnins	A
+e-mail	ímeiu	A
+e-mails	ímeius	A
+ead	é á dê	S
+earbuds	írbâdis	A
+earphone	írfôni	A
+earphones	írfônis	A
+ebs	í bê ésse	S
+ec2	é cê dois	S
+echo	équi	A
+echos	équis	A
+eclipse	iclípsi	A
+eclipses	iclípsis	A
+ecmascript	écmaescrípti	A
+ecmascripts	écmaescríptis	A
+ecommerce	ícomérsi	A
+ecommerces	ícomérsis	A
+ecs	é cê ésse	S
+edge	édji	S
+edge-computing	édji compiutin	A
+edge-computings	édji compiutins	A
+edtech	édtéqui	A
+edtechs	édtéquis	A
+edx	í dê équis	S
+eks	é cá ésse	S
+elastic	elástiqui	A
+elastics	elástiquis	A
+elasticsearch	elásticsértchi	A
+elasticsearchs	elásticsértchis	A
+elder-scrolls	élder escrôus	A
+elearning	í lérnin	A
+elearnings	í lérnins	A
+electron	ilétron	A
+electrons	ilétrons	A
+eleven-labs	ilévenlébis	A
+elevenlabs	ilévenlébis	A
+elixir	elíquisser	A
+elixirs	elíquissers	A
+elt	é éle tê	S
+emacs	ímecs	A
+email	ímeiu	A
+emails	ímeius	A
+embedding	embédin	A
+embeddings	embédins	A
+emoji	imôdji	A
+emojis	imôdjis	A
+emulator	emuleidor	A
+emulators	emuleidors	A
+encapsulation	enquépsuleichon	A
+encapsulations	enquépsuleichons	A
+encrypt	encrípiti	A
+encryption	encripchon	A
+encryptions	encripchons	A
+encrypts	encrípitis	A
+endpoint	éndpóinti	A
+endpoints	éndpóintis	A
+engagement	enguéidjimenti	A
+engagements	enguéidjimentis	A
+engineer	endjiníer	A
+engineers	endjiníers	A
+enum	ínam	A
+enums	ínams	A
+envoy	énvói	A
+envoys	énvóis	A
+eod	í ô dê	S
+epic	épique	A
+epic-games	épique guêimis	A
+epic-story	épiqui estóri	A
+epic-storys	épiqui estóris	A
+epics	épiques	A
+epoch	ípoqui	A
+epochs	ípocs	A
+erlang	érlangui	A
+erlangs	érlanguis	A
+erp	é érre pê	S
+error	érror	A
+errors	érrors	A
+eslint	ê ésse línti	A
+eslints	ê ésse líntis	A
+esp32	é ésse pê trinta e dois	S
+esp8266	é ésse pê oito dois seis seis	S
+eta	í tê êi	S
+ethereum	etíriom	A
+ethereums	etírioms	A
+ethernet	ísernéti	A
+ethernets	ísernétis	A
+etl	é tê éle	S
+evernote	evérnôuti	A
+evernotes	evérnôutis	A
+excel	equisséu	A
+excels	equisséus	A
+exception	iquicépchon	A
+exceptions	iquicépchons	A
+exchange	iquistchêindji	A
+exchanges	iquistchêindjis	A
+exe	é xis é	S
+exploit	ecsplóiti	A
+exploits	ecsplóitis	A
+expo	écispô	A
+export	ecispórti	A
+exports	ecispórtis	A
+expos	écispôs	A
+express	ecispréssi	A
+expressjs	ecispréssi djêi ésse	A
+expressvpn	ecispréss vê pê ene	A
+expressvpns	ecispréss vê pê enes	A
+extension	extênchon	A
+extensions	extênchons	A
+extranet	estranéti	A
+extranets	estranétis	A
+exynos	exínos	A
+f1	éfe uân	S
+f1-score	éfe uân scór	A
+f1-scores	éfe uân scórs	A
+faas	fás	A
+facade	fassádi	A
+facades	fassádis	A
+facebook	feisibúqui	A
+facebooks	feisibúquis	A
+factory	féctori	A
+factorys	féctoris	A
+failover	fêiliôuver	A
+failovers	fêiliôuvers	A
+faiss	féis	A
+fake	fêiqui	A
+fake-news	fêiqui niús	A
+fakes	fêiquis	A
+falcon	fólcon	A
+falcons	fólcons	A
+fallout	fólaute	A
+fallouts	fólautes	A
+fan	fén	A
+fans	féns	A
+faq	éfe êi quiú	S
+farm	fárme	A
+farming	fárminhn	A
+farmings	fárminhns	A
+farms	fármes	A
+fashion	féchon	A
+fashions	féchons	A
+fastapi	féstiéi pê ái	A
+fastapis	féstiéi pê áis	A
+fastify	féstifái	A
+fastifys	féstifáis	A
+favicon	fávicon	A
+favicons	fávicons	A
+fc24	éfe cê vinte e quatro	S
+feed	fídi	A
+feedback	fídibéqui	A
+feedbacks	fídibéquis	A
+feeds	fídis	A
+fhd	éfe agá dê	S
+fine-tune	fáini tiuni	A
+fine-tunes	fáini tiunis	A
+fine-tuning	fáini tiunin	A
+fine-tunings	fáini tiunins	A
+finetune	fáini tiuni	A
+finetunes	fáini tiunis	A
+finetuning	fáini tiunin	A
+finetunings	fáini tiunins	A
+fintech	fíntéqui	A
+fintechs	fíntéquis	A
+fire-stick	fáier estíqui	A
+fire-sticks	fáier estíquis	A
+firebase	fáirebêisi	A
+firebases	fáirebêisis	A
+firefox	fáirefóquis	A
+firestick	fáier estíqui	A
+firesticks	fáier estíquis	A
+firestore	fáirestór	A
+firestores	fáirestórs	A
+firewall	fáirevóu	A
+firewalls	fáirevóus	A
+firmware	férmuér	A
+firmwares	férmuérs	A
+fitbit	fítibíti	A
+fitbits	fítibítis	A
+fl-studio	éfe éle estúdio	A
+fl-studios	éfe éle estúdios	A
+flac	éfe éle á cê	S
+flake8	fleiqui oito	A
+flake8s	fleiqui oitos	A
+flame	fleimi	A
+flash	fléchi	A
+flashdrive	fléchidráivi	A
+flashdrives	fléchidráivis	A
+flashs	fléchis	A
+flask	fléssqui	A
+flasks	fléssquis	A
+float	flôuti	A
+floats	flôutis	A
+flops	flópis	A
+flutter	flâter	A
+flutter-dart	flâter dárti	A
+flutter-darts	flâter dártis	A
+flutters	flâters	A
+flux	flâcs	A
+follow	fólou	A
+follow-up	fólou âpi	A
+follow-ups	fólou âpis	A
+follower	fólouer	A
+follower-node	fólouer nôudi	A
+follower-nodes	fólouer nôudis	A
+followers	fólouers	A
+following	fólouin	A
+followings	fólouins	A
+follows	fólous	A
+fork	fórqui	A
+forks	fórquis	A
+formatter	formâter	A
+formatters	formâters	A
+fortnite	fórtinaiti	A
+fortnites	fórtinaitis	A
+fortran	fórtran	A
+fortrans	fórtrans	A
+founder	fáwnder	A
+founders	fáwnders	A
+fps	éfe pê ésse	S
+fps-game	éfe pê ésse	A
+fps-games	éfe pê ésses	A
+framework	freimiuórqui	A
+frameworks	freimiuórquis	A
+freela	fríla	A
+freelance	fríilens	A
+freelancer	fríilenser	A
+freelancers	fríilensers	A
+freelas	frílas	A
+freeware	fríuér	A
+freewares	fríuérs	A
+front-end	frôntendi	A
+front-ends	frôntendis	A
+frontend	frôntendi	A
+frontends	frôntendis	A
+ftp	éfe tê pê	S
+ftp-server	éfe tê pê sérver	A
+ftp-servers	éfe tê pê sérvers	A
+full-hd	fúl agá dê	A
+full-hds	fúl agá dês	A
+full-stack	fúl estéqui	A
+full-stacks	fúl estéquis	A
+fullhd	fúl agá dê	A
+fullhds	fúl agá dês	A
+fullstack	fúlestéqui	A
+fullstack-dev	fúl estéqui dévi	A
+fullstack-devs	fúl estéqui dévis	A
+fullstacks	fúlestéquis	A
+function	fânchon	A
+functions	fânchons	A
+funnel	fânéu	A
+funnels	fânéus	A
+fyi	éfe uai ái	S
+galaxy	guéleksi	A
+galaxys	guéleksis	A
+game	guêimi	A
+game-pass	guêimi pésse	A
+gamepad	guêimipédi	A
+gamepads	guêimipédis	A
+gameplay	guêimipleiei	A
+gameplays	guêimipleieis	A
+gamer	guêimer	A
+gamer-pro	guêimer prô	A
+gamer-pros	guêimer prôs	A
+gamers	guêimers	A
+games	guêimis	A
+gaming	guêimin	A
+gamings	guêimins	A
+gan	gê á ene	S
+gans	guéns	A
+garageband	garádjebéndi	A
+garagebands	garádjebéndis	A
+garbage-collection	gárbedji coléchon	A
+garbage-collections	gárbedji coléchons	A
+garbage-collector	gárbedji colétor	A
+garbage-collectors	gárbedji colétors	A
+garmin	gármin	A
+garmins	gármins	A
+gateway	guêitiuei	A
+gateway-rede	guêiteuei	A
+gateway-redes	guêiteueis	A
+gateways	guêitiueis	A
+gatsby	guétsbi	A
+gatsbys	guétsbis	A
+gb	guigabáite	S
+gboard	gê bórdi	A
+gboards	gê bórdis	A
+gcp	gê cê pê	S
+gdpr	gê dê pê érre	S
+geforce	djiforsi	A
+geforce-now	djiforsi náu	A
+geforce-nows	djiforsi náus	A
+geforces	djiforsis	A
+gem	djém	S
+gemini	djéminái	A
+geminis	djémináis	A
+gemma	djéma	A
+gemmas	djémas	A
+generator	djénereitor	A
+generators	djénereitors	A
+generic	djenérique	A
+generics	djenériquis	A
+genshin	guénchin	A
+genshin-impact	guénchin ímpecti	A
+genshin-impacts	guénchin ímpectis	A
+genshins	guénchins	A
+gentoo	djéntu	A
+gentoos	djéntus	A
+getter	guéter	A
+getters	guéters	A
+gg	gê gê	S
+ggml	djêi djêi ême éle	A
+ggmls	djêi djêi ême éles	A
+gguf	djêi djêi iú éfe	A
+ggufs	djêi djêi iú éfes	A
+ghost	gôusti	A
+ghosts	gôustis	A
+gif	djífi	A
+gifs	djífis	A
+gigabyte	guiguibáiti	A
+gigabytes	guiguibáitis	A
+gimbal	djímbau	A
+gimbals	djímbaus	A
+git	guíti	A
+github	guítrábi	A
+github-actions	guítrábi équichons	A
+githubs	guítrábis	A
+gitignore	guíti iguinór	A
+gitignores	guíti iguinórs	A
+gitlab	guítlébi	A
+gitlab-ci	guítlébi cê ái	A
+gitlab-cis	guítlébi cê áis	A
+gitlabs	guítlébis	A
+gke	gê cá é	S
+globoplay	glôbo pleiei	A
+globoplays	glôbo pleieis	A
+gmail	djimeiu	A
+gmails	djimeius	A
+gnu	guenú	S
+godot	godô	A
+godots	godôs	A
+gofmt	gôu fômti	A
+gofmts	gôu fômtis	A
+gog	gê ô gê	S
+goland	gôuléndi	A
+golands	gôuléndis	A
+golang	gôulêngui	A
+golangs	gôulênguis	A
+googlar	guglár	A
+googlars	guglárs	A
+google	gúgou	A
+google-cloud	gúgou clâudi	A
+google-clouds	gúgou clâudis	A
+google-drive	gúgou dráivi	A
+google-drives	gúgou dráivis	A
+google-earth	gúgou érs	A
+google-maps	gúgou mépis	A
+google-meet	gúgou mítchi	A
+google-meets	gúgou mítchis	A
+google-translate	gúgou tránsleiti	A
+google-translates	gúgou tránsleitis	A
+googlear	gugliar	A
+googlears	gugliars	A
+googles	gúgous	A
+gopro	gôprô	A
+gopros	gôprôs	A
+govtech	gávtéqui	A
+govtechs	gávtéquis	A
+gpg	gê pê gê	S
+gps	gê pê ésse	S
+gpt	gê pê tê	S
+gpt-4	djí pí tí quatro	S
+gpt-5	djí pí tí cinco	S
+gpt4	djí pí tí quatro	S
+gpu	gê pê ú	S
+gradient	grêidiente	A
+gradient-descent	grêidiente discénti	A
+gradient-descents	grêidiente discéntis	A
+gradients	grêidientes	A
+gradio	grêidiô	A
+gradios	grêidiôs	A
+gradle	grêidou	A
+gradles	grêidous	A
+graph	gréfi	A
+graphql	gréfique éle	A
+graphqls	gréfique éles	A
+graphs	gréfis	A
+grind	gráindi	A
+grinding	gráindin	A
+grindings	gráindins	A
+grinds	gráindis	A
+grok	grócqui	A
+groks	grócquis	A
+growth	grôus	A
+growth-hacking	grôus réquin	A
+growth-hackings	grôus réquins	A
+grpc	gê érre pê cê	A
+grpcs	gê érre pê cês	A
+gru	gê érre ú	S
+gsm	gê ésse ême	S
+gta	gê tê á	S
+gta5	gê tê á cinco	S
+gtk	gê tê cá	S
+gtx	gê tê xis	S
+guardrails	guárdireilis	A
+gui	guí	S
+guild	guíudi	A
+guilds	guíudis	A
+gz	gê zê	S
+hack-game	réqui	A
+hack-games	réquis	A
+hackeado	raquiádo	A
+hackeando	raquiândo	A
+hackear	raquiár	A
+hacker	réquer	A
+hackers	réquers	A
+hacking	réquin	A
+hackings	réquins	A
+hadoop	radúpi	A
+hadoops	radúpis	A
+haiku	ráicu	A
+haikus	ráicus	A
+hallucination	ralusinêichon	A
+hallucinations	ralusinêichons	A
+hangouts	réngáutis	A
+haproxy	êichi proxi	A
+haproxys	êichi proxis	A
+hardcode	rárdicôudi	A
+hardcoded	rárdicôudidi	A
+hardcodeds	rárdicôudidis	A
+hardcodes	rárdicôudis	A
+hardware	rárduér	A
+hardwares	rárduérs	A
+hash	réchi	A
+hashcat	réchiquéti	A
+hashcats	réchiquétis	A
+hashing	réchin	A
+hashings	réchins	A
+hashmap	réchimépi	A
+hashmaps	réchimépis	A
+hashs	réchis	A
+hashtable	réchiteibou	A
+hashtables	réchiteibous	A
+hashtag	réchitégui	A
+hashtags	réchitéguis	A
+haskell	réskeu	A
+haskells	réskeus	A
+hater	reiter	A
+haters	reiters	A
+hbo	agá bê ô	S
+hbo-max	agá bê ô mécs	A
+hd	agá dê	S
+hdd	agá dê dê	S
+hdmi	agá dê ême í	S
+hdr	agá dê érre	S
+header	réder	A
+headers	réders	A
+headmounted	rédimáwntedi	A
+headmounteds	rédimáwntedis	A
+headphone	réidifôni	A
+headphones	réidifônis	A
+headset	réidiséti	A
+headsets	réidisétis	A
+healthtech	rélstéqui	A
+healthtechs	rélstéquis	A
+heap	ripe	A
+heaps	ripes	A
+hearthstone	rártistôni	A
+hearthstones	rártistônis	A
+heatsink	ritisínqui	A
+heatsinks	ritisínquis	A
+helm	rélm	A
+helm-chart	rélm tchárti	A
+helm-charts	rélm tchártis	A
+helms	rélms	A
+heroku	rôroku	A
+herokus	rôrokus	A
+hertz	rértz	A
+hibernate	ráibernêiti	A
+hibernates	ráibernêitis	A
+high-availability	rái avelabíliti	A
+high-availabilitys	rái avelabílitis	A
+hipaa	ripa	S
+hiperlink	ráiperlínqui	A
+hiperlinks	ráiperlínquis	A
+hive	ráivi	A
+hives	ráivis	A
+hodl	ródou	A
+hodls	ródous	A
+hololens	rôlôlensi	A
+home	hôm	A
+home-office	rôume ófiss	A
+homebrew	rômbrú	A
+homebrews	rômbrús	A
+homepage	hômpeidji	A
+homepages	hômpeidjis	A
+homes	hôms	A
+honeypot	rôniipóti	A
+honeypots	rôniipótis	A
+honkai	ronquái	A
+honkais	ronquáis	A
+hotfix	rótifíquis	A
+hotmail	rótmeiu	A
+hotmails	rótmeius	A
+hotspot	rótispóti	A
+hotspots	rótispótis	A
+hp	agá pê	S
+hr	êitch ár	S
+hsm	agá ésse ême	S
+html	agá tê ême éle	S
+html5	agá tê ême éle cinco	A
+html5s	agá tê ême éle cincos	A
+http	agá tê tê pê	S
+https	agá tê tê pê ésse	S
+huawei	ruáuei	A
+huawei-cloud	ruáuei claudi	A
+huawei-clouds	ruáuei claudis	A
+huaweis	ruáueis	A
+hub	rábi	A
+hubspot	rábispóti	A
+hubspots	rábispótis	A
+hugging-face	rágin fêissi	A
+hugging-faces	rágin fêissis	A
+huggingface	rágiin fêissi	A
+huggingfaces	rágiin fêissis	A
+hybrid	ráibridi	A
+hybrid-cloud	ráibride clâudi	A
+hybrid-clouds	ráibride clâudis	A
+hybrids	ráibridis	A
+hydra	ráidra	A
+hydras	ráidras	A
+hypar	raipár	A
+hype	ráipi	A
+hyper-v	ráiper vê	A
+hyper-vs	ráiper vês	A
+hyperlink	ráiperlínqui	A
+hyperlinks	ráiperlínquis	A
+hyperv	ráiper vê	A
+hypervs	ráiper vês	A
+ia	í á	S
+iaas	ái ás	A
+iam	ái ei ême	S
+icloud	aiclaudi	A
+iclouds	aiclaudis	A
+ide	ái dê í	S
+ids	ái dê ésse	S
+ieee	ái tripo í	S
+ifood	aifúdi	A
+ifoods	aifúdis	A
+illustrator	ilâstreitor	A
+illustrators	ilâstreitors	A
+imac	áimé	A
+imacs	áimés	A
+image	ímidji	A
+images	ímidjis	A
+imap	í ême á pê	S
+imo	ái ême ô	S
+import	ímpórti	A
+imports	ímpórtis	A
+impression	impréchon	A
+impressions	impréchons	A
+inbox	ínbóquis	A
+include	inclúdi	A
+includes	inclúdis	A
+indesign	indizáine	A
+indesigns	indizáines	A
+inference	ínferens	A
+influencer	influênser	A
+influencer-digital	influênser	A
+influencer-digitals	influênsers	A
+influencers	influênsers	A
+influxdb	influcs dê bê	A
+influxdbs	influcs dê bês	A
+ingress	íngrés	A
+inheritance	inérítens	A
+init	íniti	A
+inits	ínitis	A
+insight	ínsáiti	A
+insights	ínsáitis	A
+instagram	ínstagrém	A
+instagrams	ínstagréms	A
+install	instálou	A
+install-wizard	instálou uízard	A
+installer	instáler	A
+int	íntchi	S
+integer	ínteger	A
+integers	íntegers	A
+intel	ínteu	A
+intellij	intelidjêi	A
+intellijs	intelidjêis	A
+intels	ínteus	A
+interface	interfêissi	A
+interfaces	interfêissis	A
+internet	internéti	A
+internets	internétis	A
+interpreter	interpréter	A
+interpreters	interpréters	A
+intranet	intranéti	A
+intranets	intranétis	A
+ionic	aiôniqui	A
+ionics	aiôniquis	A
+ios	ái ô ésse	S
+iot	í ó tê	S
+ip	í pê	S
+ipa	í pê á	S
+ipad	áipédi	A
+ipados	áipédi ô ésse	A
+ipads	áipédis	A
+iphone	áifôni	A
+iphones	áifônis	A
+ipod	áipódi	A
+ipods	áipódis	A
+ips	ái pê ésse	S
+ipv4	ái pê vê quatro	S
+ipv6	ái pê vê seis	S
+iscsi	ái ésse cê ésse ái	A
+iscsis	ái ésse cê ésse áis	A
+iso	í ésse ó	S
+iso-iso	í ésse ô	S
+iso27001	í ésse ô vinte e sete mil e um	S
+issue	íchu	A
+issues	íchus	A
+istio	ístio	A
+istios	ístios	A
+jaeger	iêiguer	A
+jaegers	iêiguers	A
+jailbreak	djêuibreique	A
+jailbreaks	djêuibreiques	A
+java	djáva	A
+javas	djávas	A
+javascript	djávaescrípti	A
+javascripts	djávaescríptis	A
+jax	djéquis	S
+jdk	djêi dê cá	S
+jenkins	djénquins	A
+jest	djésti	A
+jests	djéstis	A
+jetpack	djêtepéqui	A
+jetpacks	djêtepéquis	A
+jira	djíra	A
+jiras	djíras	A
+jit	jóta í tê	S
+john	djón	A
+johns	djóns	A
+joomla	djumla	A
+joomlas	djumlas	A
+joycon	djóiquen	A
+joycons	djóiquens	A
+joystick	djóisticqui	A
+joystick-game	djóisticqui	A
+joystick-games	djóisticquis	A
+joysticks	djóisticquis	A
+jpeg	jóta pê é gê	S
+jpg	jóta pê gê	S
+jquery	djêi quiéri	A
+jquerys	djêi quiéris	A
+jre	djêi érre í	S
+js	djêi ésse	S
+json	djêison	S
+julia	djúlia	A
+julias	djúlias	A
+juniper	djúniper	A
+junipers	djúnipers	A
+junit	djêi iúniti	A
+junits	djêi iúnitis	A
+jupyter	djúpiter	A
+jupyters	djúpiters	A
+jvm	djêi vê ême	S
+jwt	jóta dáblio tê	S
+k3s	cá três és	S
+k8s	cá oito és	S
+kafka	cáfica	A
+kafkas	cáficas	A
+kaggle	quégou	A
+kaggles	quégous	A
+kali	cáli	A
+kali-linux	cáli línucs	A
+kali-tools	cáli túlis	A
+kalis	cális	A
+kanban	cânbán	A
+kanbans	cânbáns	A
+kb	quilobáite	S
+keepass	quípasse	A
+keras	quérás	A
+kerberos	quérberos	A
+kernel	quérnéu	A
+kernels	quérnéus	A
+keyboard	quíbórdi	A
+keyboards	quíbórdis	A
+keylogger	quílóguer	A
+keyloggers	quílóguers	A
+khan-academy	cán acádemi	A
+khan-academys	cán acádemis	A
+kick	quíqui	A
+kick-off	quíquiófi	A
+kick-offs	quíquiófis	A
+kickoff	quíquiófi	A
+kickoffs	quíquiófis	A
+kicks	quíquis	A
+kiss	quíssi	A
+kodi	cóudi	A
+kodis	cóudis	A
+kotlin	cótilin	A
+kotlin-multiplatform	cótilin mâutipletiforme	A
+kotlin-multiplatforms	cótilin mâutipletiformes	A
+kotlins	cótilins	A
+kpi	cá pê í	S
+kpis	cá pê áis	A
+kubeadm	cubi édm	A
+kubeadms	cubi édms	A
+kubectl	cubicôntrou	A
+kubectls	cubicôntrous	A
+kubernetes	cubernétis	A
+kvm	cá vê ême	S
+lag	légue	S
+lag-rede	légue	A
+lambda-aws	lâmbda	A
+lambda-function	lâmbda fânchon	A
+lambda-functions	lâmbda fânchons	A
+lan	éle á ene	S
+landing	lândin	A
+landing-page	lândin péidji	A
+landing-pages	lândin péidjis	A
+landings	lândins	A
+langchain	lêingui tchêini	A
+langchains	lêingui tchêinis	A
+laptop	léptópi	A
+laptops	léptópis	A
+lastpass	lésti pésse	A
+latency	lêitensi	A
+latencys	lêitensis	A
+lcd	éle cê dê	S
+ldap	éle dê é pê	A
+ldap-server	éle dê é pê sérver	A
+ldap-servers	éle dê é pê sérvers	A
+ldaps	éle dê é pês	A
+lead	lídi	A
+leader	lider	A
+leaders	liders	A
+leads	lídis	A
+league-of-legends	lígui óv léjendis	A
+lean	lín	A
+leans	líns	A
+led	éle é dê	S
+legacy	légassi	A
+legacys	légassis	A
+legaltech	lígautéqui	A
+legaltechs	lígautéquis	A
+letsencrypt	létis énicripti	A
+letsencrypts	létis énicriptis	A
+level	lévou	A
+level-up	lévou âpi	A
+level-ups	lévou âpis	A
+levels	lévous	A
+lexer	léquiser	A
+lexers	léquisers	A
+lgpd	éle gê pê dê	S
+libraries	láibreris	A
+library	láibreri	A
+librarys	láibreris	A
+license	láicensi	A
+licenses	láicensis	A
+lightgbm	láiti gê bê ême	A
+lightgbms	láiti gê bê êmes	A
+lightroom	láitirúme	A
+lightrooms	láitirúmes	A
+like	láiqui	A
+likear	laiquiár	A
+likes	láiquis	A
+link	línqui	A
+linked-list	línquedi lísti	A
+linked-lists	línquedi lístis	A
+linkedin	línquedin	A
+linkedins	línquedins	A
+links	línquis	A
+linode	láinôudi	A
+linodes	láinôudis	A
+lint	línti	A
+linter	línter	A
+linters	línters	A
+lints	líntis	A
+linux	línucs	A
+lisp	lispi	A
+lisps	lispis	A
+live	láivi	A
+lives	láivis	A
+llamacpp	lâma cê pê pê	A
+llamacpps	lâma cê pê pês	A
+llamaindex	lâma índecs	A
+llm	éle éle ême	S
+llms	éle éle êmes	A
+lm-studio	éle ême estúdio	A
+lm-studios	éle ême estúdios	A
+lms	éle ême ésse	S
+lmstudio	éle ême estúdio	A
+lmstudios	éle ême estúdios	A
+load	lôudi	A
+load-balancer	lôudi bélenser	A
+load-balancers	lôudi bélensers	A
+loader	lôuder	A
+loading	lôudin	A
+lobby	lóbi	A
+lobbys	lóbis	A
+log	lógui	A
+loggar	logár	A
+logger	lóguer	A
+loggers	lóguers	A
+logging	lóguin	A
+loggings	lóguins	A
+logic-pro	lójique prô	A
+logic-pros	lójique prôs	A
+login	lóguin	A
+logins	lóguins	A
+logoff	lóguiof	A
+logoffs	lóguiofs	A
+logon	lóguion	A
+logons	lóguions	A
+logout	lóguiaute	A
+logouts	lóguiautes	A
+logs	lóguis	A
+logstash	lógstéchi	A
+logstashs	lógstéchis	A
+loki	lôqui	A
+lokis	lôquis	A
+lol	éle ô éle	S
+looker	lúquer	A
+lookers	lúquers	A
+loop	lúpi	A
+looping	lúpin	A
+loops	lúpis	A
+loot	lúti	A
+lootbox	lútibóquis	A
+loots	lútis	A
+loss	lós	A
+lstm	éle ésse tê ême	A
+lstms	éle ésse tê êmes	A
+lte	éle tê í	S
+ltv	éle tê vê	S
+lucidchart	lúsiditchárti	A
+lucidcharts	lúsiditchártis	A
+m2	ême dois	S
+macbook	mékibúqui	A
+macbooks	mékibúquis	A
+machine-learning	mêchin lérnin	A
+machine-learnings	mêchin lérnins	A
+machinelearning	mêchin lérnin	A
+machinelearnings	mêchin lérnins	A
+macintosh	mékintóchi	A
+macintoshs	mékintóchis	A
+macos	méki ô ésse	A
+magento	madjêntô	A
+magentos	madjêntôs	A
+mailchimp	mêilitchímpi	A
+mailchimps	mêilitchímpis	A
+mainboard	mêinbórdi	A
+mainboards	mêinbórdis	A
+make	mêiqui	A
+makefile	mêiquifaiu	A
+makefiles	mêiquifaius	A
+makes	mêiquis	A
+malware	málruér	A
+malwares	málruérs	A
+manjaro	mandjárô	A
+manjaros	mandjárôs	A
+maps	mépis	A
+mariadb	mária dê bê	A
+mariadbs	mária dê bês	A
+mario	mário	A
+marios	mários	A
+marketing	márquetin	A
+marketing-digital	márquetin dídjitau	A
+marketing-digitals	márquetin dídjitaus	A
+marketings	márquetins	A
+marketplace	márquetiplêissi	A
+marketplaces	márquetiplêissis	A
+martech	mártéqui	A
+martechs	mártéquis	A
+master	méster	A
+masters	mésters	A
+matchmaking	métchimêiquin	A
+matchmakings	métchimêiquins	A
+matlab	métlabi	A
+matlabs	métlabis	A
+matplotlib	métiplótlibi	A
+matplotlibs	métiplótlibis	A
+maven	mêiven	A
+maven-java	mêiven djáva	A
+maven-javas	mêiven djávas	A
+mavens	mêivens	A
+maya	máia	A
+mayas	máias	A
+mb	megabáite	S
+mcp	ême cê pê	S
+md5	ême dê cinco	S
+mediafire	midiafáier	A
+mediafires	midiafáiers	A
+mediatek	midiatéqui	A
+mediateks	midiatéquis	A
+medium	mídium	A
+mediums	mídiums	A
+meeting	mítin	A
+meetings	mítins	A
+mega	méga	A
+megas	mégas	A
+meme	mêmi	A
+memes	mêmis	A
+memory-leak	mémori líque	A
+memory-leaks	mémori líques	A
+merge	mérdji	A
+mergeado	merdjiádo	A
+mergeando	merdjiândo	A
+mergear	merdjiár	A
+merges	mérdjis	A
+messenger	mésendjer	A
+messengers	mésendjers	A
+metabase	métabêisi	A
+metabases	métabêisis	A
+metasploit	métasplóiti	A
+metasploits	métasplóitis	A
+method	méfodi	A
+methods	méfodis	A
+mfa	ême éfe á	S
+mic	máiqui	A
+microphone	maicrofôni	A
+microphones	maicrofônis	A
+microsd	máicrô ésse dê	A
+microsds	máicrô ésse dês	A
+microservice	maicrosérvis	A
+microservices	maicrosérvices	A
+microsoft-teams	máicrosofti tímis	A
+middleware	mídiuér	A
+middleware-web	mídiuér	A
+middleware-webs	mídiuérs	A
+middlewares	mídiuérs	A
+midjourney	mídjârni	A
+midjourneys	mídjârnis	A
+mikrotik	maicrotíqui	A
+mikrotiks	maicrotíquis	A
+milvus	mílvus	A
+minecraft	máinecréfti	A
+minecrafts	máinecréftis	A
+miner	máiner	A
+miners	máiners	A
+minikube	míni quiúbi	A
+minikubes	míni quiúbis	A
+mining	máinin	A
+minings	máinins	A
+mit	ême ái tê	S
+mixtral	miquistrál	A
+mixtrals	miquistráls	A
+mkv	ême cá vê	S
+ml	ême éle	S
+mlflow	ême éle flôu	A
+mlflows	ême éle flôus	A
+mlops	ême éle ópis	A
+mmo	ême ême ó	S
+mmorpg	ême ême ô érre pê gê	A
+mmorpgs	ême ême ô érre pê gês	A
+moba	môba	S
+mocha	môca	A
+mochas	môcas	A
+mock	móqui	A
+mocks	móquis	A
+mockup	móquiápi	A
+mockups	móquiápis	A
+mod	módi	S
+modding	módin	A
+moddings	módins	A
+modem	módem	A
+modems	módems	A
+mods	módis	A
+module	módiu	A
+modules	módius	A
+monday	mândei	A
+mondays	mândeis	A
+mongo	móngô	A
+mongodb	mongô dê bê	A
+mongodbs	mongô dê bês	A
+mongos	móngôs	A
+monitoring	mônitorin	A
+monitorings	mônitorins	A
+monolith	mónolifi	A
+monoliths	mónolifis	A
+mooc	múqui	A
+moocs	múquis	A
+motherboard	mâderbórdi	A
+motherboards	mâderbórdis	A
+motorola	motorôla	A
+motorolas	motorôlas	A
+mouse	máuse	A
+mouses	máuses	A
+mov	ême ó vê	S
+mp3	ême pê três	S
+mp4	ême pê quatro	S
+mr	ême ár	S
+mrr	ême érre érre	S
+msi	ême ésse í	S
+mtbf	ême tê bê éfe	S
+mttr	ême tê tê érre	S
+multicloud	mâutiquiclaudi	A
+multiclouds	mâutiquiclaudis	A
+multimodal	mâutimôudau	A
+multimodals	mâutimôudaus	A
+multiplayer	mâutipleiér	A
+multiplayers	mâutipleiérs	A
+multithreading	mâutitrédin	A
+multithreadings	mâutitrédins	A
+mutex	miúticsi	A
+mvc	ême vê cê	S
+mvp	ême vê pê	S
+mvp-game	ême vê pê	A
+mvp-games	ême vê pês	A
+mvp-produto	ême vê pê	A
+mvp-produtos	ême vê pês	A
+mvp-startup	ême vê pê	A
+mvp-startups	ême vê pês	A
+mvvm	ême vê vê ême	A
+mvvms	ême vê vê êmes	A
+mypy	mai pái	A
+mypys	mai páis	A
+mysql	mai ésse quê éle	A
+mysqls	mai ésse quê éles	A
+nagios	náguios	A
+namespace	nêimispêissi	A
+namespace-k8s	nêimispêissi	A
+namespaces	nêimispêissis	A
+nano	nânô	A
+nanos	nânôs	A
+nas	ene á ésse	S
+nat	ene á tê	S
+nats	nétis	A
+nba	ene bê á	S
+nc	ene cê	S
+neovim	nióvim	A
+neovims	nióvims	A
+nerf	nérfi	A
+nerfs	nérfis	A
+nest	nésti	A
+nestjs	néstci djêi ésse	A
+nests	néstis	A
+netbeans	nétibins	A
+netbook	nétibúqui	A
+netbooks	nétibúquis	A
+netcat	nétiquéti	A
+netcats	nétiquétis	A
+netflix	nétifliquis	A
+netgear	nétiguiér	A
+netgears	nétiguiérs	A
+netlify	nétilifái	A
+netlifys	nétilifáis	A
+networking	nétiuórquin	A
+networkings	nétiuórquins	A
+neural	niuráu	A
+neural-network	niuráu nétuórqui	A
+neural-networks	niuráu nétuórquis	A
+neurals	niuráus	A
+newbie	niúbi	A
+newbies	niúbis	A
+newrelic	niú réliqui	A
+newrelics	niú réliquis	A
+news	niús	A
+newsletter	niusléter	A
+newsletters	niuslétérs	A
+next	nécsti	A
+nextjs	nécsti djêi ésse	A
+nexts	nécstis	A
+nexus	néquissus	A
+nfc	ene éfe cê	S
+nfs	ene éfe ésse	S
+nft	énefe tê	S
+nfts	énefe tês	A
+nginx	êngin éxi	A
+nick	níqui	A
+nickname	níqueneime	A
+nicknames	níqueneimes	A
+nicks	níquis	A
+nightly	náitili	A
+nightlys	náitilis	A
+ninja	níndja	A
+ninjas	níndjas	A
+nlp	ene éle pê	S
+nlu	ene éle ú	S
+nmap	ene mépi	A
+nmaps	ene mépis	A
+noc	nóqui	S
+node	nôudi	A
+node-cluster	nôudi clâster	A
+node-clusters	nôudi clâsters	A
+node-tree	nôudi trí	A
+node-trees	nôudi trís	A
+nodejs	nôudi djêi ésse	A
+nodes	nôudis	A
+nomad	nômedi	A
+nomads	nômedis	A
+noob	núbi	A
+noobs	núbis	A
+nordvpn	nórdi vê pê ene	A
+nordvpns	nórdi vê pê enes	A
+nosql	nôu ésse quê éle	A
+nosqls	nôu ésse quê éles	A
+notebook	nôutibúqui	A
+notebooks	nôutibúquis	A
+notepad	nôutipédi	A
+notepads	nôutipédis	A
+notion	nôuchon	A
+notions	nôuchons	A
+npc	ene pê cê	S
+npm	ene pê ême	S
+npu	ene pê ú	S
+nslookup	ene ésse lúcape	A
+nslookups	ene ésse lúcapes	A
+ntp	ene tê pê	S
+numpy	nâmpái	A
+numpys	nâmpáis	A
+nuxt	nâcsti	A
+nuxts	nâcstis	A
+nvidia	envídia	A
+nvidia-driver	envídia dráiver	A
+nvidia-drivers	envídia dráivers	A
+nvidias	envídias	A
+nvim	envím	A
+nvims	envíms	A
+nvme	ene vê ême í	A
+nvmes	ene vê ême ís	A
+oauth	ô óti	A
+oauths	ô ótis	A
+object	óbidjéti	A
+objective-c	óbidjétiv cê	A
+objective-cs	óbidjétiv cês	A
+objects	óbidjétis	A
+obs	ô bê ésse	A
+obs-studio	ô bê ésse estúdio	A
+obs-studios	ô bê ésse estúdios	A
+observability	obizervabíliti	A
+observabilitys	obizervabílitis	A
+observer	obizérver	A
+observers	obizérvers	A
+obsidian	obisídian	A
+obsidians	obisídians	A
+ocr	ó cê érre	S
+octave	óctêiv	A
+octaves	óctêivs	A
+oculus	óquilus	A
+odt	ó dê tê	S
+off-line	oflaini	A
+off-lines	oflainis	A
+offboarding	ofbórdin	A
+offboardings	ofbórdins	A
+offline	oflaini	A
+offlines	oflainis	A
+ogg	ó gê gê	S
+okr	ó cá érre	S
+okta	ôuqui ta	A
+oktas	ôuqui tas	A
+oled	ôuled	S
+on-line	onláini	A
+on-lines	onláinis	A
+on-premise	on prémis	A
+on-premises	on prémises	A
+onboarding	onbórdin	A
+onboardings	onbórdins	A
+one-drive	uân dráivi	A
+one-drives	uân dráivis	A
+onedrive	uândráivi	A
+onedrives	uândráivis	A
+onenote	uânnôuti	A
+onenotes	uânnôutis	A
+onion	ôniom	A
+onions	ônioms	A
+online	onláini	A
+onlines	onláinis	A
+onnx	ónics	A
+ooo	ô ô ô	S
+op	ó pê	S
+open-source	ôpen sórci	A
+open-sources	ôpen sórcis	A
+openai	ôupen êi ái	A
+openais	ôupen êi áis	A
+opencv	ôupen cê vê	A
+opencvs	ôupen cê vês	A
+openshift	ôupen chífti	A
+openshifts	ôupen chíftis	A
+opensource	ôpen sórci	A
+opensources	ôpen sórcis	A
+openssl	ôupen ésse ésse éle	A
+openssls	ôupen ésse ésse éles	A
+opentelemetry	ôupen telemétri	A
+opentelemetrys	ôupen telemétris	A
+opus	ôpus	A
+oracle	óracou	A
+oracle-db	óracou dê bê	A
+oracle-dbs	óracou dê bês	A
+oracles	óracous	A
+origin	ôridjin	A
+origins	ôridjins	A
+orm	ó érre ême	S
+os	ó ésse	S
+otp	ó tê pê	S
+outlook	áutiluque	A
+outlooks	áutiluques	A
+outsource	áutsórsi	A
+outsources	áutsórsis	A
+outsourcing	áutsórsin	A
+outsourcings	áutsórsins	A
+overclock	ôuverclóqui	A
+overclocking	ôuverclóquin	A
+overclockings	ôuverclóquins	A
+overclocks	ôuverclóquis	A
+overfitting	ôuverfitin	A
+overfittings	ôuverfitins	A
+overload	ôverlôudi	A
+overloads	ôverlôudis	A
+override	ôverráidi	A
+overrides	ôverráidis	A
+overtime	ôuvertáimi	A
+overtimes	ôuvertáimis	A
+overwatch	ôuverutchi	A
+overwatchs	ôuverutchis	A
+owasp	ôuásp	S
+paas	pás	A
+package	pékedji	A
+packages	pékedjis	A
+packer	péker	A
+packers	pékers	A
+pacman	pékiméne	A
+pacmans	pékiménes	A
+pandas	pêndas	A
+paramount	péramáwnti	A
+paramounts	péramáwntis	A
+parse	párs	A
+parser	pársser	A
+parsers	párssers	A
+pascal	páscal	A
+pascals	páscals	A
+password	péssuordi	A
+passwords	péssuordis	A
+patch	pétchi	A
+patch-notes	pétchi nôutis	A
+patchs	pétchis	A
+payload	pêiilôudi	A
+payload-sec	pêiilôudi	A
+payload-secs	pêiilôudis	A
+payloads	pêiilôudis	A
+paypal	peipáu	A
+paypals	peipáus	A
+pb	petabáite	S
+pc	pê cê	S
+pci	pê cê í	S
+pci-dss	pê cê ái dê ésse ésse	S
+pcie	pê cê í í	S
+pdf	pê dê éfe	S
+pen-drive	pêndraivi	A
+pen-drives	pêndraivis	A
+pendrive	pêndraivi	A
+pendrives	pêndraivis	A
+pentest	péntésti	A
+pentester	péntéstér	A
+pentesters	péntéstérs	A
+pentesting	péntéstin	A
+pentestings	péntéstins	A
+pentests	péntéstis	A
+pentium	pêntium	A
+pentiums	pêntiums	A
+perl	pérou	A
+perls	pérous	A
+perplexity	perplécsiti	A
+perplexitys	perplécsitis	A
+pes	pê í ésse	S
+pgp	pê gê pê	S
+pgvector	pê gê véctor	A
+pgvectors	pê gê véctors	A
+phi	fái	S
+phishing	fíchin	A
+phishings	fíchins	A
+photoshop	fôtochópi	A
+photoshops	fôtochópis	A
+php	pê agá pê	S
+phpstorm	pê agá pê estórme	A
+phpstorms	pê agá pê estórmes	A
+pikachu	picatchú	A
+pikachus	picatchús	A
+pinecone	páinquôuni	A
+pinecones	páinquôunis	A
+ping	pínguí	A
+ping-game	pínguí	A
+ping-games	pínguís	A
+ping-pong	pínguí póngue	A
+pings	pínguís	A
+pinterest	pínterésti	A
+pinterests	pínteréstis	A
+pip	pípi	A
+pipeline	páipelaini	A
+pipelines	páipelainis	A
+pipenv	pípi énv	A
+pipenvs	pípi énvs	A
+pitch	pítchi	A
+pitch-deck	pítchi déqui	A
+pitch-decks	pítchi déquis	A
+pitchs	pítchis	A
+pixel	píquisseu	A
+pixels	píquisseus	A
+planning	plénin	A
+plannings	plénins	A
+player	pleiér	A
+players	pleiérs	A
+playstation	pleiestêichon	A
+playstation-plus	pleiestêichon plâs	A
+playstations	pleiestêichons	A
+playstore	pleiestór	A
+playstores	pleiestórs	A
+playwright	pleiráiti	A
+playwrights	pleiráitis	A
+plex	plécs	A
+plotly	plótili	A
+plotlys	plótilis	A
+plotter	plótér	A
+plotters	plótérs	A
+plug	plâgui	A
+plug-and-play	plâgue énd pleiei	A
+plug-in	plâguin	A
+plug-ins	plâguins	A
+plugin	plâguin	A
+plugins	plâguins	A
+pm	pê ême	S
+png	pê ene gê	S
+pnpm	pê ene pê ême	A
+pnpms	pê ene pê êmes	A
+po	pê ô	S
+poc	pê ô cê	S
+pod	pódi	S
+podcast	pódquésti	A
+podcast-show	pódquésti	A
+podcast-shows	pódquéstis	A
+podcasts	pódquéstis	A
+podman	pódimén	A
+podmans	pódiméns	A
+pods	pódis	A
+poetry	pôuetri	A
+poetrys	pôuetris	A
+pokemon	pôquemon	A
+pokemons	pôquemons	A
+polymorphism	polimórfismo	A
+polymorphisms	polimórfismos	A
+pop	pê ó pê	S
+pop-up	pópape	A
+pop-ups	pópapes	A
+pop3	pê ô pê três	S
+popup	pópape	A
+popups	pópapes	A
+posix	pósicsi	A
+post	pôusti	A
+postgres	pôusti gres	A
+postgresql	pôusti gres quiu éle	A
+postgresqls	pôusti gres quiu éles	A
+posts	pôustis	A
+power	páuer	A
+power-bi	páuer bê ái	A
+power-bis	páuer bê áis	A
+powerbank	páuerbênqui	A
+powerbanks	páuerbênquis	A
+powerbi	páuer bê ái	A
+powerbis	páuer bê áis	A
+powerpoint	páuerpóinti	A
+powerpoints	páuerpóintis	A
+powers	páuers	A
+powershell	páuerchéu	A
+powershells	páuerchéus	A
+ppc	pê pê cê	S
+ppi	pê pê ái	S
+ppt	pê pê tê	S
+pptx	pê pê tê xis	S
+precision	pricízhon	A
+precisions	pricízhons	A
+premiere	premiér	A
+premieres	premiérs	A
+prettier	prítier	A
+prettiers	prítiers	A
+primary	práimeri	A
+primarys	práimeris	A
+prime-video	práime vídio	A
+prime-videos	práime vídios	A
+print	prínti	A
+print-debug	prínti dibâgui	A
+print-debugs	prínti dibâguis	A
+print-screen	prínti escrín	A
+printer	príntir	A
+printers	príntirs	A
+prints	príntis	A
+printscreen	printiscrín	A
+printscreenar	printiscrinár	A
+printscreens	printiscríns	A
+pro-tools	prô túlis	A
+profile	prôfaiu	A
+profiles	prôfaius	A
+programmer	prôugremer	A
+programmers	prôugremers	A
+prolog	prólogui	A
+prologs	próloguis	A
+prometheus	prométius	A
+prometheus-metrics	prométius métricis	A
+promise	prómissi	A
+promises	prómissis	A
+prompt	prômpti	A
+prompting	prômptin	A
+promptings	prômptins	A
+prompts	prômptis	A
+proptech	própitéqui	A
+proptechs	própitéquis	A
+proton	prôuton	A
+protonmail	prôuton meiu	A
+protonmails	prôuton meius	A
+protons	prôutons	A
+prototype	prótótáipi	A
+prototypes	prótótáipis	A
+provider	provaider	A
+providers	provaiders	A
+proxmox	próquismóquis	A
+proxy	prócsi	A
+proxy-server	prócsi sérver	A
+proxy-servers	prócsi sérvers	A
+proxychains	prócsitchêinis	A
+proxys	prócsis	A
+ps1	pê ésse um	S
+ps4	pê ésse quatro	S
+ps5	pê ésse cinco	S
+pubg	pá bê gê	A
+pubgs	pá bê gês	A
+publisher	pâblicher	A
+publishers	pâblichers	A
+pull	púu	A
+pull-request	púu riquésti	A
+pull-requests	púu riquéstis	A
+pulls	púus	A
+puppet	pâpeti	A
+puppeteer	pâpitíer	A
+puppeteers	pâpitíers	A
+puppets	pâpetis	A
+push	púchi	A
+pushado	puchádo	A
+pushando	puchândo	A
+pushar	puchár	A
+pushs	púchis	A
+pve	pê vê í	S
+pvp	pê vê pê	S
+pwa	pê dáblio á	S
+py	pái	S
+pycharm	páitchárme	A
+pycharms	páitchármes	A
+pydantic	paidêntiqui	A
+pydantics	paidêntiquis	A
+pygame	páiguêimi	A
+pygames	páiguêimis	A
+pylint	pái línti	A
+pylints	pái líntis	A
+pyqt	páiquiú	A
+pyqts	páiquiús	A
+pyspark	pái espárqui	A
+pysparks	pái espárquis	A
+pytest	páitésti	A
+pytests	páitéstis	A
+python	páiton	A
+pythons	páitons	A
+pytorch	pái tórtchi	A
+pytorchs	pái tórtchis	A
+qa	quiú êi	S
+qdrant	cuédrenti	A
+qdrants	cuédrentis	A
+qemu	quêmu	A
+qemus	quêmus	A
+qhd	quiú agá dê	S
+qled	quiuledi	A
+qleds	quiuledis	A
+qlora	quiú lôra	A
+qloras	quiú lôras	A
+qt	quiú	S
+qualcomm	cuólcôm	A
+qualcomms	cuólcôms	A
+quantization	cuantizêichon	A
+quantizations	cuantizêichons	A
+quantized	cuantáizdi	A
+quantizeds	cuantáizdis	A
+quest	quésti	A
+quests	quéstis	A
+queue	quiú	A
+queues	quiús	A
+quorum	cuórum	A
+quorums	cuórums	A
+qwen	quên	A
+qwens	quêns	A
+rabbitmq	rébiti ême quiú	A
+rabbitmqs	rébiti ême quiús	A
+race-condition	rêissi condíchon	A
+race-conditions	rêissi condíchons	A
+radeon	radêon	A
+radeons	radêons	A
+rag	rég	S
+rag-pipeline	régui páipelaini	A
+rag-pipelines	régui páipelainis	A
+raid	rêidi	S
+raid-game	rêidi	A
+raid-games	rêidis	A
+rails	rêius	A
+ram	érre á ême	S
+rancher	rântcher	A
+ranchers	rântchers	A
+rank	rénqui	A
+ranked	rênqui	A
+rankeds	rênquis	A
+ranking	rénquin	A
+rankings	rénquins	A
+ranks	rénquis	A
+ransomware	rênsomuér	A
+ransomwares	rênsomuérs	A
+rappi	rápi	A
+rappis	rápis	A
+raspberry	ráspberi	A
+raspberry-pi	ráspberi páii	A
+raspberry-pis	ráspberi páiis	A
+raspberrys	ráspberis	A
+rate-limit	rêiti límiti	A
+rate-limits	rêiti límitis	A
+rc	érre cê	S
+rclone	érre clôni	A
+rclones	érre clônis	A
+rdp	érre dê pê	S
+rds	érre dê ésse	S
+reach	ríchi	A
+reachs	ríchis	A
+react	riácti	A
+react-native	riácti nêitiv	A
+react-natives	riácti nêitivs	A
+reactjs	riácti djêi ésse	A
+reacts	riáctis	A
+readme	ridimi	A
+readmes	ridimis	A
+reaper	ripér	A
+reapers	ripérs	A
+rebase	ribêisi	A
+rebases	ribêisis	A
+reboot	ribúti	A
+rebootando	ributândo	A
+rebootar	ributár	A
+reboots	ribútis	A
+recall	rikól	A
+recalls	rikóls	A
+red-hat	rédi réti	A
+red-hats	rédi rétis	A
+red-team	rédi tími	A
+red-teams	rédi tímis	A
+reddit	rédite	A
+reddits	rédites	A
+redhat	rédiréti	A
+redhats	rédirétis	A
+redis	rédis	A
+redshift	rédichífti	A
+redshifts	rédichíftis	A
+redux	ridâcs	A
+refactor	rifátor	A
+refactoring	rifatórin	A
+refactorings	rifatórins	A
+refactors	rifátors	A
+refinement	rifáinmenti	A
+refinements	rifáinmentis	A
+refresh	rifréchi	A
+refreshs	rifréchis	A
+regex	réguêcs	A
+regexp	réguêcs	A
+registry	rédjistri	A
+registrys	rédjistris	A
+reinforcement	rienfórcemenre	A
+reinforcement-learning	rienfórssimen lérnin	A
+reinforcement-learnings	rienfórssimen lérnins	A
+reinforcements	rienfórcemenres	A
+release	rilísi	A
+releases	rilísis	A
+relu	rélú	A
+relus	rélús	A
+remix	rímics	A
+remote	rimôuti	A
+remotes	rimôutis	A
+replica	réplica	A
+replicas	réplicas	A
+replication	repliquêichon	A
+replications	repliquêichons	A
+reply	riplái	A
+replys	ripláis	A
+repo	rípo	A
+repos	rípos	A
+repository	ripózitóri	A
+repositorys	ripózitóris	A
+request	riquésti	A
+requests	riquéstis	A
+require	riquáiér	A
+requires	riquáiérs	A
+reset	riséti	A
+resets	risétis	A
+resnet	résnéti	A
+resnets	résnétis	A
+resolution	resolúchon	A
+resolutions	resolúchons	A
+respawn	rispóne	A
+respawns	rispónes	A
+response	rispónsi	A
+responses	rispónsis	A
+rest	rést	S
+restful	réstifu	A
+restfuls	réstifus	A
+restore	ristór	A
+restores	ristórs	A
+retail	ritêiu	A
+retails	ritêius	A
+retro	rétrô	A
+retros	rétrôs	A
+retrospective	retrospéctive	A
+retrospectives	retrospéctives	A
+retry	ritrái	A
+retrys	ritráis	A
+retweet	ritúiti	A
+retweets	ritúitis	A
+reverse-proxy	rivérsi prócsi	A
+reverse-proxys	rivérsi prócsis	A
+rfid	érre éfe í dê	S
+rgb	érre gê bê	S
+rh	érre agá	S
+rider	ráider	A
+riders	ráiders	A
+risc	rísqui	A
+riscs	rísquis	A
+rlhf	érre éle agá éfe	A
+rlhfs	érre éle agá éfes	A
+rnn	érre ene ene	S
+roadmap	rôudimépi	A
+roadmaps	rôudimépis	A
+roblox	róbloquis	A
+roc	érre ô cê	S
+rocm	érre ô cê ême	A
+rocms	érre ô cê êmes	A
+roi	érre ó í	S
+roku	rôqui	A
+rokus	rôquis	A
+rollback	rôulbéqui	A
+rollbacks	rôulbéquis	A
+rom	érre ó ême	S
+rom-game	róm	A
+rom-games	róms	A
+root	rúti	A
+rootkit	rútikíti	A
+rootkits	rútikítis	A
+roots	rútis	A
+route53	rúti cinquenta e três	A
+router	rútir	A
+routers	rútirs	A
+rpg	érre pê gê	S
+rpm	érre pê ême	S
+rpo	érre pê ó	S
+rsa	érre ésse á	S
+rsync	érre síncui	A
+rsyncs	érre síncuis	A
+rtf	érre tê éfe	S
+rto	érre tê ó	S
+rtx	érre tê xis	S
+rubocop	rubicópi	A
+rubocops	rubicópis	A
+runner	râner	A
+runners	râners	A
+runtime	rântáimi	A
+runtimes	rântáimis	A
+rust	râsti	A
+rusts	râstis	A
+ryzen	ráizen	A
+ryzens	ráizens	A
+s3	ésse três	S
+saas	sás	A
+saas-business	sás	A
+safetensors	sêiftensors	A
+salesforce	sêilsfórsi	A
+salesforces	sêilsfórsis	A
+salt	sólti	A
+salt-hash	sólti réchi	A
+salt-hashs	sólti réchis	A
+salts	sóltis	A
+saml	sémol	S
+samsung	sâmsun	A
+samsungs	sâmsuns	A
+san	ésse á ene	S
+sandbox	séndibóquis	A
+sandboxing	séndibóquisin	A
+sandboxings	séndibóquisins	A
+sap	ésse á pê	S
+sass	sésse	A
+sata	sáta	S
+scala	escála	A
+scalability	squeilabíliti	A
+scalabilitys	squeilabílitis	A
+scalas	escálas	A
+scale	esquêiu	A
+scales	esquêius	A
+scaleup	esquêiu âpi	A
+scaleups	esquêiu âpis	A
+scanner	escâner	A
+scanners	escâners	A
+scikit	sáiquiti	A
+scikit-learn	sáiquiti lérn	A
+scikit-learns	sáiquiti lérns	A
+scikits	sáiquitis	A
+scipy	sáipái	A
+scipys	sáipáis	A
+screen	escrín	A
+screens	escríns	A
+screenshot	escrínchóti	A
+screenshots	escrínchótis	A
+script	escrípti	A
+scripting	escríptin	A
+scriptings	escríptins	A
+scripts	escríptis	A
+scrollando	escrolândo	A
+scrollar	escrolár	A
+scrum	escrâm	A
+scrums	escrâms	A
+scsi	escázi	S
+scss	ésse cê ésse ésse	A
+sd	ésse dê	S
+sdk	ésse dê cá	S
+seaborn	síborn	A
+seaborns	síborns	A
+search	sértchi	A
+searchs	sértchis	A
+seed	sídi	A
+seeds	sídis	A
+segfault	sêguifóuti	A
+segfaults	sêguifóutis	A
+selenium	selêniom	A
+seleniums	selênioms	A
+selfie	sélfi	A
+selfies	sélfis	A
+sem	ésse í ême	S
+semaphore	sémaforo	A
+semaphores	sémaforos	A
+semver	sêm vér	A
+semvers	sêm vérs	A
+sendgrid	sêndigridi	A
+sendgrids	sêndigridis	A
+sentry	séntri	A
+sentrys	séntris	A
+seo	ésse í ô	S
+series-a	síris êi	A
+series-as	síris êis	A
+serverless	sérverlés	A
+service	sérvice	A
+servicenow	sérvicenáu	A
+servicenows	sérvicenáus	A
+services	sérvices	A
+setter	séter	A
+setters	séters	A
+setting	séntin	A
+settings	séntins	A
+setup	séteapi	A
+setup-gamer	séteapi guêimer	A
+setups	séteapis	A
+sftp	ésse éfe tê pê	A
+sftps	ésse éfe tê pês	A
+sh	ésse agá	S
+sha	ésse agá á	S
+sha256	chá duzentos e cinquenta e seis	S
+sharding	chárdin	A
+shardings	chárdins	A
+share	chéri	A
+shareholder	chérrôuder	A
+shareholders	chérrôuders	A
+sharepoint	chérpóinti	A
+sharepoints	chérpóintis	A
+shares	chéris	A
+shareware	chéruér	A
+sharewares	chéruérs	A
+shell	chéu	A
+shells	chéus	A
+shop	chópi	A
+shopify	chópifái	A
+shopifys	chópifáis	A
+shops	chópis	A
+siem	síme	S
+sigmoid	sigmóidi	A
+sigmoids	sigmóidis	A
+sign-in	sáinin	A
+sign-ins	sáinins	A
+sign-up	sáinape	A
+sign-ups	sáinapes	A
+signal	sígnau	A
+signals	sígnaus	A
+signin	sáinin	A
+signins	sáinins	A
+signup	sáinape	A
+signups	sáinapes	A
+sim	síme	S
+singleplayer	sínguilpleiér	A
+singleplayers	sínguilpleiérs	A
+singleton	síngueltom	A
+singletons	síngueltoms	A
+site	sáiti	A
+sites	sáitis	A
+sketch	esquétchi	A
+sketchs	esquétchis	A
+skin	esquíne	A
+skins	esquínis	A
+sklearn	ésse quê lérn	A
+sklearns	ésse quê lérns	A
+skype	escáipi	A
+skypes	escáipis	A
+skyrim	esquiráimi	A
+skyrims	esquiráimis	A
+sla	ésse éle á	S
+slack	esléqui	A
+slacks	esléquis	A
+slackware	eslékiuér	A
+slackwares	eslékiuérs	A
+slave	eslêiv	A
+slaves	eslêivs	A
+sli	ésse éle í	S
+slides	eslaidis	A
+slm	ésse éle ême	S
+slo	ésse éle ó	S
+smart	esmárti	A
+smart-tv	esmárti tê vê	A
+smart-tvs	esmárti tê vês	A
+smarthome	esmárti rôm	A
+smarthomes	esmárti rôms	A
+smartphone	esmartifôni	A
+smartphones	esmartifônis	A
+smarts	esmártis	A
+smarttv	esmárti tê vê	A
+smarttvs	esmárti tê vês	A
+smartwatch	esmartiuótchi	A
+smartwatches	esmartiuótchis	A
+smartwatchs	esmartiuótchis	A
+smb	ésse ême bê	S
+smm	ésse ême ême	S
+smtp	ésse ême tê pê	S
+snapchat	esnépchéti	A
+snapchats	esnépchétis	A
+snapdragon	esnépdragon	A
+snapdragons	esnépdragons	A
+snapshot	esnépchóti	A
+snapshots	esnépchótis	A
+snippet	esnípeti	A
+snippets	esnípetis	A
+snmp	ésse ene ême pê	A
+snmps	ésse ene ême pês	A
+snowflake	esnôufleiqui	A
+snowflakes	esnôufleiquis	A
+sns	ésse ene ésse	S
+so	ésse ó	S
+soap	sôupi	S
+soc	sóqui	S
+socat	sôuquéti	A
+socats	sôuquétis	A
+socket	sóqueti	A
+sockets	sóquetis	A
+softmax	sofitmécs	A
+software	sóftuér	A
+software-engineer	sóftuér endjiníer	A
+software-engineers	sóftuér endjiníers	A
+softwares	sóftuérs	A
+solid	sólidi	A
+solid-principles	sólidi prínsipous	A
+solids	sólidis	A
+sonic	sôniqui	A
+sonics	sôniquis	A
+sonnet	sónéti	A
+sonnets	sónétis	A
+soundbar	sáwndibári	A
+soundbars	sáwndibáris	A
+soundcloud	sáwndiclaudi	A
+soundclouds	sáwndiclaudis	A
+source	sórssi	A
+source-code	sórssi côudi	A
+source-codes	sórssi côudis	A
+sources	sórssis	A
+spa	ésse pê á	S
+spam	espém	A
+spamar	espamár	A
+spammar	espamár	A
+spammer	espémer	A
+spammers	espémers	A
+spams	espéms	A
+spark	espárqui	A
+sparks	espárquis	A
+spawn	espóne	A
+spawns	espónes	A
+speaker	espíker	A
+speakers	espíkers	A
+speech-to-text	espítchi tu técsti	A
+speech-to-texts	espítchi tu técstis	A
+speedrun	espídrân	A
+speedrunner	espídrâner	A
+speedrunners	espídrâners	A
+speedruns	espídrâns	A
+splunk	espláncui	A
+splunks	espláncuis	A
+spotify	espótifái	A
+spotifys	espótifáis	A
+spring	espríngui	A
+spring-boot	espríngui búti	A
+spring-boots	espríngui bútis	A
+springs	esprínguis	A
+sprint	esprínti	A
+sprints	espríntis	A
+spyware	espáiuér	A
+spywares	espáiuérs	A
+sql	ésse quê éle	S
+sql-injection	ésse quê éle injécchon	A
+sql-injections	ésse quê éle injécchons	A
+sqlalchemy	ésse quê éle álquemi	A
+sqlalchemys	ésse quê éle álquemis	A
+sqlite	ésse quê láiti	A
+sqlites	ésse quê láitis	A
+sqlmap	ésse quê éle mépi	A
+sqlmaps	ésse quê éle mépis	A
+sqs	ésse quiú ésse	S
+squarespace	escuérispêissi	A
+squarespaces	escuérispêissis	A
+sre	ésse érre í	S
+ssd	ésse ésse dê	S
+ssg	ésse ésse gê	S
+ssh	ésse ésse agá	S
+ssh-key	ésse ésse agá quí	A
+ssh-keys	ésse ésse agá quís	A
+ssl	ésse ésse éle	S
+sso	ésse ésse ó	S
+ssr	ésse ésse érre	S
+stable	estêibou	A
+stable-diffusion	estêibou difiúchon	A
+stable-diffusions	estêibou difiúchons	A
+stablediffusion	estêibou difiúchon	A
+stablediffusions	estêibou difiúchons	A
+stables	estêibous	A
+stack	estéqui	A
+stack-trace	estéqui trêissi	A
+stack-traces	estéqui trêissis	A
+stacks	estéquis	A
+stacktrace	estéquitrêissi	A
+stacktraces	estéquitrêissis	A
+stakeholder	estêicrôuder	A
+stakeholders	estêicrôuders	A
+standby	esténdbái	A
+standbys	esténdbáis	A
+standup	esténdâpi	A
+standups	esténdâpis	A
+starcraft	estárcréfti	A
+starcrafts	estárcréftis	A
+startado	estartádo	A
+startando	estartândo	A
+startar	estartár	A
+startup	estártape	A
+startups	estártapes	A
+stash	estéchi	A
+stashs	estéchis	A
+status	estátus	A
+steam	estími	A
+steam-deck	estím déqui	A
+steam-decks	estím déquis	A
+steamdeck	estímdéqui	A
+steamdecks	estímdéquis	A
+steams	estímis	A
+sticker	estíquer	A
+stickers	estíquers	A
+stock-option	estóqui ópchon	A
+stock-options	estóqui ópchons	A
+store	estór	A
+stores	estórs	A
+story	estóri	A
+storys	estóris	A
+stream	estríme	A
+streamando	estrimândo	A
+streamar	estrimár	A
+streamer	estríimer	A
+streamers	estríimers	A
+streaming	estríimin	A
+streaming-service	estríimin sérvice	A
+streaming-services	estríimin sérvices	A
+streamings	estríimins	A
+streamlit	estríimlíti	A
+streamlits	estríimlítis	A
+streams	estrímes	A
+street-view	estríti viu	A
+street-views	estríti vius	A
+string	estrín	A
+strings	estríns	A
+stripe	estráipi	A
+stripes	estráipis	A
+struct	estrâqui	A
+structs	estrâquis	A
+stt	ésse tê tê	S
+style-guide	estáili gáide	A
+style-guides	estáili gáides	A
+sublime	sabláime	A
+sublimes	sabláimes	A
+subnet	sâbnéti	A
+subnets	sâbnétis	A
+subscribe	sabiscráibi	A
+subscriber	sabiscráiber	A
+subscribers	sabiscráibers	A
+subscribes	sabiscráibis	A
+subwoofer	sábiuúfer	A
+subwoofers	sábiuúfers	A
+sudo	súdu	A
+sudos	súdus	A
+supabase	sûpabêisi	A
+supabases	sûpabêisis	A
+superset	supersséti	A
+supersets	superssétis	A
+supervised	supervaisdi	A
+superviseds	supervaisdis	A
+svelte	esvéuti	A
+sveltekit	esvéuti quíti	A
+sveltekits	esvéuti quítis	A
+sveltes	esvéutis	A
+svg	ésse vê gê	S
+swarm	uórmi	A
+swarms	uórmis	A
+swift	suífti	A
+swifts	suíftis	A
+swiftui	suífti ú ái	A
+swiftuis	suífti ú áis	A
+switch	suítchi	A
+switchs	suítchis	A
+symfony	sinfôni	A
+symfonys	sinfônis	A
+sync	síncui	A
+syncs	síncuis	A
+syncthing	síncitin	A
+syncthings	síncitins	A
+systemd	sístem dê	A
+systemds	sístem dês	A
+t5	tê cinco	S
+tab	tébi	A
+tableau	tabló	A
+tableaus	tablós	A
+tablet	tábleti	A
+tablets	tábletis	A
+tabs	tébis	A
+tag	tégui	S
+tags	téguis	A
+tails	têiu	A
+tailwind	teiuíndi	A
+tailwindcss	teiuíndi cê ésse ésse	A
+tailwinds	teiuíndis	A
+tanh	tân agá	A
+tanhs	tân agás	A
+tar	tê á érre	S
+task	tésqui	A
+tasks	tésquis	A
+tauri	tári	A
+tauris	táris	A
+tb	terabáite	S
+tbd	tê bê dê	S
+tcp	tê cê pê	S
+tcpdump	tê cê pê dâmpi	A
+tcpdumps	tê cê pê dâmpis	A
+tdd	tê dê dê	S
+telegram	telegrém	A
+telegrams	telegréms	A
+telnet	télenéti	A
+telnets	télenétis	A
+template	têmplêiti	A
+templates	têmplêitis	A
+tensor-cores	ténsor córs	A
+tensorboard	ténsorbórdi	A
+tensorboards	ténsorbórdis	A
+tensorflow	ténsorflôu	A
+tensorflows	ténsorflôus	A
+tensorrt	ténsor érre tê	A
+tensorrts	ténsor érre tês	A
+terminal	términau	A
+terminals	términaus	A
+terraform	térafórme	A
+terraforms	térafórmes	A
+text-to-speech	técsti tu espítchi	A
+text-to-speechs	técsti tu espítchis	A
+tflops	tê flópis	A
+thermal	térmau	A
+thermals	térmaus	A
+thread	trédi	A
+thread-pool	trédi púu	A
+thread-pools	trédi púus	A
+threadripper	trédirípper	A
+threadrippers	trédiríppers	A
+threads	trédis	A
+throttle	trótou	A
+throttles	trótous	A
+throttling	trótilin	A
+throttlings	trótilins	A
+throughput	trúputi	A
+throughputs	trúputis	A
+thunderbolt	tânderbôuti	A
+thunderbolts	tânderbôutis	A
+ti	tê í	S
+tic	tê í cê	S
+ticket	tíqueti	A
+tickets	tíquetis	A
+tiff	tê í éfe éfe	S
+tiktok	tíquitóqui	A
+tiktoker	tiquitóquer	A
+tiktokers	tiquitóquers	A
+tiktoks	tíquitóquis	A
+timeline	táimelaine	A
+timelines	táimelaines	A
+timeout	táimiaute	A
+timeouts	táimiautes	A
+timesheet	táimichiti	A
+timesheets	táimichitis	A
+tinder	tínder	A
+tinders	tínders	A
+tkinter	tíquiinter	A
+tkinters	tíquiinters	A
+tls	tê éle ésse	S
+todoist	tudóisti	A
+todoists	tudóistis	A
+token	tôquen	A
+token-llm	tôquen	A
+token-llms	tôquens	A
+tokenizer	tôquenaizer	A
+tokenizers	tôquenaizers	A
+tokens	tôquens	A
+tokens-llm	tôquens	A
+tomcat	tómquéti	A
+tomcats	tómquétis	A
+toml	tómou	S
+tor	tór	A
+tor-browser	tór bráuzer	A
+tor-browsers	tór bráuzers	A
+torch	tórtchi	A
+torchs	tórtchis	A
+torrent	torrénti	A
+torrents	torréntis	A
+touch	tâtchi	A
+touchpad	tâtchipédi	A
+touchpads	tâtchipédis	A
+touchs	tâtchis	A
+touchscreen	tâtchiscrín	A
+touchscreens	tâtchiscríns	A
+tp-link	tê pê línqui	A
+tp-links	tê pê línquis	A
+tplink	tê pê línqui	A
+tplinks	tê pê línquis	A
+tpm	tê pê ême	S
+tpu	tê pê ú	S
+traceback	trêissibéqui	A
+tracebacks	trêissibéquis	A
+traceroute	trêissirútchi	A
+traceroutes	trêissirútchis	A
+trackball	trékibóu	A
+trackballs	trékibóus	A
+tracking	trékin	A
+trackings	trékins	A
+trackpad	trékipédi	A
+trackpads	trékipédis	A
+trader	trêider	A
+traders	trêiders	A
+trading	trêidin	A
+tradings	trêidins	A
+traefik	tráfique	A
+traefiks	tráfiques	A
+traffic	tréfiqui	A
+traffics	tréfiquis	A
+transformer	trensfórmer	A
+transformers	trensfórmers	A
+transpiler	transpáiler	A
+transpilers	transpáilers	A
+travis	trávis	A
+travisci	trávis cê ái	A
+traviscis	trávis cê áis	A
+tree	trí	A
+trees	trís	A
+trello	trêlô	A
+trellos	trêlôs	A
+trend	trêndi	A
+trending	trêndin	A
+trendings	trêndins	A
+trends	trêndis	A
+trigger	trígher	A
+triggers	tríghers	A
+tripod	tráipódi	A
+tripods	tráipódis	A
+trojan	trôudjan	A
+trojans	trôudjans	A
+troll	trólou	A
+trolls	trólous	A
+ts	tê ésse	S
+tts	tê tê ésse	S
+tui	tê u ái	S
+tumblr	tâmbler	A
+tumblrs	tâmblers	A
+tuple	tâpou	A
+tuples	tâpous	A
+tvos	tê vê ô ésse	A
+tweet	túiti	A
+tweets	túitis	A
+twilio	tuílio	A
+twilios	tuílios	A
+twitch	tuítchi	A
+twitch-prime	tuítchi práime	A
+twitch-primes	tuítchi práimes	A
+twitch-streamer	tuítchi estríimer	A
+twitch-streamers	tuítchi estríimers	A
+twitchs	tuítchis	A
+twittar	tuitár	A
+twitter	tuíter	A
+twitters	tuíters	A
+txt	tê xis tê	S
+typedef	táipidéfi	A
+typedefs	táipidéfis	A
+typescript	táipiescrípti	A
+typescripts	táipiescríptis	A
+uat	iú êi tê	S
+uber	úber	A
+ubers	úbers	A
+ubiquiti	iubíquiti	A
+ubiquitis	iubíquitis	A
+ubuntu	ubúntu	A
+ubuntu-server	ubúntu sérver	A
+ubuntu-servers	ubúntu sérvers	A
+ubuntus	ubúntus	A
+udemy	iudémi	A
+udemys	iudémis	A
+udp	ú dê pê	S
+uefi	iúefi	S
+uhd	iú agá dê	S
+ui	ú í	S
+uikit	ú ái quíti	A
+uikits	ú ái quítis	A
+ultrabook	âutrabúqui	A
+ultrabooks	âutrabúquis	A
+ultrawide	âutraúaide	A
+ultrawides	âutraúaides	A
+underclock	âuderclóqui	A
+underclocks	âuderclóquis	A
+underfitting	ânderfitin	A
+underfittings	ânderfitins	A
+undervolt	ândervôuti	A
+undervolts	ândervôutis	A
+unet	iú néti	A
+unets	iú nétis	A
+unfollow	ânfólou	A
+unfollows	ânfólous	A
+uninstall	aninstálou	A
+unittest	iúnitésti	A
+unittests	iúnitéstis	A
+unity	iunití	A
+unity3d	iunití três dê	A
+unity3ds	iunití três dês	A
+unitys	iunitís	A
+unix	iúnics	A
+unplug	anplâgui	A
+unreal	ânríu	A
+unreal-engine	ânríu éndjin	A
+unreal-engines	ânríu éndjins	A
+unreals	ânríus	A
+unsubscribe	ânsabiscráibi	A
+unsubscribes	ânsabiscráibis	A
+unsupervised	ansupervaisdi	A
+unsuperviseds	ansupervaisdis	A
+upado	apádo	A
+upando	apândo	A
+upar	apár	A
+update	ápdeiti	A
+updates	ápdeitis	A
+upgrade	âpigrêidi	A
+upgrades	âpigrêidis	A
+uplay	iuplei	A
+uplays	iupleis	A
+upload	ápilôudi	A
+uploadar	aplodár	A
+uploads	ápilôudis	A
+uptime	âptáimi	A
+uptimes	âptáimis	A
+uri	ú érre í	S
+url	ú érre éle	S
+usb	ú ésse bê	S
+usb-c	ú ésse bê cê	A
+usb-cs	ú ésse bê cês	A
+user-story	iúzer estóri	A
+user-storys	iúzer estóris	A
+username	iúzerneime	A
+usernames	iúzerneimes	A
+utorrent	ú torrénti	A
+utorrents	ú torréntis	A
+ux	ú xis	S
+uxui	iú équis iú ái	A
+uxuis	iú équis iú áis	A
+vae	vê á í	S
+vagrant	vêigrenti	A
+vagrants	vêigrentis	A
+valorant	valóranti	A
+valorants	valórantis	A
+varnish	várniche	A
+varnishs	várniches	A
+vault	vólti	A
+vaults	vóltis	A
+vc	vê cê	S
+vector	véctor	A
+vectors	véctors	A
+venture-capital	vêntcher cápital	A
+venture-capitals	vêntcher cápitals	A
+venv	vê énv	A
+venvs	vê énvs	A
+vercel	vérsseu	A
+vercels	vérsseus	A
+vga	vê gê á	S
+vibe	váibi	A
+vibe-coding	váibe côudin	A
+vibe-codings	váibe côudins	A
+vibes	váibis	A
+vim	víme	A
+viral	vairáu	A
+virals	vairáus	A
+virtualbox	vertchualbóquis	A
+virtualenv	vertchualénv	A
+virtualenvs	vertchualénvs	A
+virus	vírus	A
+visio	vísio	A
+visios	vísios	A
+visual-studio	víjuau estúdio	A
+visual-studio-code	víjuau estúdio côudi	A
+visual-studio-codes	víjuau estúdio côudis	A
+visual-studios	víjuau estúdios	A
+visualstudio	víjuau estúdio	A
+visualstudios	víjuau estúdios	A
+vit	vê ái tê	S
+vlan	vê éle á ene	S
+vlc	vê éle cê	A
+vlm	vê éle ême	S
+vlog	vlógui	A
+vlogger	vlóguer	A
+vloggers	vlóguers	A
+vlogs	vlóguis	A
+vm	vê ême	S
+vm-cloud	vê ême	A
+vm-clouds	vê êmes	A
+vmware	vê ême uér	A
+vmwares	vê ême uérs	A
+vnc	vê ene cê	S
+voucher	váutcher	A
+vouchers	váutchers	A
+vp	vê pê	S
+vpc	vê pê cê	S
+vpn	vê pê ene	S
+vps	vê pê ésse	S
+vr	vê érre	S
+vr-headset	vê érre réidiséti	A
+vr-headsets	vê érre réidisétis	A
+vram	vê rém	A
+vrams	vê réms	A
+vs-code	vê ésse côudi	A
+vs-codes	vê ésse côudis	A
+vscode	vê ésse côudi	A
+vscodes	vê ésse côudis	A
+vue	viú	S
+vuejs	viú djêi ésse	A
+vulnerability	vâlnerabíliti	A
+vulnerabilitys	vâlnerabílitis	A
+waf	dáblio á éfe	S
+wallet	uóleti	A
+wallets	uóletis	A
+wan	dáblio á ene	S
+wandb	uêinde bê	A
+wandbs	uêinde bês	A
+warcraft	uórcréfti	A
+warcrafts	uórcréftis	A
+warehouse	uérrráus	A
+warning	uórnin	A
+warnings	uórnins	A
+warzone	uórzôni	A
+warzones	uórzônis	A
+watchos	uótchi ô ésse	A
+watercooler	uóter cúler	A
+watercoolers	uóter cúlers	A
+wav	dáblio á vê	S
+waze	uêizi	A
+wazes	uêizis	A
+wearable	uérabou	A
+wearables	uérabous	A
+weaviate	uíviêiti	A
+weaviates	uíviêitis	A
+web	uébi	A
+webapp	uébépi	A
+webapps	uébépis	A
+webcam	uébiquem	A
+webcams	uébiquems	A
+webex	uébex	A
+webhook	uébruqui	A
+webhooks	uébruquis	A
+webinar-live	uebinár	A
+webinar-lives	uebinárs	A
+webmail	uébmeiu	A
+webmails	uébmeius	A
+webp	dáblio é bê pê	S
+webpage	uébpeidji	A
+webpages	uébpeidjis	A
+webserver	uébsérver	A
+webservers	uébsérvers	A
+website	uébsaiti	A
+websites	uébsaitis	A
+websocket	uébsóqueti	A
+websockets	uébsóquetis	A
+webstore	uébestór	A
+webstores	uébestórs	A
+webstorm	uébiestórme	A
+webstorms	uébiestórmes	A
+weights	uêitis	A
+weights-and-biases	uêitis éndi báisis	A
+wetransfer	uítrénsfer	A
+wetransfers	uítrénsfers	A
+whatsapp	uótizápi	A
+whatsapp-web	uótizápi uébi	A
+whatsapp-webs	uótizápi uébis	A
+whatsapps	uótizápis	A
+whisper	uíspêr	A
+whispers	uíspêrs	A
+wi-fi	uáifai	A
+wi-fis	uáifais	A
+widescreen	uáidiscrín	A
+widescreens	uáidiscríns	A
+widget	uídjeti	A
+widgets	uídjetis	A
+wifi	uáifai	S
+wiki	uíqui	A
+wikipedia	uiquipédia	A
+wikipedias	uiquipédias	A
+wikis	uíquis	A
+windows	uíndous	A
+winget	uínguéti	A
+wingets	uínguétis	A
+winrar	uínrár	A
+winrars	uínrárs	A
+wired	uáiredi	A
+wireds	uáiredis	A
+wireframe	uáirefrêimi	A
+wireframes	uáirefrêimis	A
+wireless	uáirleci	A
+wireshark	uáirichárqui	A
+wiresharks	uáirichárquis	A
+wishlist	uíchilísti	A
+wishlists	uíchilístis	A
+witcher	uítcher	A
+witchers	uítchers	A
+wizard	uízard	A
+wlan	dáblio éle á ene	A
+wlans	dáblio éle á enes	A
+woocommerce	uúcomérsi	A
+woocommerces	uúcomérsis	A
+wordpress	uórdipréssi	A
+wordpress-php	uórdipréssi pê agá pê	A
+wordpress-phps	uórdipréssi pê agá pês	A
+workaround	uórquiaráwndi	A
+workarounds	uórquiaráwndis	A
+workday	uórquedei	A
+workdays	uórquedeis	A
+workflow	uórqueflôu	A
+workflows	uórqueflôus	A
+workshop	uórquichópi	A
+workshops	uórquichópis	A
+worm	uórmi	A
+worms	uórmis	A
+wow	uáu	S
+wsl	dáblio ésse éle	S
+x86	xis oitenta e seis	S
+xamarin	zémarin	A
+xamarins	zémarins	A
+xbox	ékisbóqui	A
+xbox-live	ékisbóqui láivi	A
+xbox-lives	ékisbóqui láivis	A
+xcode	xis côudi	A
+xcodes	xis côudis	A
+xd	xis dê	S
+xeon	zíon	A
+xeons	zíons	A
+xgboost	équis gui busti	A
+xgboosts	équis gui bustis	A
+xiaomi	chiaômi	A
+xiaomis	chiaômis	A
+xls	xis éle ésse	S
+xlsx	xis éle ésse xis	S
+xml	xis ême éle	S
+xr	équis ár	S
+xss	xis ésse ésse	S
+yagni	iágni	A
+yagnis	iágnis	A
+yahoo	iarrú	A
+yahoos	iarrús	A
+yaml	iémou	S
+yandex	iêndex	A
+yml	iémou	S
+youtube	iutúbi	A
+youtuber	iutúber	A
+youtubers	iutúbers	A
+youtubes	iutúbis	A
+yum	iâm	S
+zabbix	zábix	A
+zbrush	zebrâchi	A
+zbrushs	zebrâchis	A
+zelda	zélda	A
+zeldas	zéldas	A
+zendesk	zêndésqui	A
+zendesks	zêndésquis	A
+zero-day	zírô dêi	A
+zero-days	zírô dêis	A
+zero-trust	zírô trâsti	A
+zero-trusts	zírô trâstis	A
+zip	zípi	A
+zookeeper	zúquiper	A
+zookeepers	zúquipers	A
+zoom	zúmi	A
+zooms	zúmis	A
+zsh	zê ésse agá	S

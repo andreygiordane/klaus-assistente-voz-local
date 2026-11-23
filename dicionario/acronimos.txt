@@ -1,0 +1,336 @@
+# Siglas: soletradas letra a letra, a menos que haja "=falado". Só valem quando escritas em MAIÚSCULAS (ex.: PDF, GPU).
+PDF
+DOC
+DOCX
+XLS
+XLSX
+PPT
+PPTX
+TXT
+RTF
+ODT
+JPG
+JPEG
+PNG
+BMP
+SVG
+TIFF
+WEBP
+MP3
+MP4
+AVI
+MKV
+MOV
+WAV
+FLAC
+AAC
+OGG
+ISO
+EXE
+MSI
+DLL
+APK
+IPA
+DMG
+TAR
+GZ
+BAT
+CMD
+SH
+PS1
+URL
+URI
+DNS
+IP
+TCP
+UDP
+HTTP
+HTTPS
+FTP
+SSH
+SSL
+TLS
+VPN
+LAN
+WAN
+VLAN
+SMTP
+IMAP
+POP
+DHCP
+NAT
+CPU
+GPU
+APU
+NPU
+TPU
+RAM
+ROM
+SSD
+HDD
+HD
+NVMe=ene vê ême í
+USB
+HDMI
+VGA
+DVI
+RGB=érre gê bê
+LED
+OLED=ôuled
+LCD
+BIOS=báios
+UEFI=iúefi
+CMOS=cê ême ô ésse
+PCI
+PCIE=pê cê í í
+AGP
+SATA=sáta
+SCSI=escázi
+RAID=rêidi
+NAS
+SAN
+SD
+GPS
+RFID
+NFC
+LTE=éle tê í
+GSM
+SIM=síme
+EDGE=édji
+WIFI=uáifai
+IOT
+IA
+AI
+ML
+DL
+LLM
+SLM
+NLP
+OCR
+TTS
+STT
+ASR
+GAN
+CNN
+RNN
+GPT
+AGI
+API
+SDK
+IDE=ái dê í
+CLI=cê éle ái
+GUI=guí
+TUI=tê u ái
+UI
+UX
+OS
+SO
+VM
+VMs
+JIT
+AOT
+CI
+CD
+CICD=cê ái cê dê
+TDD
+BDD
+DDD
+MVC
+MVP
+ORM
+CRUD=crâdi
+REST=rést
+SOAP=sôupi
+JSON=djêison
+XML
+YAML=iémou
+TOML=tómou
+HTML
+CSS
+SQL=ésse quê éle
+NoSQL=nôu ésse quê éle
+JS=djêi ésse
+TS=tê ésse
+PHP
+PY=pái
+JVM=djêi vê ême
+JDK=djêi dê cá
+JRE=djêi érre í
+NPM
+CDN
+DOM=dóm
+AJAX=eidjécs
+SPA=ésse pê á
+SSR=ésse ésse érre
+SSG=ésse ésse gê
+PWA=pê dáblio á
+SEO=ésse í ô
+SEM=ésse í ême
+SMM=ésse ême ême
+PPC=pê pê cê
+CPC
+CPM
+CTR
+CRO=cê érre ô
+KPI
+ROI
+OKR
+CRM
+ERP
+CMS
+LMS
+HR=êitch ár
+RH=érre agá
+BI
+ETL
+ELT
+SLA
+SLO
+SLI
+RTO
+RPO
+MTTR=ême tê tê érre
+MTBF=ême tê bê éfe
+DDoS=dê dê ó ésse
+DoS=dê ó ésse
+WAF
+IDS=ái dê ésse
+IPS=ái pê ésse
+SIEM=síme
+SOC=sóqui
+NOC=nóqui
+CVE
+OWASP=ôuásp
+CTF
+MFA
+2FA
+OTP
+SSO
+SAML=sémol
+JWT
+CORS=córs
+CSRF
+XSS
+RSA
+AES
+SHA
+MD5
+PGP
+GPG
+HSM
+TPM=tê pê ême
+AWS
+GCP
+SaaS=sás
+PaaS=pás
+IaaS=ái ás
+FaaS=fás
+EC2
+S3
+IAM=ái ei ême
+VPC
+RDS
+EKS
+ECS
+GKE
+AKS
+K8S=cá oito és
+CNCF
+CPUs
+GPUs
+IDEs
+APIs
+SDKs
+URLs
+PCs=pê cês
+PC=pê cê
+TI=tê í
+TIC=tê í cê
+MIT=ême ái tê
+IEEE=ái tripo í
+ISO-ISO=í ésse ô
+ABNT=á bê ene tê
+LGPD=éle gê pê dê
+GDPR=gê dê pê érre
+HIPAA=ripa
+PCI-DSS=pê cê ái dê ésse ésse
+ISO27001=í ésse ô vinte e sete mil e um
+CEO=cê í ô
+CTO=cê tê ô
+CFO=cê éfe ô
+COO=cê ô ô
+CMO=cê ême ô
+CIO=cê ái ô
+CISO=cê ái ésse ô
+PO=pê ô
+PM=pê ême
+QA=quiú êi
+UX/UI=iú équis iú ái
+UAT=iú êi tê
+POC=pê ô cê
+MVP-tech=ême vê pê
+B2B=bi tu bi
+B2C=bi tu ci
+SaaS-tech=sás
+ARR
+MRR
+CAC
+LTV
+FAQ=éfe êi quiú
+FYI=éfe uai ái
+ASAP=êisap
+DIY=dê ái uai
+BTW=bi tê dáblio
+IMO=ái ême ô
+TBD=tê bê dê
+ETA=í tê êi
+EOD=í ô dê
+OOO=ô ô ô
+TL;DR=ti éle dê érre
+AFK
+GG
+OP
+NPC=ene pê cê
+FPS=éfe pê ésse
+RPG
+MMO
+MOBA=môba
+DLC
+VR=vê érre
+AR=êi ár
+XR=équis ár
+MR=ême ár
+HDR=agá dê érre
+FHD=éfe agá dê
+UHD=iú agá dê
+QHD=quiú agá dê
+4K=quatro cá
+8K=oito cá
+2K=dois cá
+5G=cinco gê
+4G=quatro gê
+3G=três gê
+2G=dois gê
+3D=três dê
+2D=dois dê
+HD-ready=agá dê rédi
+dpi=dê pê ái
+DPI=dê pê ái
+PPI=pê pê ái
+FPS-game=éfe pê ésse
+RPM=érre pê ême
+MHz=méga érts
+GHz=guiga érts
+kHz=quilo érts
+Hz=érts
+KB=quilobáite
+MB=megabáite
+GB=guigabáite
+TB=terabáite
+PB=petabáite
+Kbps=quilobítis por segundo
+Mbps=megabítis por segundo
+Gbps=guigabítis por segundo
+kbps=quilobítis por segundo
+mbps=megabítis por segundo
+gbps=guigabítis por segundo

@@ -1,0 +1,16 @@
+# Ambientes e caches
+.venv/
+.venv_tts/
+__pycache__/
+*.pyc
+
+# Dados pessoais e privados: NUNCA versionar
+dados/
+voz/
+modelos/
+*.wav
+*.bak
+*.bak_manual
+*.log
+*.err
+.env

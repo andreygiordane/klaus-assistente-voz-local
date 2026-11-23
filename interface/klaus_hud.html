@@ -1,0 +1,839 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>KLAUS</title>
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@500;700;900&family=Rajdhani:wght@400;500;600;700&display=swap" rel="stylesheet" />
+<style>
+:root{
+  --bg:#020813; --ciano:#2fd4ff; --ciano-rgb:47,212,255; --azul:#1a6bff; --texto:#d8f6ff; --mudo:#6ea8c9;
+  --borda:rgba(47,212,255,.30); --painel:rgba(4,16,34,.66); --ambar:#ffb84a; --verde:#2be37b; --vermelho:#ff4d63;
+  --fonte-titulo:'Orbitron','Segoe UI',system-ui,sans-serif; --fonte:'Rajdhani','Segoe UI',system-ui,sans-serif;
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html,body{width:100%;height:100%;background:var(--bg);color:var(--texto);font-family:var(--fonte);overflow:hidden;
+  user-select:none;-webkit-user-select:none;cursor:default}
+body{background:
+  radial-gradient(ellipse at 50% 42%, rgba(26,107,255,.20) 0%, rgba(2,8,19,0) 60%),
+  radial-gradient(ellipse at 50% 100%, rgba(47,212,255,.10) 0%, rgba(2,8,19,0) 50%), var(--bg)}
+body::after{content:"";position:fixed;inset:0;pointer-events:none;z-index:30;opacity:.35;
+  background:repeating-linear-gradient(to bottom,transparent 0 2px,rgba(0,0,0,.16) 3px 4px)}
+#app{position:relative;z-index:1;display:grid;height:100vh;min-height:560px;gap:14px;padding:14px 18px 12px;
+  grid-template-columns:minmax(300px,24%) 1fr minmax(300px,24%);
+  grid-template-rows:auto 1fr auto;grid-template-areas:"topo topo topo" "esq centro dir" "rodape rodape rodape"}
+/* ---------- painéis ---------- */
+.painel{position:relative;background:var(--painel);border:1px solid var(--borda);backdrop-filter:blur(8px);
+  clip-path:polygon(14px 0,100% 0,100% calc(100% - 14px),calc(100% - 14px) 100%,0 100%,0 14px);
+  box-shadow:inset 0 0 26px rgba(var(--ciano-rgb),.06)}
+.painel::before{content:"";position:absolute;left:0;top:0;width:26px;height:26px;pointer-events:none;
+  border-top:2px solid var(--ciano);border-left:2px solid var(--ciano);filter:drop-shadow(0 0 5px rgba(var(--ciano-rgb),.9))}
+.painel::after{content:"";position:absolute;right:0;bottom:0;width:26px;height:26px;pointer-events:none;
+  border-bottom:2px solid var(--ciano);border-right:2px solid var(--ciano);filter:drop-shadow(0 0 5px rgba(var(--ciano-rgb),.9))}
+.painel h2{font-family:var(--fonte);font-weight:700;font-size:15px;letter-spacing:.09em;text-transform:uppercase;
+  display:flex;align-items:center;gap:8px;margin-bottom:10px;color:#e9fbff}
+.painel h2 svg{width:18px;height:18px;stroke:var(--ciano);fill:none;stroke-width:2;flex:none}
+.pad{padding:14px 16px}
+.mudo{color:var(--mudo)}
+/* ---------- topo ---------- */
+#topo{grid-area:topo;display:grid;grid-template-columns:minmax(300px,24%) 1fr auto auto;gap:14px;align-items:center}
+#marca{display:flex;align-items:center;gap:14px;padding:10px 18px}
+#marca svg{width:54px;height:54px;flex:none;filter:drop-shadow(0 0 8px rgba(var(--ciano-rgb),.5))}
+#marca b{display:block;font-family:var(--fonte-titulo);font-size:34px;letter-spacing:.14em;line-height:1;color:#f2fbff}
+#marca small{display:block;margin-top:5px;font-size:13px;letter-spacing:.16em;color:#bfe9ff}
+#status{display:flex;align-items:center;gap:12px;padding:8px 22px;justify-self:start;min-width:300px}
+#luz{width:15px;height:15px;border-radius:50%;background:var(--vermelho);box-shadow:0 0 12px var(--vermelho);flex:none}
+#status.on #luz{background:var(--verde);box-shadow:0 0 12px var(--verde)}
+#status b{display:block;font-size:19px;color:var(--vermelho);line-height:1.1}
+#status.on b{color:var(--verde)}
+#status span{font-size:15px;color:#d6efff}
+#relogio{display:contents}
+#data{display:flex;align-items:center;gap:10px;font-size:17px;white-space:nowrap;color:#d8f2ff;padding:6px 14px;border:1px solid var(--borda);
+  clip-path:polygon(10px 0,100% 0,100% calc(100% - 10px),calc(100% - 10px) 100%,0 100%,0 10px)}
+#data svg{width:22px;height:22px;stroke:var(--ciano);fill:none;stroke-width:1.8}
+#hora{white-space:nowrap;font-family:var(--fonte-titulo);font-size:34px;font-weight:700;letter-spacing:.04em;color:#fff;
+  text-shadow:0 0 14px rgba(var(--ciano-rgb),.5);padding:2px 12px;border:1px solid var(--borda);
+  clip-path:polygon(10px 0,100% 0,100% calc(100% - 10px),calc(100% - 10px) 100%,0 100%,0 10px)}
+/* ---------- colunas ---------- */
+#esq,#dir{display:flex;flex-direction:column;gap:12px;min-height:0}
+#esq{grid-area:esq}#dir{grid-area:dir}
+#centro{grid-area:centro;position:relative;display:flex;flex-direction:column;align-items:center;min-height:0}
+/* medidores */
+#medidores{display:grid;grid-template-columns:1fr 1fr;gap:6px 4px}
+.medidor{display:flex;flex-direction:column;align-items:center;text-align:center}
+.anel{position:relative;width:96px;height:96px}
+.anel svg{width:100%;height:100%;transform:rotate(-90deg)}
+.anel circle{fill:none;stroke-width:7;stroke-linecap:round}
+.anel .fundo{stroke:rgba(110,168,201,.18)}
+.anel .valor{stroke:var(--c,var(--ciano));filter:drop-shadow(0 0 5px var(--c,var(--ciano)));transition:stroke-dashoffset .6s ease}
+.anel .rotulo{position:absolute;inset:0;display:flex;flex-direction:column;align-items:center;justify-content:center;line-height:1.05}
+.anel .rotulo small{font-size:13px;color:#e4f6ff;letter-spacing:.06em}
+.anel .rotulo b{font-size:24px;font-weight:600;color:#fff}
+.medidor .sub{font-size:13px;color:#cfe9fb;margin-top:3px;line-height:1.2}
+#rede{margin-top:6px;padding-top:8px;border-top:1px solid rgba(47,212,255,.18)}
+#rede .linha{display:flex;gap:18px;font-size:14px;margin:4px 0 2px;align-items:center}
+#rede svg{width:14px;height:14px;stroke:var(--ciano);fill:none;stroke-width:2}
+#grafico{width:100%;height:46px;display:block}
+/* resposta */
+#resposta .corpo{display:flex;gap:12px;align-items:flex-start;max-height:150px;overflow:hidden}
+#resposta .avatar{width:48px;height:48px;border-radius:50%;border:2px solid var(--ciano);flex:none;display:grid;place-items:center;
+  box-shadow:0 0 10px rgba(var(--ciano-rgb),.4);background:rgba(2,8,19,.7)}
+#resposta .avatar svg{width:28px;height:28px}
+#resposta .balao{flex:1;background:rgba(10,28,52,.7);border-radius:10px;padding:8px 12px 18px;position:relative;min-height:52px}
+#resposta .quem{font-size:12px;color:var(--mudo);margin-bottom:2px;letter-spacing:.05em}
+#resposta .txt{font-size:17px;line-height:1.25;color:#fff;max-height:88px;overflow:hidden}
+#resposta .hr{position:absolute;right:10px;bottom:4px;font-size:11px;color:var(--mudo)}
+/* controles */
+#controles{display:grid;grid-template-columns:repeat(6,1fr);gap:5px;padding:10px}
+.botao{display:flex;flex-direction:column;align-items:center;gap:5px;padding:8px 2px;background:rgba(var(--ciano-rgb),.07);
+  border:1px solid rgba(var(--ciano-rgb),.28);color:#e1f6ff;font:600 13px var(--fonte);cursor:pointer;transition:.18s;border-radius:6px}
+.botao:hover{background:rgba(var(--ciano-rgb),.2);border-color:var(--ciano);box-shadow:0 0 12px rgba(var(--ciano-rgb),.4)}
+.botao svg{width:24px;height:24px;stroke:var(--ciano);fill:none;stroke-width:1.8}
+.botao.ativo{background:rgba(var(--ciano-rgb),.22);border-color:var(--ciano)}
+.botao.off svg{stroke:var(--vermelho)}
+/* visão */
+#visaoLinha{display:flex;flex-wrap:wrap;gap:8px;align-items:center;margin-bottom:6px}
+.chip{display:inline-block;padding:3px 10px;border-radius:999px;font-size:13px;border:1px solid var(--borda);background:rgba(var(--ciano-rgb),.08);color:#d8f2ff}
+#camObjetos{display:flex;flex-wrap:wrap;gap:5px;margin:0 0 6px;max-height:50px;overflow:hidden}
+#camObjetos .chip{font-size:12px;padding:1px 8px;border-color:rgba(255,184,74,.7);color:#ffd9a0}
+.chip.on{border-color:var(--verde);color:var(--verde)}.chip.pessoa{border-color:var(--ciano);color:#fff}
+#camAmbiente{font-size:15px;line-height:1.25;max-height:46px;overflow:hidden}
+#radar{width:100%;height:64px;display:block;margin:2px 0 6px;border:1px solid var(--borda);border-radius:6px;background:rgba(2,10,22,.6)}
+/* progresso de carregamento (aparece no lugar do nome enquanto o Klaus inicia) */
+#carga{position:absolute;left:50%;bottom:10px;transform:translateX(-50%);width:min(470px,88%);display:none;pointer-events:none;text-align:left;
+  background:rgba(2,12,26,.72);border:1px solid var(--borda);border-radius:10px;padding:12px 16px 10px;backdrop-filter:blur(4px)}
+body[data-estado="LOADING"] #carga{display:block}
+body[data-estado="LOADING"] #identidade{display:none}
+#carga .cTitulo{font-family:var(--fonte-titulo);font-size:12px;letter-spacing:.22em;color:var(--ciano);margin-bottom:8px}
+#carga .cBarra{height:6px;border-radius:4px;background:rgba(var(--ciano-rgb),.16);overflow:hidden}
+#carga .cBarra i{display:block;height:100%;width:0;border-radius:4px;background:linear-gradient(90deg,var(--azul),var(--ciano));box-shadow:0 0 12px rgba(var(--ciano-rgb),.9)}
+#carga .cLinha{display:flex;justify-content:space-between;margin:7px 0 8px;font-size:14px;color:#d8f2ff}
+#carga .cLinha b{font-family:var(--fonte-titulo);color:var(--ciano)}
+#cPassos{list-style:none;margin:0;padding:0;display:grid;grid-template-columns:1fr 1fr;gap:3px 14px;font-size:12.5px;color:var(--mudo)}
+#cPassos li::before{content:"○  ";color:var(--mudo)}
+#cPassos li.feito{color:#9fe8b8}#cPassos li.feito::before{content:"✓  ";color:#5cf0a0}
+#cPassos li.atual{color:#fff}#cPassos li.atual::before{content:"◉  ";color:var(--ciano);animation:pisca 1s infinite}
+@keyframes pisca{50%{opacity:.25}}
+/* interface limpa: só o Klaus; clicar na tela mostra os menus (e eles se escondem sozinhos) */
+#topo,#esq,#dir,#rodape,#vozbar{transition:opacity .4s ease,transform .4s ease}
+body.limpo #centro{position:fixed;inset:0;z-index:1;pointer-events:none}
+body.limpo #vozbar{position:absolute;left:50%;bottom:44px;margin:0;width:min(92%,720px);transform:translateX(-50%)}
+body.limpo #identidade{bottom:34px;transition:bottom .4s ease}
+body.limpo.menus #identidade{bottom:142px}
+body.limpo #rosto{pointer-events:auto;cursor:pointer}
+body.limpo #topo,body.limpo #esq,body.limpo #dir,body.limpo #rodape{position:relative;z-index:5}
+body.limpo:not(.menus) #topo{opacity:0;pointer-events:none;transform:translateY(-18px)}
+body.limpo:not(.menus) #esq{opacity:0;pointer-events:none;transform:translateX(-34px)}
+body.limpo:not(.menus) #dir{opacity:0;pointer-events:none;transform:translateX(34px)}
+body.limpo:not(.menus) #rodape{opacity:0;pointer-events:none}
+body.limpo:not(.menus) #vozbar{opacity:0;transform:translate(-50%,20px)}
+body.limpo.menus #vozbar{pointer-events:auto}
+body.limpo.offline #topo{opacity:1;pointer-events:auto;transform:none}
+#dicaLimpa{position:fixed;left:0;right:0;bottom:16px;text-align:center;font-size:13px;letter-spacing:.22em;color:var(--mudo);opacity:0;pointer-events:none;z-index:6;
+  animation:dica 10s ease 2.5s forwards}
+body.menus #dicaLimpa{display:none}
+@keyframes dica{0%{opacity:0}15%{opacity:.85}80%{opacity:.85}100%{opacity:0}}
+/* modo sério: a interface toda passa para o vermelho */
+body.serio{--ciano:#ff3b4e;--ciano-rgb:255,59,78;--borda:rgba(255,59,78,.34);--azul:#ff6a00}
+body.serio{background:radial-gradient(ellipse at 50% 42%, rgba(255,40,60,.17) 0%, rgba(2,8,19,0) 60%),radial-gradient(ellipse at 50% 100%, rgba(255,59,78,.10) 0%, rgba(2,8,19,0) 50%),var(--bg)}
+#bModo.ativo{background:rgba(255,59,78,.25);border-color:#ff3b4e}
+/* ---------- centro ---------- */
+#palco{position:relative;flex:1;width:100%;min-height:0}
+#rosto{position:absolute;inset:0;width:100%;height:100%}
+#identidade{position:absolute;left:0;right:0;bottom:6px;text-align:center;pointer-events:none}
+#identidade b{display:block;font-family:var(--fonte-titulo);font-size:clamp(26px,3.4vw,46px);letter-spacing:.16em;color:#eaf8ff;
+  text-shadow:0 0 18px rgba(var(--ciano-rgb),.6)}
+#identidade span{display:block;margin-top:4px;font-size:19px;color:#d8f2ff}
+#vozbar{position:relative;width:min(100%,720px);height:84px;margin:8px 0 2px;display:flex;align-items:center;justify-content:center;
+  border:2px solid rgba(var(--ciano-rgb),.55);border-radius:60px;background:rgba(3,12,28,.7);
+  box-shadow:0 0 22px rgba(var(--ciano-rgb),.25), inset 0 0 20px rgba(var(--ciano-rgb),.08)}
+#onda{position:absolute;inset:0;width:100%;height:100%}
+#vozbar .lado{position:absolute;top:50%;transform:translateY(-50%);font-size:15px;color:#e8f7ff;z-index:2}
+#vozbar .l1{left:30px}#vozbar .l2{right:30px;color:#d8f2ff}
+#mic{position:relative;z-index:3;width:74px;height:74px;border-radius:50%;border:3px solid var(--ciano);cursor:pointer;
+  background:radial-gradient(circle,rgba(26,107,255,.35),rgba(3,12,28,.95));display:grid;place-items:center;
+  box-shadow:0 0 22px rgba(var(--ciano-rgb),.55);transition:.2s}
+#mic svg{width:34px;height:34px;stroke:#eaffff;fill:none;stroke-width:1.8}
+#mic:hover{transform:scale(1.06)}
+body[data-estado="LISTENING"] #mic{border-color:#5cf0ff;box-shadow:0 0 34px rgba(92,240,255,.9)}
+body[data-estado="PROCESSING"] #mic{border-color:var(--ambar);box-shadow:0 0 30px rgba(255,184,74,.8)}
+/* ---------- indicador: o Klaus está trabalhando ---------- */
+#trabalho{position:fixed;left:50%;top:26px;transform:translate(-50%,-30px);z-index:60;display:flex;align-items:center;gap:12px;padding:10px 20px 13px;
+  border-radius:40px;background:rgba(3,12,28,.9);border:1px solid rgba(255,184,74,.75);box-shadow:0 0 26px rgba(255,184,74,.38);color:#fff1d6;
+  font-size:15px;opacity:0;pointer-events:none;transition:opacity .35s,transform .35s;overflow:hidden;max-width:90vw}
+body.trabalhando #trabalho{opacity:1;transform:translate(-50%,0)}
+#trabalho .giro{flex:none;width:20px;height:20px;border-radius:50%;border:3px solid rgba(255,184,74,.25);border-top-color:#ffb84a;animation:trGiro .9s linear infinite}
+@keyframes trGiro{to{transform:rotate(360deg)}}
+#trabalho b{display:block;font-weight:600}#trabalho span{font-size:12px;opacity:.8}
+#trabalho .barra{position:absolute;left:0;right:0;bottom:0;height:3px;background:rgba(255,184,74,.15)}
+#trabalho .barra i{position:absolute;top:0;bottom:0;width:35%;background:#ffb84a;animation:trCorre 1.4s ease-in-out infinite}
+@keyframes trCorre{0%{left:-35%}100%{left:100%}}
+/* ---------- direita ---------- */
+#clima .linha{display:flex;align-items:center;gap:14px}
+#clima .icone{width:92px;height:70px;flex:none}
+#clima .temp{font-family:var(--fonte-titulo);font-size:42px;font-weight:500;line-height:1}
+#clima .cidade{font-size:16px;color:#d8f2ff;margin-top:4px}
+#clima .lado{margin-left:auto;text-align:left;font-size:16px;line-height:1.5;color:#e4f6ff}
+#atalhos .grade{display:grid;grid-template-columns:repeat(4,1fr);gap:8px}
+.atalho{display:flex;flex-direction:column;align-items:center;gap:5px;padding:9px 2px 7px;font-size:13px;color:#e8f7ff;
+  background:rgba(10,28,52,.7);border:1px solid rgba(var(--ciano-rgb),.22);border-radius:8px;cursor:pointer;transition:.18s}
+.atalho:hover{border-color:var(--ciano);box-shadow:0 0 12px rgba(var(--ciano-rgb),.4);transform:translateY(-1px)}
+.atalho svg{width:34px;height:34px}
+#tarefas ul{list-style:none;display:flex;flex-direction:column;gap:7px;max-height:150px;overflow:hidden}
+#tarefas li{display:flex;align-items:center;gap:10px;font-size:16px;cursor:pointer}
+#tarefas .caixa{width:19px;height:19px;border:1.5px solid var(--mudo);border-radius:3px;flex:none;display:grid;place-items:center}
+#tarefas li.feito{color:var(--mudo);text-decoration:line-through}
+#tarefas li.feito .caixa{border-color:var(--ciano);background:rgba(var(--ciano-rgb),.18)}
+#tarefas .dica{font-size:12px;color:var(--mudo);margin-top:8px}
+#apps .item{display:flex;align-items:center;gap:10px;font-size:15px;margin:5px 0}
+#apps .item i{width:8px;height:8px;border-radius:50%;background:var(--verde);box-shadow:0 0 6px var(--verde);flex:none}
+#apps .item span{margin-left:auto;color:#d3ebfa}
+#apps .vazio,#tarefas .vazio{color:var(--mudo);font-size:14px}
+/* ---------- rodapé ---------- */
+#rodape{grid-area:rodape;text-align:center;font-size:13px;letter-spacing:.18em;color:#bfe3f5;padding-top:2px}
+#rodape i{display:inline-block;margin:0 10px;color:var(--ciano);font-style:normal}
+@media (max-width:1100px){
+  html,body{overflow:auto}
+  #app{grid-template-columns:1fr;grid-template-areas:"topo" "centro" "esq" "dir" "rodape";height:auto}
+  #topo{grid-template-columns:1fr}
+  #palco{min-height:420px}
+}
+</style>
+</head>
+<body class="limpo" data-estado="IDLE">
+<div id="trabalho"><i class="giro"></i><div><b id="trTitulo">Trabalhando...</b><span id="trTempo"></span></div><div class="barra"><i></i></div></div>
+<div id="dicaLimpa">CLIQUE NA TELA PARA ABRIR OS MENUS</div>
+<div id="app">
+  <!-- ======== TOPO ======== -->
+  <div id="topo">
+    <div id="marca" class="painel">
+      <svg viewBox="0 0 64 64"><defs><linearGradient id="gk" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#ffffff"/><stop offset=".5" stop-color="#9fb4c4"/><stop offset="1" stop-color="#e8f4ff"/></linearGradient></defs>
+        <path d="M10 6h13v22L44 6h17L35 33l27 25H44L23 38v20H10z" fill="url(#gk)"/></svg>
+      <div><b>KLAUS</b><small>SEU ASSISTENTE PESSOAL DE IA</small></div>
+    </div>
+    <div id="status" class="painel"><div id="luz"></div><div><b id="statusTitulo">Desconectado</b><span id="statusTexto">Abra o iniciar_klaus.bat</span></div></div>
+    <div id="relogio"><div id="data"><svg viewBox="0 0 24 24"><rect x="3" y="5" width="18" height="16" rx="2"/><path d="M3 10h18M8 3v4M16 3v4"/></svg><span id="dataTxt">--</span></div><div id="hora">--:--:--</div></div>
+  </div>
+
+  <!-- ======== ESQUERDA ======== -->
+  <aside id="esq">
+    <section class="painel pad" id="monitor">
+      <h2><svg viewBox="0 0 24 24"><path d="M3 12h4l2-6 4 12 2-6h6"/></svg>Monitor do sistema</h2>
+      <div id="medidores">
+        <div class="medidor" id="m-cpu"><div class="anel"><svg viewBox="0 0 100 100"><circle class="fundo" cx="50" cy="50" r="42"/><circle class="valor" cx="50" cy="50" r="42" style="--c:#2fd4ff"/></svg><div class="rotulo"><small>CPU</small><b>--</b></div></div><div class="sub">--</div></div>
+        <div class="medidor" id="m-gpu"><div class="anel"><svg viewBox="0 0 100 100"><circle class="fundo" cx="50" cy="50" r="42"/><circle class="valor" cx="50" cy="50" r="42" style="--c:#5b8dff"/></svg><div class="rotulo"><small>GPU</small><b>--</b></div></div><div class="sub">--</div></div>
+        <div class="medidor" id="m-ram"><div class="anel"><svg viewBox="0 0 100 100"><circle class="fundo" cx="50" cy="50" r="42"/><circle class="valor" cx="50" cy="50" r="42" style="--c:#2fd4ff"/></svg><div class="rotulo"><small>RAM</small><b>--</b></div></div><div class="sub">--</div></div>
+        <div class="medidor" id="m-disco"><div class="anel"><svg viewBox="0 0 100 100"><circle class="fundo" cx="50" cy="50" r="42"/><circle class="valor" cx="50" cy="50" r="42" style="--c:#b07bff"/></svg><div class="rotulo"><small>DISCO</small><b>--</b></div></div><div class="sub">--</div></div>
+      </div>
+      <div id="rede"><h2 style="margin:0 0 2px;font-size:14px"><svg viewBox="0 0 24 24"><path d="M12 3v12M7 10l5 5 5-5M4 20h16"/></svg>Rede</h2>
+        <div class="linha"><span>↓ <b id="rDown">0.0</b> Mbps</span><span>↑ <b id="rUp">0.0</b> Mbps</span></div>
+        <canvas id="grafico" width="320" height="46"></canvas></div>
+    </section>
+
+    <section class="painel pad" id="resposta">
+      <h2><svg viewBox="0 0 24 24"><path d="M3 12h4l2-6 4 12 2-6h6"/></svg>Klaus responde</h2>
+      <div class="corpo"><div class="avatar"><svg viewBox="0 0 64 64"><path d="M10 6h13v22L44 6h17L35 33l27 25H44L23 38v20H10z" fill="url(#gk)"/></svg></div>
+        <div class="balao"><div class="quem" id="respQuem">KLAUS</div><div class="txt" id="respTxt">Diga "Klaus" para começar.</div><div class="hr" id="respHora"></div></div></div>
+    </section>
+
+    <section class="painel pad" id="visao">
+      <h2><svg viewBox="0 0 24 24"><path d="M2 12s4-7 10-7 10 7 10 7-4 7-10 7S2 12 2 12z"/><circle cx="12" cy="12" r="3"/></svg>Visão</h2>
+      <div id="visaoLinha"><span class="chip" id="camEstado">Câmera desligada</span><span id="camPessoas"></span></div>
+      <canvas id="radar" width="320" height="110"></canvas>
+      <div id="camObjetos"></div>
+      <div id="camAmbiente" class="mudo">Diga: "Klaus, o que você está vendo?"</div>
+    </section>
+
+    <section class="painel" id="controles">
+      <button class="botao" id="bOuvir" title="Escutar agora, sem dizer o nome"><svg viewBox="0 0 24 24"><rect x="9" y="3" width="6" height="12" rx="3"/><path d="M5 11a7 7 0 0 0 14 0M12 18v3"/></svg>Ouvir</button>
+      <button class="botao" id="bParar" title="Interromper a fala"><svg viewBox="0 0 24 24"><rect x="6" y="6" width="12" height="12" rx="2"/></svg>Parar</button>
+      <button class="botao ativo" id="bVoz" title="Ligar ou desligar a voz do Klaus"><svg viewBox="0 0 24 24"><path d="M11 5 6 9H3v6h3l5 4zM15.5 8.5a5 5 0 0 1 0 7M18.5 5.5a9 9 0 0 1 0 13"/></svg>Voz</button>
+      <button class="botao" id="bCamera" title="Ligar ou desligar o acompanhamento pela webcam"><svg viewBox="0 0 24 24"><path d="M3 8a2 2 0 0 1 2-2h2l1.500-2h7L17 6h2a2 2 0 0 1 2 2v10a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/><circle cx="12" cy="13" r="3.500"/></svg>Câmera</button>
+      <button class="botao" id="bModo" title="Modo sério: núcleo vermelho, voz mais grave e respostas formais"><svg viewBox="0 0 24 24"><path d="M12 3 4 6v6c0 4.500 3.200 7.600 8 9 4.800-1.400 8-4.500 8-9V6z"/><path d="M12 8v5M12 16v.5"/></svg>Sério</button>
+      <button class="botao" id="bLimpar" title="Esquecer a conversa"><svg viewBox="0 0 24 24"><path d="M4 7h16M9 7V4h6v3M6 7l1 13h10l1-13"/></svg>Limpar</button>
+    </section>
+  </aside>
+
+  <!-- ======== CENTRO ======== -->
+  <main id="centro">
+    <div id="palco"><canvas id="rosto"></canvas>
+      <div id="identidade"><b>KLAUS</b><span id="frase">Sempre aqui.</span></div>
+      <div id="carga"><div class="cTitulo">INICIALIZANDO SISTEMAS</div><div class="cBarra"><i id="cPreenche"></i></div>
+        <div class="cLinha"><span id="cEtapa">Iniciando...</span><b id="cPct">0%</b></div><ul id="cPassos"></ul></div></div>
+    <div id="vozbar"><canvas id="onda"></canvas><span class="lado l1" id="vbEsq">Fale comigo...</span>
+      <button id="mic" title="Clique para falar sem dizer o nome"><svg viewBox="0 0 24 24"><rect x="9" y="3" width="6" height="12" rx="3"/><path d="M5 11a7 7 0 0 0 14 0M12 18v3"/></svg></button>
+      <span class="lado l2" id="vbDir">Diga "Klaus"</span></div>
+  </main>
+
+  <!-- ======== DIREITA ======== -->
+  <aside id="dir">
+    <section class="painel pad" id="clima">
+      <h2><svg viewBox="0 0 24 24"><path d="M7 18a4 4 0 0 1 0-8 5 5 0 0 1 9.6-1A4 4 0 0 1 17 18z"/></svg>Clima</h2>
+      <div class="linha"><svg class="icone" id="climaIcone" viewBox="0 0 92 70"></svg>
+        <div><div class="temp" id="climaTemp">--°C</div><div class="cidade" id="climaCidade">sem cidade</div></div>
+        <div class="lado"><div id="climaDesc">--</div><div>Máx: <span id="climaMax">--</span>°C</div><div>Mín: <span id="climaMin">--</span>°C</div></div></div>
+    </section>
+    <section class="painel pad" id="atalhos"><h2><svg viewBox="0 0 24 24"><path d="M3 11 12 3l9 8v10H3z"/></svg>Atalhos rápidos</h2><div class="grade" id="grade"></div></section>
+    <section class="painel pad" id="tarefas"><h2><svg viewBox="0 0 24 24"><rect x="5" y="4" width="14" height="17" rx="2"/><path d="M9 4v3h6V4M9 12l2 2 4-4"/></svg>Tarefas</h2>
+      <ul id="listaTarefas"><li class="vazio">Nenhuma tarefa.</li></ul><div class="dica">Diga: "Klaus, anote comprar café".</div></section>
+    <section class="painel pad" id="apps"><h2 style="margin-bottom:6px">Aplicações em execução</h2><div id="listaApps"><div class="vazio">--</div></div></section>
+  </aside>
+
+  <div id="rodape">KLAUS <i>•</i> INTELIGÊNCIA <i>•</i> PRODUTIVIDADE <i>•</i> SEMPRE COM VOCÊ</div>
+</div>
+
+<script>
+(() => {
+"use strict";
+const $ = (s) => document.querySelector(s);
+const clamp = (v, a, b) => Math.min(b, Math.max(a, v));
+const WS_URL = "ws://127.0.0.1:" + (new URLSearchParams(location.search).get("ws") || "8765");
+const DEMO = new URLSearchParams(location.search).has("demo");
+
+/* ============================ ESTADO ============================ */
+const S = { carga: { pct: 0, passo: 0, etapa: "Iniciando..." }, cargaVista: 0, modo: "normal", agressivo: false, camera: false, cameraOk: true, visao: null, estado: "IDLE", pessoa: null, online: false, voz: true, nivelMic: 0, nivelVoz: 0, nivelMicSuave: 0, nivelVozSuave: 0,
+  histRede: Array(60).fill(0), maxRede: 5 };
+
+/* ============================ ÍCONES ============================ */
+const ICONES_APP = {
+  "Explorer": '<svg viewBox="0 0 34 34"><path d="M3 9a2 2 0 0 1 2-2h8l3 3h13a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z" fill="#f2b632"/><path d="M3 14h28v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z" fill="#ffd25e"/></svg>',
+  "Chrome": '<svg viewBox="0 0 34 34"><circle cx="17" cy="17" r="14" fill="#ea4335"/><path d="M17 17 3.9 24.5A14 14 0 0 0 17 31z" fill="#34a853"/><path d="M17 17h14a14 14 0 0 1-13.1 14z" fill="#fbbc05"/><path d="M17 17 3.9 9.5A14 14 0 0 1 17 3z" fill="#ea4335"/><circle cx="17" cy="17" r="6.2" fill="#fff"/><circle cx="17" cy="17" r="4.6" fill="#4285f4"/></svg>',
+  "Spotify": '<svg viewBox="0 0 34 34"><circle cx="17" cy="17" r="14" fill="#1ed760"/><path d="M8.5 12.5c5-1.5 11-1 15.5 1.7M9.4 17.4c4.4-1.2 9.2-.8 13 1.4M10.4 21.9c3.5-.9 7-.6 10 1" stroke="#0b1a10" stroke-width="2.2" fill="none" stroke-linecap="round"/></svg>',
+  "Discord": '<svg viewBox="0 0 34 34"><rect x="3" y="5" width="28" height="24" rx="8" fill="#5865f2"/><path d="M10 12c2-1 4-1.4 7-1.4S22 11 24 12c1.6 2.6 2.4 5.2 2.2 8.4-1.2.9-2.4 1.5-3.8 1.9l-1-1.6c.5-.2 1-.4 1.4-.7-.9.4-2.700.9-5.800.9s-4.900-.5-5.800-.9c.4.3.9.5 1.400.7l-1 1.600c-1.400-.4-2.600-1-3.800-1.900-.2-3.200.6-5.800 2.200-8.400z" fill="#fff"/><circle cx="13.5" cy="17.8" r="1.7" fill="#5865f2"/><circle cx="20.5" cy="17.8" r="1.7" fill="#5865f2"/></svg>',
+  "Steam": '<svg viewBox="0 0 34 34"><circle cx="17" cy="17" r="14" fill="#1b2838"/><circle cx="21.500" cy="13.500" r="4.200" fill="none" stroke="#fff" stroke-width="2"/><circle cx="12.500" cy="21.800" r="3" fill="none" stroke="#fff" stroke-width="2"/><path d="M12.800 18.800 18 16.500" stroke="#fff" stroke-width="2"/></svg>',
+  "VS Code": '<svg viewBox="0 0 34 34"><path d="M24 4 11 15 6 11 3 13v8l3 2 5-4 13 11 7-3V7z" fill="#2f9bff"/><path d="m24 4 7 3v20l-7 3V4z" fill="#1a73d9" opacity=".9"/></svg>',
+  "YouTube": '<svg viewBox="0 0 34 34"><rect x="2" y="7" width="30" height="20" rx="6" fill="#ff1f2d"/><path d="M14 12.500 22 17l-8 4.500z" fill="#fff"/></svg>',
+};
+const ICONE_PADRAO = '<svg viewBox="0 0 34 34"><rect x="4" y="4" width="26" height="26" rx="7" fill="#1a6bff"/><path d="M12 12h10v10H12z" fill="none" stroke="#fff" stroke-width="2"/></svg>';
+
+function iconeClima(desc) {
+  const d = (desc || "").toLowerCase();
+  const sol = '<circle cx="62" cy="22" r="11" fill="#ffc93c"/><g stroke="#ffc93c" stroke-width="3" stroke-linecap="round"><path d="M62 4v5M62 35v5M44 22h5M75 22h5M49 9l3 3M72 32l3 3M75 9l-3 3M52 32l-3 3"/></g>';
+  const nuvem = '<path d="M26 60a14 14 0 0 1 0-28 18 18 0 0 1 34.500-3A15 15 0 0 1 62 60z" fill="#eaf6ff" stroke="#9fd8ff" stroke-width="2"/>';
+  let extra = "";
+  if (/chuv|garoa|pancada/.test(d)) extra = '<g stroke="#4fb4ff" stroke-width="3" stroke-linecap="round"><path d="M30 64l-3 6M42 64l-3 6M54 64l-3 6"/></g>';
+  if (/trov/.test(d)) extra = '<path d="M44 58 38 68h6l-3 7 9-11h-6l3-6z" fill="#ffd54a"/>';
+  if (/nev/.test(d)) extra = '<g fill="#fff"><circle cx="30" cy="66" r="2.200"/><circle cx="44" cy="68" r="2.200"/><circle cx="56" cy="66" r="2.200"/></g>';
+  if (/neblina/.test(d)) return '<g stroke="#9fd8ff" stroke-width="4" stroke-linecap="round"><path d="M14 24h60M22 36h56M14 48h60M26 60h46"/></g>';
+  if (/limpo|c[eé]u limpo|quase limpo/.test(d)) return sol.replace('r="11"', 'r="15"').replace(/62/g, "46");
+  if (/parcial|poucas/.test(d)) return sol + nuvem + extra;
+  return nuvem + extra;
+}
+
+/* ============================ RELÓGIO ============================ */
+function relogio() {
+  const a = new Date();
+  $("#hora").textContent = a.toLocaleTimeString("pt-BR", { hour: "2-digit", minute: "2-digit", second: "2-digit" });
+  const t = a.toLocaleDateString("pt-BR", { weekday: "long", day: "numeric", month: "long", year: "numeric" });
+  $("#dataTxt").textContent = t.charAt(0).toUpperCase() + t.slice(1);
+}
+setInterval(relogio, 1000); relogio();
+
+/* ============================ PAINÉIS ============================ */
+function medidor(id, pct, sub) {
+  const el = $("#m-" + id);
+  if (pct === null || pct === undefined) { el.querySelector("b").textContent = "--"; return; }
+  const p = clamp(pct, 0, 100), C = 2 * Math.PI * 42;
+  const c = el.querySelector(".valor");
+  c.style.strokeDasharray = C; c.style.strokeDashoffset = C * (1 - p / 100);
+  el.querySelector("b").textContent = Math.round(p) + "%";
+  if (sub !== undefined) el.querySelector(".sub").innerHTML = sub;
+}
+function telemetria(t) {
+  medidor("cpu", t.cpu, `${(t.cpu_nome || "CPU").replace(/\(R\)|\(TM\)|Processor|\d+-Core|CPU/gi, "").replace(/\s+/g, " ").trim()}<br>&nbsp;`);
+  medidor("gpu", t.gpu, `${(t.gpu_nome || "GPU").replace(/NVIDIA GeForce /i, "")}<br>${t.temp != null ? Math.round(t.temp) + "°C" : "&nbsp;"}`);
+  medidor("ram", t.ram, `${t.ram_usada} / ${t.ram_total} GB`);
+  medidor("disco", t.disco, t.disco_usado != null ? `${t.disco_usado} / ${t.disco_total} GB` : "--");
+  $("#rDown").textContent = (t.down ?? 0).toFixed(1); $("#rUp").textContent = (t.up ?? 0).toFixed(1);
+  S.histRede.push(t.down ?? 0); S.histRede.shift(); desenharRede();
+}
+function desenharRede() {
+  const c = $("#grafico"), g = c.getContext("2d"), w = c.width, h = c.height;
+  g.clearRect(0, 0, w, h);
+  const max = Math.max(1, ...S.histRede) * 1.2;
+  g.beginPath();
+  S.histRede.forEach((v, i) => { const x = i / (S.histRede.length - 1) * w, y = h - 3 - (v / max) * (h - 8); i ? g.lineTo(x, y) : g.moveTo(x, y); });
+  g.strokeStyle = "#2fd4ff"; g.lineWidth = 1.6; g.shadowColor = "#2fd4ff"; g.shadowBlur = 6; g.stroke();
+  g.shadowBlur = 0; g.lineTo(w, h); g.lineTo(0, h); g.closePath();
+  const gr = g.createLinearGradient(0, 0, 0, h); gr.addColorStop(0, "rgba(47,212,255,.28)"); gr.addColorStop(1, "rgba(47,212,255,0)");
+  g.fillStyle = gr; g.fill();
+}
+function clima(c) {
+  $("#climaTemp").textContent = `${c.agora_temp}°C`;
+  $("#climaCidade").textContent = c.cidade || "";
+  const desc = (c.agora || "").replace(/^(o céu está|o tempo está|está|há)\s*/i, "");
+  $("#climaDesc").textContent = desc.charAt(0).toUpperCase() + desc.slice(1);
+  $("#climaMax").textContent = c.max; $("#climaMin").textContent = c.min;
+  $("#climaIcone").innerHTML = iconeClima(c.agora);
+}
+function atalhos(lista) {
+  const g = $("#grade");
+  if (g.dataset.k === lista.join("|")) return;
+  g.dataset.k = lista.join("|"); g.innerHTML = "";
+  lista.forEach((nome) => {
+    const b = document.createElement("button"); b.className = "atalho";
+    b.innerHTML = (ICONES_APP[nome] || ICONE_PADRAO) + `<span>${nome}</span>`;
+    b.onclick = () => enviar({ tipo: "abrir", nome }); g.appendChild(b);
+  });
+}
+function tarefas(lista) {
+  const ul = $("#listaTarefas"); ul.innerHTML = "";
+  const ord = [...lista].sort((a, b) => a.feito - b.feito).slice(0, 6);
+  if (!ord.length) { ul.innerHTML = '<li class="vazio">Nenhuma tarefa.</li>'; return; }
+  ord.forEach((t) => {
+    const li = document.createElement("li"); li.className = t.feito ? "feito" : "";
+    li.innerHTML = `<span class="caixa">${t.feito ? '<svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="#2fd4ff" stroke-width="3"><path d="m5 12 5 5 9-10"/></svg>' : ""}</span><span></span>`;
+    li.lastChild.textContent = t.texto; li.onclick = () => enviar({ tipo: "tarefa", id: t.id, feito: !t.feito }); ul.appendChild(li);
+  });
+}
+function apps(lista) {
+  const el = $("#listaApps");
+  el.innerHTML = lista.length ? "" : '<div class="vazio">Nenhum aplicativo conhecido aberto.</div>';
+  lista.forEach((a) => { const d = document.createElement("div"); d.className = "item"; d.innerHTML = `<i></i><b style="font-weight:500">${a.nome}</b><span>${a.mb} MB</span>`; el.appendChild(d); });
+}
+function aplicarModo() {
+  document.body.classList.toggle("serio", S.modo === "serio"); $("#bModo").classList.toggle("ativo", S.modo === "serio");
+  $("#frase").textContent = FRASES[S.estado](); statusTexto();
+}
+function painelVisao() {
+  const b = $("#bCamera"); b.classList.toggle("ativo", S.camera); b.disabled = !S.cameraOk; b.style.opacity = S.cameraOk ? 1 : .4;
+  const e = $("#camEstado"); e.textContent = !S.cameraOk ? "Câmera indisponível" : S.camera ? `Câmera ligada • ${S.visao ? S.visao.rostos : 0} rosto(s)` : "Câmera desligada";
+  e.classList.toggle("on", S.camera);
+  const p = $("#camPessoas"); p.innerHTML = "";
+  if (S.camera && S.visao) (S.visao.pessoas || []).forEach((n) => { const c = document.createElement("span"); c.className = "chip pessoa"; c.textContent = n === "?" ? "desconhecido" : n; p.appendChild(c); });
+  if (S.visao && S.visao.ambiente) $("#camAmbiente").textContent = S.visao.ambiente;
+  const ob = $("#camObjetos"); ob.innerHTML = "";
+  if (S.camera && S.visao && S.visao.lista) S.visao.lista.forEach((o) => { const c = document.createElement("span"); c.className = "chip"; c.textContent = o.n > 1 ? `${o.n}× ${o.nome}` : o.nome; ob.appendChild(c); });
+  desenharRadar();
+}
+function desenharRadar() {
+  const c = $("#radar"), r = c.getContext("2d"), w = c.width, h = c.height; r.clearRect(0, 0, w, h);
+  r.strokeStyle = "rgba(47,212,255,.18)"; r.lineWidth = 1;
+  for (let i = 1; i < 4; i++) { r.beginPath(); r.moveTo(w * i / 4, 0); r.lineTo(w * i / 4, h); r.stroke(); }
+  r.beginPath(); r.moveTo(0, h / 2); r.lineTo(w, h / 2); r.stroke();
+  if (!S.camera) { r.fillStyle = "rgba(160,190,210,.6)"; r.font = "13px sans-serif"; r.textAlign = "center"; r.fillText("câmera desligada", w / 2, h / 2 + 4); return; }
+  const fs = (S.visao && S.visao.faces) || [];
+  if (!fs.length) { r.fillStyle = "rgba(160,190,210,.6)"; r.font = "13px sans-serif"; r.textAlign = "center"; r.fillText("ninguém à vista", w / 2, h / 2 + 4); }
+  ((S.visao && S.visao.objetos) || []).forEach((o) => {        // objetos detectados (caixas laranja finas)
+    const x = (1 - o.cx - o.w / 2) * w, y = (o.cy - o.h / 2) * h;
+    r.strokeStyle = "rgba(255,184,74,.8)"; r.lineWidth = 1.2; r.strokeRect(x, y, o.w * w, o.h * h);
+    r.fillStyle = "rgba(255,200,120,.95)"; r.font = "10px sans-serif"; r.textAlign = "left"; r.fillText(o.nome, Math.max(1, x + 2), Math.max(10, y + 10));
+  });
+  fs.forEach((f) => {
+    const bw = Math.max(18, f.tam * w * 1.1), bh = bw * 1.25, x = (1 - f.cx) * w - bw / 2, y = f.cy * h - bh / 2;   // espelhado, como num espelho
+    r.strokeStyle = f.nome ? "#2fd4ff" : "#ffb84a"; r.lineWidth = 2; r.strokeRect(x, y, bw, bh);
+    r.fillStyle = r.strokeStyle; r.font = "bold 13px sans-serif"; r.textAlign = "left"; r.fillText(f.nome || "desconhecido", Math.max(2, x), Math.max(12, y - 3));
+  });
+}
+
+function resposta(quem, texto) {
+  $("#respQuem").textContent = quem; $("#respTxt").textContent = texto;
+  $("#respHora").textContent = new Date().toTimeString().slice(0, 5);
+}
+const FRASES = { LOADING: () => "Iniciando...", IDLE: () => S.modo === "serio" ? "Modo sério. Aguardando ordens." : S.pessoa ? `Sempre aqui, ${S.pessoa}.` : "Sempre aqui.", LISTENING: () => "Estou ouvindo...",
+  PROCESSING: () => "Pensando...", SPEAKING: () => "Falando..." };
+function definirEstado(e) {
+  S.estado = e; document.body.dataset.estado = e; $("#frase").textContent = FRASES[e]();
+  $("#vbEsq").textContent = e === "LISTENING" ? "Estou ouvindo..." : e === "SPEAKING" ? "Falando..." : e === "PROCESSING" ? "Pensando..." : "Fale comigo...";
+  $("#vbDir").textContent = e === "IDLE" ? 'Diga "Klaus"' : "";
+  statusTexto();
+}
+const PASSOS = ["Interface", "Voz do Klaus", "Ouvido (Whisper)", "Reconhecimento de voz", "Cérebro (modelo local)", "Visão (câmera e objetos)"];
+$("#cPassos").innerHTML = PASSOS.map((p) => `<li>${p}</li>`).join("");
+function atualizarCarga() {
+  const c = S.carga;
+  [...$("#cPassos").children].forEach((li, i) => { li.className = i < c.passo ? "feito" : i === c.passo ? "atual" : ""; });
+  $("#cEtapa").textContent = c.etapa; statusTexto();
+}
+setInterval(() => {                                   // a barra anda suave e continua devagar dentro da etapa (nunca parece travada)
+  if (S.estado !== "LOADING") return;
+  const alvo = Math.min(99, S.carga.pct), teto = Math.min(99, alvo + 9);
+  S.cargaVista = S.cargaVista < alvo ? Math.min(alvo, S.cargaVista + Math.max(0.35, (alvo - S.cargaVista) * 0.08)) : Math.min(teto, S.cargaVista + 0.03);
+  $("#cPreenche").style.width = S.cargaVista.toFixed(1) + "%"; $("#cPct").textContent = Math.floor(S.cargaVista) + "%";
+}, 50);
+function mostrarMenus(v) {
+  document.body.classList.toggle("menus", v); clearTimeout(S.tMenus);
+  if (v) S.tMenus = setTimeout(() => mostrarMenus(false), 25000);          // esconde sozinho depois de 25 s sem mexer o mouse
+}
+function alternarMenus() { mostrarMenus(!document.body.classList.contains("menus")); }
+document.addEventListener("mousemove", () => { if (document.body.classList.contains("menus")) { clearTimeout(S.tMenus); S.tMenus = setTimeout(() => mostrarMenus(false), 25000); } });
+document.addEventListener("keydown", (e) => { if (e.key === "Escape") mostrarMenus(false); else if (e.key.toLowerCase() === "m" && !e.ctrlKey && !e.altKey) alternarMenus(); });
+function statusTexto() {
+  const st = $("#status"); document.body.classList.toggle("offline", !S.online);
+  st.classList.toggle("on", S.online);
+  $("#statusTitulo").textContent = !S.online ? "Desconectado" : S.estado === "LOADING" ? "Iniciando..." : "Online";
+  $("#statusTexto").textContent = S.online && S.modo === "serio" && S.estado !== "LOADING" ? "Modo sério ativo." : S.online && S.estado === "LOADING" ? S.carga.etapa.replace(/\.+$/, "") : S.online ? (S.pessoa ? `Pronto para ajudar, ${S.pessoa}.` : "Pronto para ajudar.") : "Abra o iniciar_klaus.bat";
+}
+
+/* ============================ CONEXÃO ============================ */
+let ws = null;
+function enviar(o) { if (ws && ws.readyState === 1) ws.send(JSON.stringify(o)); }
+function mensagem(m) {
+  switch (m.tipo) {
+    case "estado": definirEstado(m.valor); break;
+    case "trabalho": trabalho(m); break;
+    case "usuario": resposta(m.pessoa ? m.pessoa.toUpperCase() : "VOCÊ", m.texto); break;
+    case "klaus": resposta("KLAUS", m.texto); break;
+    case "nivel": S.nivelMic = m.mic; S.nivelVoz = m.voz; S.zcr = m.zcr; break;
+    case "telemetria": telemetria(m); break;
+    case "clima": clima(m); break;
+    case "apps": apps(m.lista); break;
+    case "tarefas": tarefas(m.lista); break;
+    case "visao": S.visao = m; painelVisao(); break;
+    case "carga": S.carga = m; atualizarCarga(); break;
+    case "menus": mostrarMenus(!!m.valor); break;
+    case "info": S.agressivo = !!m.agressivo; if (m.modo && m.modo !== S.modo) { S.modo = m.modo; aplicarModo(); } if (m.pessoa) S.pessoa = m.pessoa; S.camera = !!m.camera; S.cameraOk = m.camera_ok !== false; painelVisao(); atalhos(m.atalhos || []); $("#frase").textContent = FRASES[S.estado](); statusTexto(); break;
+  }
+}
+let trTimer = null, trShow = null;
+function trabalho(m) {                                // mostra que o Klaus está procurando/trabalhando (aparece depois de 1,5 s)
+  clearTimeout(trShow);
+  if (!m.ativo) { clearInterval(trTimer); trTimer = null; document.body.classList.remove("trabalhando"); return; }
+  $("#trTitulo").textContent = m.texto || "Trabalhando nisso...";
+  const ini = m.inicio || Date.now();
+  const tick = () => { const s = Math.max(0, Math.round((Date.now() - ini) / 1000)); $("#trTempo").textContent = s < 3 ? "" : `há ${s} s nisso`; };
+  clearInterval(trTimer); trTimer = setInterval(tick, 500); tick();
+  trShow = setTimeout(() => document.body.classList.add("trabalhando"), Math.max(0, 1500 - (Date.now() - ini)));
+}
+function conectar() {
+  let sock;
+  try { sock = new WebSocket(WS_URL); } catch { setTimeout(conectar, 3000); return; }
+  ws = sock;
+  sock.onopen = () => { S.online = true; statusTexto(); };
+  sock.onmessage = (ev) => { try { mensagem(JSON.parse(ev.data)); } catch (e) { /* ignora */ } };
+  sock.onclose = () => { S.online = false; statusTexto(); setTimeout(conectar, 2500); };
+  sock.onerror = () => { try { sock.close(); } catch (e) { /* nada */ } };
+}
+
+/* ============================ CONTROLES ============================ */
+$("#bOuvir").onclick = $("#mic").onclick = () => enviar({ tipo: "ouvir" });
+$("#bCamera").onclick = () => enviar({ tipo: "camera", valor: !S.camera });
+$("#bModo").onclick = () => enviar({ tipo: "modo", valor: S.modo === "serio" ? "normal" : "serio" });
+$("#bParar").onclick = () => enviar({ tipo: "parar" });
+$("#bLimpar").onclick = () => { enviar({ tipo: "limpar" }); resposta("KLAUS", "Conversa esquecida."); };
+$("#bVoz").onclick = () => { S.voz = !S.voz; $("#bVoz").classList.toggle("off", !S.voz); $("#bVoz").classList.toggle("ativo", S.voz); enviar({ tipo: "mudo", valor: !S.voz }); };
+
+/* ============================ ONDA DA VOZ ============================ */
+const onda = $("#onda"), og = onda.getContext("2d");
+const histOnda = Array(48).fill(0);
+function desenharOnda(t) {
+  const r = onda.getBoundingClientRect(), d = devicePixelRatio || 1;
+  if (onda.width !== Math.round(r.width * d)) { onda.width = Math.round(r.width * d); onda.height = Math.round(r.height * d); }
+  const w = onda.width, h = onda.height; og.clearRect(0, 0, w, h);
+  const nivel = S.estado === "SPEAKING" ? S.nivelVozSuave : S.nivelMicSuave;
+  histOnda.push(clamp(nivel * 1.3 + (S.estado === "IDLE" ? 0.05 + 0.04 * Math.sin(t * 0.002) : 0.03), 0, 1)); histOnda.shift();
+  const n = 24, larg = (w * 0.30) / n, cx = w / 2, mic = 70 * d;
+  og.lineCap = "round"; og.lineWidth = Math.max(2, 2.6 * d);
+  const cor = S.estado === "PROCESSING" ? "255,140,30" : S.modo === "serio" ? "255,59,78" : "47,212,255";
+  for (let lado = -1; lado <= 1; lado += 2) for (let i = 0; i < n; i++) {
+    const v = histOnda[histOnda.length - 1 - i] * (0.55 + 0.45 * Math.sin(i * 0.9 + t * 0.006));
+    const x = cx + lado * (mic + 12 * d + i * larg), alt = (4 + v * (h * 0.36)) * (1 - i / (n * 1.4));
+    og.strokeStyle = `rgba(${cor},${0.95 - i / n * 0.65})`;
+    og.beginPath(); og.moveTo(x, h / 2 - alt); og.lineTo(x, h / 2 + alt); og.stroke();
+  }
+}
+
+/* ============================ NÚCLEO VIVO DO KLAUS ============================ */
+const cv = $("#rosto"), g = cv.getContext("2d");
+const TEMAS = {
+  normal: { primary: [56, 189, 248], bright: [0, 229, 255], accent: [251, 191, 36], turbulence: 0.36, spinBase: 1.0 },
+  serio: { primary: [255, 42, 60], bright: [255, 94, 58], accent: [255, 160, 122], turbulence: 0.5, spinBase: 0.82 },
+  pensando: { primary: [255, 140, 30], bright: [255, 176, 64], accent: [255, 214, 140], turbulence: 0.62, spinBase: 1.0 }
+};
+const cor = { primary: [...TEMAS.normal.primary], bright: [...TEMAS.normal.bright], accent: [...TEMAS.normal.accent], turbulence: 0.36, spinBase: 1 };
+const N = { energia: 0, alvoEnergia: 0, escala: 1, vEscala: 0, giro: 1, brilho: 0.35, hover: 0, serio: 0, bandas: new Float32Array(24), alvoBandas: new Float32Array(24),
+  tempo: 0, ultimo: performance.now(), ultimoPico: 0, batida: 0, ponteiro: { x: 0, y: 0, ativo: false }, olhar: { x: 0, y: 0 }, spawn: 0, varre: 0 };
+let W = 0, H = 0, cx = 0, cy = 0, R0 = 100, DPR = 1;
+const particulas = [], ligacoes = [], filamentos = [], pulsos = [], disparos = [], faiscas = [], satelites = [], poeira = [];
+const lerp = (a, b, t) => a + (b - a) * t;
+const rgba = (c, a) => `rgba(${Math.round(c[0])},${Math.round(c[1])},${Math.round(c[2])},${a})`;
+
+function construir() {
+  particulas.length = ligacoes.length = filamentos.length = satelites.length = poeira.length = 0;
+  const total = 170, ouro = Math.PI * (3 - Math.sqrt(5)), camadas = [0.5, 0.7, 0.88, 1.0];
+  for (let k = 0; k < total; k++) {                                   // nós sinápticos em 4 camadas concêntricas (distribuição de Fibonacci)
+    const y = 1 - (k / (total - 1)) * 2, rf = Math.sqrt(Math.max(0, 1 - y * y)), th = ouro * k, cam = camadas[k % 4];
+    particulas.push({ bx: Math.cos(th) * rf * cam, by: y * cam, bz: Math.sin(th) * rf * cam, fase: Math.random() * 6.28, freq: 0.7 + Math.random() * 1.4,
+      tam: 1 + Math.random() * 1.5, acento: Math.random() < 0.16, px: 0, py: 0, pz: 0, esc: 1 });
+  }
+  for (let a = 0; a < particulas.length; a++) {                       // conexões orgânicas próximas
+    let n = 0;
+    for (let b = a + 1; b < particulas.length && n < 4; b++) {
+      const A = particulas[a], B = particulas[b];
+      if (Math.hypot(A.bx - B.bx, A.by - B.by, A.bz - B.bz) < 0.40) { ligacoes.push({ a, b }); n++; }
+    }
+  }
+  for (let f = 0; f < 10; f++) filamentos.push({ tilt: (Math.random() - 0.5) * Math.PI, speed: (0.28 + Math.random() * 0.5) * (f % 2 ? -1 : 1), raio: 0.4 + (f / 10) * 0.52,
+    fase: Math.random() * 6.28, acento: f === 2 || f === 6 });
+  [[1.75, 0.5, 0.9], [2.0, -0.7, -0.7], [1.55, 1.1, 1.15], [2.25, -0.3, -0.55]].forEach(([r, inc, v], k) => satelites.push({ r, inc, v, fase: k * 1.6, rot: k * 0.9 }));
+  for (let k = 0; k < 70; k++) poeira.push({ x: Math.random(), y: Math.random(), vx: (Math.random() - 0.5) * 0.00003, vy: -0.00001 - Math.random() * 0.00004, r: 0.8 + Math.random() * 2.4, a: 0.1 + Math.random() * 0.3, f: Math.random() * 6.28 });
+}
+construir();
+
+function emitirPulso(forca = 0.7, inicio = 1.0) {
+  pulsos.push({ r: R0 * 1.12 * inicio, max: R0 * (2.4 + forca * 1.15), a: 0.34 + forca * 0.36, v: 1.8 + forca * 2.4, lw: 1 + forca * 1.1 });
+}
+function emitirFaiscas(qtd, forca) {
+  for (let k = 0; k < qtd; k++) faiscas.push({ ang: Math.random() * 6.28, d: R0 * (0.9 + Math.random() * 0.25), v: 1.2 + Math.random() * 2.6 * forca, vida: 1, dec: 0.018 + Math.random() * 0.03, len: 6 + Math.random() * 16 * forca });
+}
+cv.addEventListener("mousemove", (e) => { const r = cv.getBoundingClientRect(); N.ponteiro.x = e.clientX - r.left; N.ponteiro.y = e.clientY - r.top; N.ponteiro.ativo = true; });
+cv.addEventListener("mouseleave", () => { N.ponteiro.ativo = false; });
+cv.addEventListener("click", (e) => {
+  const r = cv.getBoundingClientRect(), x = e.clientX - r.left, y = e.clientY - r.top;
+  if (Math.hypot(x - cx, y - cy) < R0 * 1.75) { emitirPulso(0.85, 0.96); emitirFaiscas(26, 1); N.vEscala += 0.045; N.energia = Math.min(1, N.energia + 0.45); }
+  alternarMenus();
+});
+
+function medir() {
+  const r = cv.getBoundingClientRect();
+  DPR = Math.min(devicePixelRatio || 1, 2);
+  W = Math.max(200, r.width); H = Math.max(220, r.height);
+  if (cv.width !== Math.round(W * DPR) || cv.height !== Math.round(H * DPR)) { cv.width = Math.round(W * DPR); cv.height = Math.round(H * DPR); }
+  g.setTransform(DPR, 0, 0, DPR, 0, 0);
+  const limpo = document.body.classList.contains("limpo") && !document.body.classList.contains("menus");
+  cx = W / 2; cy = H * 0.47; R0 = Math.max(66, Math.min(limpo ? 250 : 176, Math.min(W, H) * (limpo ? 0.25 : 0.28)));
+}
+
+function atualizar(dt, agora) {
+  const est = S.estado, falando = est === "SPEAKING", ouvindo = est === "LISTENING", pensando = est === "PROCESSING";
+  const alvoTema = pensando && S.modo !== "serio" ? TEMAS.pensando : S.modo === "serio" ? TEMAS.serio : TEMAS.normal;
+  const kc = Math.min(1, dt * 0.09);                                             // mistura suave das cores entre estados e modos
+  for (let c = 0; c < 3; c++) { cor.primary[c] = lerp(cor.primary[c], alvoTema.primary[c], kc); cor.bright[c] = lerp(cor.bright[c], alvoTema.bright[c], kc); cor.accent[c] = lerp(cor.accent[c], alvoTema.accent[c], kc); }
+  cor.turbulence = lerp(cor.turbulence, alvoTema.turbulence + (S.agressivo ? 0.5 : 0), kc); cor.spinBase = lerp(cor.spinBase, alvoTema.spinBase * (S.agressivo ? 1.7 : 1), kc);
+  N.serio = lerp(N.serio, S.modo === "serio" ? 1 : 0, Math.min(1, dt * 0.05));
+  const t = N.tempo, zc = S.zcr ?? 0.2, inclina = Math.max(0, Math.min(1, (zc - 0.08) / 0.32));
+  const rosto = S.camera && S.visao && S.visao.faces && S.visao.faces.length ? S.visao.faces[0] : null;
+
+  if (falando) {
+    N.alvoEnergia = Math.min(1, 0.10 + S.nivelVozSuave * 2.3);                  // a voz de verdade do Klaus
+    for (let k = 0; k < 24; k++) {
+      const f = k / 24, peso = (1 - inclina) * (1.25 - f * 0.8) + inclina * (0.45 + f * 0.95);   // "s/f" acendem os agudos; vogais, os graves
+      const harm = Math.abs(Math.sin(t * (7 + k * 0.65) + k * 0.9)) * 0.6 + Math.abs(Math.cos(t * (13 - k * 0.35) + k * 1.7)) * 0.4;
+      N.alvoBandas[k] = Math.min(1, N.alvoEnergia * peso * (0.5 + harm * 0.75));
+    }
+    if (N.alvoEnergia > 0.7 && agora - N.ultimoPico > 400) { emitirPulso(0.45 + N.alvoEnergia * 0.35, 1.03); emitirFaiscas(8 + Math.round(N.alvoEnergia * 10), N.alvoEnergia); N.ultimoPico = agora; }
+  } else if (ouvindo) {
+    N.alvoEnergia = Math.min(1, 0.06 + S.nivelMicSuave * 2.8);                  // a sua voz
+    for (let k = 0; k < 24; k++) {
+      const harm = Math.abs(Math.sin(t * (6 + k * 0.7) + k * 1.1)) * 0.7 + 0.3;
+      N.alvoBandas[k] = Math.min(1, N.alvoEnergia * (0.5 + harm * 0.8) * (1.1 - (k / 24) * 0.4));
+    }
+    if (N.alvoEnergia > 0.6 && agora - N.ultimoPico > 420) { emitirPulso(0.45, 0.98); N.ultimoPico = agora; }
+  } else if (pensando) {
+    N.alvoEnergia = 0.5 + Math.sin(t * 10) * 0.14;
+    for (let k = 0; k < 24; k++) N.alvoBandas[k] = 0.28 + Math.abs(Math.sin(t * 8 + k * 0.5)) * 0.34;
+  } else {                                                                     // em repouso: respira e tem batimento
+    const respira = (Math.sin(t * 1.55) + 1) * 0.5;
+    const b = Math.pow(Math.max(0, Math.sin(t * 2.3)), 14) + 0.55 * Math.pow(Math.max(0, Math.sin(t * 2.3 - 0.95)), 14);
+    N.batida = b;
+    N.alvoEnergia = 0.04 + respira * 0.08 + b * 0.16 + N.hover * 0.14 + (rosto ? 0.05 : 0);
+    for (let k = 0; k < 24; k++) N.alvoBandas[k] = 0.05 + Math.sin(t * 1.6 + k * 0.45) * 0.04 + b * 0.1 + N.hover * 0.08;
+    if (b > 0.9 && agora - N.ultimoPico > 900) { emitirPulso(0.2, 1.0); N.ultimoPico = agora; }
+  }
+  if (S.estado === "LOADING") N.alvoEnergia *= 0.6;
+  N.energia = lerp(N.energia, N.alvoEnergia, Math.min(1, dt * 0.2));
+  for (let k = 0; k < 24; k++) N.bandas[k] = lerp(N.bandas[k], N.alvoBandas[k], Math.min(1, dt * 0.24));
+
+  // o núcleo percebe o mouse e também a pessoa que a câmera vê
+  const dm = N.ponteiro.ativo ? Math.hypot(N.ponteiro.x - cx, N.ponteiro.y - cy) : 9999;
+  const alvoHover = Math.max(dm < R0 * 2.1 ? 1 - dm / (R0 * 2.1) : 0, rosto ? 0.5 : 0);
+  N.hover = lerp(N.hover, alvoHover, Math.min(1, dt * 0.1));
+  const alvoOX = rosto ? (0.5 - rosto.cx) * 2 : N.ponteiro.ativo ? (N.ponteiro.x - cx) / W : 0;
+  const alvoOY = rosto ? (rosto.cy - 0.5) * 2 : N.ponteiro.ativo ? (N.ponteiro.y - cy) / H : 0;
+  N.olhar.x = lerp(N.olhar.x, alvoOX, Math.min(1, dt * 0.06)); N.olhar.y = lerp(N.olhar.y, alvoOY, Math.min(1, dt * 0.06));
+
+  let alvoEsc = 1 + Math.sin(t * 1.55) * 0.025 + N.hover * 0.035 + N.batida * 0.03;
+  if (ouvindo) alvoEsc = 0.94 + N.energia * 0.16; else if (pensando) alvoEsc = 0.97 + Math.sin(t * 9) * 0.02; else if (falando) alvoEsc = 1.02 + N.energia * 0.15;
+  N.vEscala = (N.vEscala + (alvoEsc - N.escala) * 0.12 * dt) * Math.pow(0.8, dt); N.escala += N.vEscala * dt;
+  const alvoGiro = cor.spinBase * (pensando ? 2.8 : falando ? 1.55 + N.energia * 0.9 : ouvindo ? 1.25 + N.energia * 0.7 : 0.78 + N.hover * 0.35);
+  N.giro = lerp(N.giro, alvoGiro, Math.min(1, dt * 0.08));
+  N.brilho = lerp(N.brilho, 0.3 + N.energia * 0.55 + (pensando ? 0.2 : 0) + N.hover * 0.12, Math.min(1, dt * 0.1));
+  for (let k = pulsos.length - 1; k >= 0; k--) { const r = pulsos[k]; r.r += r.v * dt; r.a *= Math.pow(0.962, dt); if (r.r >= r.max || r.a < 0.01) pulsos.splice(k, 1); }
+  // disparos neurais correndo pelas ligações (mais intensos conforme a atividade)
+  const taxa = (pensando ? 14 : falando ? 3 + N.energia * 10 : ouvindo ? 3 + N.energia * 6 : 0.7) * dt / 60;
+  N.spawn += taxa; while (N.spawn >= 1 && disparos.length < 90) { N.spawn -= 1; disparos.push({ l: Math.floor(Math.random() * ligacoes.length), p: 0, v: 0.025 + Math.random() * 0.04 }); }
+  N.spawn = Math.min(N.spawn, 1);
+  for (let k = disparos.length - 1; k >= 0; k--) { disparos[k].p += disparos[k].v * dt; if (disparos[k].p >= 1) disparos.splice(k, 1); }
+  for (let k = faiscas.length - 1; k >= 0; k--) { const f = faiscas[k]; f.d += f.v * dt * 1.6; f.vida -= f.dec * dt; if (f.vida <= 0) faiscas.splice(k, 1); }
+  N.varre = (S.visao && S.visao.varrendo) ? Math.min(1, N.varre + dt * 0.05) : Math.max(0, N.varre - dt * 0.05);
+}
+
+function desenharAura() {
+  const aura = R0 * (2.5 + N.energia * 0.8), grad = g.createRadialGradient(cx, cy, R0 * 0.1, cx, cy, aura);
+  grad.addColorStop(0, rgba(cor.primary, 0.17 + N.brilho * 0.24)); grad.addColorStop(0.42, rgba(cor.primary, 0.05 + N.brilho * 0.07)); grad.addColorStop(1, "rgba(0,0,0,0)");
+  g.fillStyle = grad; g.beginPath(); g.arc(cx, cy, aura, 0, 6.2832); g.fill();
+  g.save(); g.globalCompositeOperation = "lighter";                                // poeira luminosa flutuando em volta
+  const spr = rgba(cor.bright, 1);
+  poeira.forEach((d) => {
+    d.x += d.vx * 16; d.y += d.vy * 16; if (d.y < -0.05) { d.y = 1.05; d.x = Math.random(); } if (d.x < -0.05) d.x = 1.05; if (d.x > 1.05) d.x = -0.05;
+    const al = d.a * (0.5 + 0.5 * Math.sin(N.tempo * 1.4 + d.f)) * (0.5 + N.energia * 0.8);
+    g.fillStyle = rgba(cor.bright, al); g.beginPath(); g.arc(d.x * W, d.y * H, d.r, 0, 6.2832); g.fill();
+  });
+  g.restore();
+}
+function desenharPulsos() { pulsos.forEach((r) => { g.strokeStyle = rgba(cor.bright, r.a); g.lineWidth = r.lw; g.beginPath(); g.arc(cx, cy, r.r, 0, 6.2832); g.stroke(); }); }
+
+function desenharAneis(t, r) {
+  g.save(); g.translate(cx, cy);
+  const sr = N.serio;
+  g.save(); g.rotate(t * 0.14 * N.giro);                                             // anel externo segmentado (no modo sério: mais segmentos e mais grosso)
+  g.strokeStyle = rgba(cor.primary, 0.26 + N.brilho * 0.22); g.lineWidth = 1 + sr * 1.2;
+  const segs = sr > 0.5 ? 6 : 4;
+  for (let k = 0; k < segs; k++) { g.beginPath(); g.arc(0, 0, r * 1.56, (k * 6.2832) / segs + 0.14, ((k + 1) * 6.2832) / segs - 0.26); g.stroke(); }
+  g.restore();
+  g.save(); g.rotate(-t * 0.24 * N.giro);                                            // anel intermediário contra-rotativo
+  g.strokeStyle = rgba(cor.bright, 0.18 + N.brilho * 0.24); g.lineWidth = 0.9; g.setLineDash([42, 16, 6, 16]); g.beginPath(); g.arc(0, 0, r * 1.38, 0, 6.2832); g.stroke(); g.setLineDash([]);
+  for (let m = 0; m < 2; m++) { const a = m * Math.PI + 0.4; g.fillStyle = rgba(cor.accent, 0.75 + N.energia * 0.25); g.beginPath(); g.arc(Math.cos(a) * r * 1.38, Math.sin(a) * r * 1.38, 2.2, 0, 6.2832); g.fill(); }
+  g.restore();
+  if (sr > 0.02) {                                                                    // modo sério: marcas de radar e varredura contínua
+    g.save(); g.rotate(-t * 0.08); g.globalAlpha = sr;
+    for (let k = 0; k < 60; k++) { const a = (k / 60) * 6.2832, comp = k % 5 === 0 ? 11 : 5; g.strokeStyle = rgba(cor.primary, k % 5 === 0 ? 0.7 : 0.35); g.lineWidth = k % 5 === 0 ? 1.6 : 1;
+      g.beginPath(); g.moveTo(Math.cos(a) * r * 1.68, Math.sin(a) * r * 1.68); g.lineTo(Math.cos(a) * (r * 1.68 + comp), Math.sin(a) * (r * 1.68 + comp)); g.stroke(); }
+    g.restore();
+    g.save(); g.globalAlpha = sr; g.rotate(t * 1.1); const fx = g.createLinearGradient(0, 0, r * 1.62, 0); fx.addColorStop(0, rgba(cor.bright, 0)); fx.addColorStop(1, rgba(cor.bright, 0.28));
+    g.fillStyle = fx; g.beginPath(); g.moveTo(0, 0); g.arc(0, 0, r * 1.62, -0.55, 0); g.closePath(); g.fill();
+    g.strokeStyle = rgba(cor.bright, 0.7); g.lineWidth = 1.3; g.beginPath(); g.moveTo(0, 0); g.lineTo(r * 1.62, 0); g.stroke(); g.restore();
+  }
+  // onda circular reativa (spline fechada) + barras radiais de equalizador
+  const pontos = 84, baseR = r * 1.18, pts = [];
+  for (let k = 0; k < pontos; k++) {
+    const ang = (k / pontos) * 6.2832, banda = N.bandas[Math.floor((k / pontos) * 24) % 24];
+    const org = Math.sin(ang * 4 + t * 2.6 * N.giro) * 0.45 + Math.cos(ang * 7 - t * 3.8 * N.giro) * 0.35 + Math.sin(ang * 11 + t * 5.2) * 0.2;
+    const amp = (3.5 + N.energia * 24 * (0.7 + cor.turbulence * 0.45)) * (0.45 + banda * 0.95), rad = baseR + org * amp;
+    pts.push({ x: Math.cos(ang) * rad, y: Math.sin(ang) * rad });
+  }
+  g.save(); g.shadowColor = rgba(cor.bright, 0.6); g.shadowBlur = 12 + N.energia * 16; g.strokeStyle = rgba(cor.bright, 0.5 + N.energia * 0.45); g.lineWidth = 1.3 + N.energia * 1.2;
+  g.beginPath(); g.moveTo((pts[pontos - 1].x + pts[0].x) / 2, (pts[pontos - 1].y + pts[0].y) / 2);
+  for (let k = 0; k < pontos; k++) { const a = pts[k], b = pts[(k + 1) % pontos]; g.quadraticCurveTo(a.x, a.y, (a.x + b.x) / 2, (a.y + b.y) / 2); }
+  g.closePath(); g.stroke(); g.shadowBlur = 0; g.strokeStyle = rgba(cor.accent, 0.14 + N.energia * 0.3); g.lineWidth = 0.8; g.scale(1.035, 1.035); g.stroke(); g.restore();
+  if (N.energia > 0.07) {
+    g.save(); g.globalCompositeOperation = "lighter"; g.lineCap = "round"; g.lineWidth = 2;
+    for (let k = 0; k < 96; k++) {
+      const ang = (k / 96) * 6.2832 + t * 0.15 * N.giro, banda = N.bandas[(k * 24 / 96 | 0) % 24], comp = 2 + banda * N.energia * 38;
+      g.strokeStyle = rgba(cor.bright, 0.18 + banda * 0.6); g.beginPath(); g.moveTo(Math.cos(ang) * (r * 1.27), Math.sin(ang) * (r * 1.27)); g.lineTo(Math.cos(ang) * (r * 1.27 + comp), Math.sin(ang) * (r * 1.27 + comp)); g.stroke();
+    }
+    g.restore();
+  }
+  g.strokeStyle = rgba(cor.primary, 0.25 + N.energia * 0.3); g.lineWidth = 0.9; g.beginPath(); g.arc(0, 0, r * 0.98, 0, 6.2832); g.stroke();
+  g.restore();
+}
+
+function desenharNucleo(t, r) {
+  g.save(); g.translate(cx, cy);
+  const rotY = t * 0.38 * N.giro + N.olhar.x * 0.7, rotX = Math.sin(t * 0.27) * 0.35 + N.olhar.y * 0.5;
+  const cY = Math.cos(rotY), sY = Math.sin(rotY), cX = Math.cos(rotX), sX = Math.sin(rotX), esf = r * 0.84, turb = cor.turbulence, amp = 0.04 + N.energia * (0.18 + turb * 0.12);
+  g.save(); g.globalCompositeOperation = "lighter";
+  filamentos.forEach((fi, f) => {                                                    // filamentos de plasma
+    const fa = t * fi.speed * N.giro + fi.fase, rad = esf * fi.raio;
+    g.beginPath();
+    for (let k = 0; k <= 48; k++) {
+      const u = (k / 48) * 6.2832, wob = 1 + Math.sin(u * 3 + fa * 2.2) * (0.07 + N.energia * 0.16) + Math.cos(u * 5 - fa * 1.7) * (0.04 + turb * 0.05);
+      const tl = fi.tilt + Math.sin(t * 0.5 + f) * 0.3, x = Math.cos(u) * rad * wob, y = Math.sin(u) * rad * wob * Math.cos(tl), z = Math.sin(u) * rad * wob * Math.sin(tl);
+      const x1 = x * cY - z * sY, z1 = z * cY + x * sY, y2 = y * cX - z1 * sX, z2 = z1 * cX + y * sX, pe = 360 / (360 - z2);
+      k === 0 ? g.moveTo(x1 * pe, y2 * pe) : g.lineTo(x1 * pe, y2 * pe);
+    }
+    g.strokeStyle = rgba(fi.acento ? cor.accent : cor.primary, 0.12 + N.energia * 0.28); g.lineWidth = 0.9 + N.energia * 0.9; g.stroke();
+  });
+  g.restore();
+  particulas.forEach((p) => {                                                        // projeção 3D com ondulação orgânica
+    const disp = 1 + Math.sin(p.bx * 3.4 + t * (1.8 + p.freq) + p.fase) * amp + Math.cos(p.by * 3.8 - t * 2.3 + p.fase) * amp * 0.8 + Math.sin(p.bz * 4.2 + t * 3.1 * turb) * amp * 0.6;
+    const x0 = p.bx * esf * disp, y0 = p.by * esf * disp, z0 = p.bz * esf * disp;
+    const x1 = x0 * cY - z0 * sY, z1 = z0 * cY + x0 * sY, y2 = y0 * cX - z1 * sX, z2 = z1 * cX + y0 * sX, pe = 360 / (360 - z2);
+    p.px = x1 * pe; p.py = y2 * pe; p.pz = z2 / esf; p.esc = pe;
+  });
+  g.save(); g.globalCompositeOperation = "lighter"; g.lineWidth = 0.7 + N.energia * 0.4;
+  ligacoes.forEach((l) => {                                                          // conexões sinápticas
+    const a = particulas[l.a], b = particulas[l.b], al = Math.max(0.03, ((a.pz + b.pz) * 0.5 + 1.15) * 0.45) * (0.16 + N.energia * 0.4);
+    g.strokeStyle = rgba(cor.primary, al); g.beginPath(); g.moveTo(a.px, a.py); g.lineTo(b.px, b.py); g.stroke();
+  });
+  disparos.forEach((d) => {                                                          // faíscas de pensamento viajando pelas conexões
+    const l = ligacoes[d.l]; if (!l) return; const a = particulas[l.a], b = particulas[l.b], x = a.px + (b.px - a.px) * d.p, y = a.py + (b.py - a.py) * d.p, al = Math.sin(d.p * 3.1416);
+    const gr = g.createRadialGradient(x, y, 0, x, y, 7); gr.addColorStop(0, `rgba(255,255,255,${0.95 * al})`); gr.addColorStop(0.4, rgba(cor.bright, 0.6 * al)); gr.addColorStop(1, rgba(cor.bright, 0));
+    g.fillStyle = gr; g.beginPath(); g.arc(x, y, 7, 0, 6.2832); g.fill();
+  });
+  particulas.forEach((p) => {
+    const dp = Math.max(0.14, (p.pz + 1.2) / 2.2), rad = Math.max(0.8, p.tam * p.esc * (0.85 + N.energia * 0.5));
+    g.fillStyle = p.pz > 0.38 ? `rgba(255,255,255,${Math.min(1, dp * (0.78 + N.energia * 0.3))})` : p.acento ? rgba(cor.accent, dp * (0.58 + N.energia * 0.4)) : rgba(cor.bright, dp * (0.55 + N.energia * 0.4));
+    g.beginPath(); g.arc(p.px, p.py, rad, 0, 6.2832); g.fill();
+  });
+  g.restore();
+  const hr = r * (0.34 + N.energia * 0.17 + N.batida * 0.05), hg = g.createRadialGradient(0, 0, 1, 0, 0, hr);   // coração de plasma
+  hg.addColorStop(0, `rgba(255,255,255,${0.75 + N.energia * 0.25})`); hg.addColorStop(0.32, rgba(cor.bright, 0.42 + N.energia * 0.36)); hg.addColorStop(0.68, rgba(cor.accent, 0.14 + N.energia * 0.2)); hg.addColorStop(1, "rgba(0,0,0,0)");
+  g.fillStyle = hg; g.beginPath(); g.arc(0, 0, hr, 0, 6.2832); g.fill();
+  g.restore();
+}
+
+function desenharSatelites(t, r) {                                                    // satélites com rastro orbitando o núcleo
+  g.save(); g.globalCompositeOperation = "lighter"; g.lineCap = "round";
+  satelites.forEach((o) => {
+    const ci = Math.cos(o.inc), si = Math.sin(o.inc), vel = o.v * (0.5 + N.giro * 0.6), a0 = o.fase + t * vel * 2.2;
+    const ponto = (a) => { const x = Math.cos(a) * o.r * r, z = Math.sin(a) * o.r * r, y = z * si * 0.55, z2 = z * ci, pe = 360 / (360 - z2 * 0.5); return [cx + x * pe, cy + y * pe, z2]; };
+    let ant = ponto(a0);
+    for (let k = 1; k <= 30; k++) {
+      const q = ponto(a0 - Math.sign(o.v) * k * 0.055), al = Math.pow(1 - k / 31, 2) * (0.22 + N.energia * 0.5 + N.serio * 0.12);
+      g.strokeStyle = rgba(cor.bright, al); g.lineWidth = Math.max(0.5, 2.6 - k * 0.08); g.beginPath(); g.moveTo(ant[0], ant[1]); g.lineTo(q[0], q[1]); g.stroke(); ant = q;
+    }
+    const c0 = ponto(a0), gr = g.createRadialGradient(c0[0], c0[1], 0, c0[0], c0[1], 9); gr.addColorStop(0, "rgba(255,255,255,.95)"); gr.addColorStop(0.4, rgba(cor.bright, 0.55)); gr.addColorStop(1, rgba(cor.bright, 0));
+    g.fillStyle = gr; g.beginPath(); g.arc(c0[0], c0[1], 9, 0, 6.2832); g.fill();
+  });
+  faiscas.forEach((f) => {
+    const x0 = cx + Math.cos(f.ang) * f.d, y0 = cy + Math.sin(f.ang) * f.d, x1 = cx + Math.cos(f.ang) * (f.d + f.len * f.vida), y1 = cy + Math.sin(f.ang) * (f.d + f.len * f.vida);
+    g.strokeStyle = rgba(cor.bright, 0.9 * f.vida); g.lineWidth = 1.6 * f.vida + 0.4; g.beginPath(); g.moveTo(x0, y0); g.lineTo(x1, y1); g.stroke();
+  });
+  g.restore();
+}
+
+function desenharVarredura(t) {                                                       // varredura do ambiente pela câmera: feixe de radar verde
+  if (N.varre < 0.01) return;
+  g.save(); g.translate(cx, cy); g.rotate(t * 2.2); g.globalAlpha = N.varre;
+  const fx = g.createLinearGradient(0, 0, R0 * 1.9, 0); fx.addColorStop(0, "rgba(125,255,200,0)"); fx.addColorStop(1, "rgba(125,255,200,.38)");
+  g.fillStyle = fx; g.beginPath(); g.moveTo(0, 0); g.arc(0, 0, R0 * 1.9, -0.5, 0); g.closePath(); g.fill(); g.restore();
+}
+
+function quadro(t) {
+  const agora = performance.now(), dtMs = Math.min(36, Math.max(1, agora - N.ultimo)); N.ultimo = agora;
+  const dt = dtMs / 16.667; N.tempo += dtMs * 0.001;
+  S.nivelMicSuave += (S.nivelMic - S.nivelMicSuave) * 0.35; S.nivelVozSuave += (S.nivelVoz - S.nivelVozSuave) * 0.45;
+  medir(); g.clearRect(0, 0, W, H);
+  atualizar(dt, agora);
+  const r = R0 * N.escala;
+  g.globalAlpha = S.estado === "LOADING" ? 0.55 + 0.25 * Math.sin(N.tempo * 3) : 1;
+  desenharAura(); desenharPulsos(); desenharAneis(N.tempo, r); desenharNucleo(N.tempo, r); desenharSatelites(N.tempo, r); desenharVarredura(N.tempo);
+  g.globalAlpha = 1;
+}
+
+function laco(t) { quadro(t); desenharOnda(t); requestAnimationFrame(laco); }
+
+/* ============================ DEMONSTRAÇÃO (?demo=1) ============================ */
+function demo() {
+  S.online = true; S.pessoa = "Alex"; if (new URLSearchParams(location.search).get("modo") === "serio") { S.modo = "serio"; aplicarModo(); } statusTexto(); definirEstado("IDLE"); if (new URLSearchParams(location.search).has("menus")) mostrarMenus(true);
+  atalhos(["Explorer", "Discord", "Steam", "VS Code", "Chrome", "Spotify", "YouTube"]);
+  clima({ cidade: "São Paulo", agora_temp: 18, agora: "o céu está parcialmente nublado", max: 24, min: 14 });
+  tarefas([{ id: 1, texto: "Finalizar projeto AC-Control", feito: true }, { id: 2, texto: "Verificar backup do servidor", feito: false },
+    { id: 3, texto: "Estudar Java - Spring Boot", feito: false }, { id: 4, texto: "Relaxar um pouco", feito: false }]);
+  apps([{ nome: "Google Chrome", mb: 482 }, { nome: "Discord", mb: 368 }, { nome: "Visual Studio Code", mb: 421 }, { nome: "Steam", mb: 290 }, { nome: "Spotify", mb: 275 }]);
+  resposta("KLAUS", "Olá, Alex! Como posso ajudar hoje?");
+  const estados = ["IDLE", "LISTENING", "PROCESSING", "SPEAKING"]; let n = Number(new URLSearchParams(location.search).get("estado")) || 0;
+  definirEstado(estados[n % 4]);
+  if (!new URLSearchParams(location.search).has("fixo")) setInterval(() => definirEstado(estados[++n % 4]), 4500);
+  setInterval(() => {
+    telemetria({ cpu: 7 + Math.random() * 6, cpu_nome: "AMD Ryzen 7 5700X 8-Core Processor", ram: 32, ram_usada: 10.1, ram_total: 31.9,
+      gpu: 12 + Math.random() * 5, gpu_nome: "NVIDIA GeForce RTX 4060 Ti", temp: 37, disco: 48, disco_usado: 479, disco_total: 931, down: 4 + Math.random() * 12, up: 3 + Math.random() * 9 });
+    S.nivelMic = S.estado === "LISTENING" ? 0.2 + Math.random() * 0.5 : 0.02;
+    S.zcr = 0.1 + Math.random() * 0.3; S.camera = true;
+    S.visao = { rostos: 1, pessoas: ["Alex"], olhando: false, varrendo: (Date.now() / 7000 % 1) > 0.7 && new URLSearchParams(location.search).has("varrer"), lista: [{ nome: "pessoa", n: 1 }, { nome: "telas", n: 2 }, { nome: "teclado", n: 1 }, { nome: "garrafa", n: 1 }], objetos: [{ nome: "tela", cx: 0.25, cy: 0.35, w: 0.22, h: 0.2 }, { nome: "tela", cx: 0.72, cy: 0.38, w: 0.2, h: 0.18 }, { nome: "teclado", cx: 0.5, cy: 0.78, w: 0.3, h: 0.1 }], faces: [{ nome: "Alex", cx: 0.5 + 0.3 * Math.sin(Date.now() / 2500), cy: 0.5 + 0.1 * Math.sin(Date.now() / 3100), tam: 0.25 }] };
+    painelVisao();
+    S.nivelVoz = S.estado === "SPEAKING" ? 0.15 + Math.abs(Math.sin(Date.now() / 140)) * 0.4 : 0;
+  }, 120);
+}
+
+/* ============================ INÍCIO ============================ */
+statusTexto(); definirEstado("IDLE");
+if (DEMO) demo(); else conectar();
+requestAnimationFrame(laco);
+})();
+</script>
+</body>
+</html>
